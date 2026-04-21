@@ -14,6 +14,8 @@ env/
 paper_trader.log
 pipeline.log
 paper_trader.log.*
+forecast_logger.stdout.log
+paper_trader.stdout.log
 
 # Generated Excel export (regenerable from paper_trades.json via --export)
 paper_trade_tracker.xlsx

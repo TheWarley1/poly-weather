@@ -40,10 +40,10 @@ jobs:
           pip install requests numpy scipy openpyxl
 
       - name: Run forecast logger
-        run: python forecast_logger.py
+        run: python -u forecast_logger.py 2>&1 | tee forecast_logger.stdout.log
 
       - name: Run paper trader
-        run: python paper_trader.py
+        run: python -u paper_trader.py 2>&1 | tee paper_trader.stdout.log
 
       - name: Commit updated state
         run: |
@@ -67,5 +67,7 @@ jobs:
           path: |
             paper_trader.log
             paper_trader.log.*
+            forecast_logger.stdout.log
+            paper_trader.stdout.log
           if-no-files-found: ignore
           retention-days: 14
