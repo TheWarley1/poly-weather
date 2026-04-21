@@ -1,0 +1,71 @@
+name: Polymarket Weather Trading
+
+# Runs every 6 hours (UTC) and can be triggered manually from the Actions tab.
+# GitHub's scheduled workflows can be delayed during peak load — the cadence is
+# best-effort, not precise. Good enough for a 6-hour cycle.
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+# Allow the default GITHUB_TOKEN to push data commits back to the repo.
+permissions:
+  contents: write
+
+# Prevent two scheduled runs from racing each other on the same commit.
+concurrency:
+  group: trading-run
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install runtime dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests numpy scipy openpyxl
+
+      - name: Run forecast logger
+        run: python forecast_logger.py
+
+      - name: Run paper trader
+        run: python paper_trader.py
+
+      - name: Commit updated state
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No data changes to commit."
+            exit 0
+          fi
+          git commit -m "auto: trading run $(date -u +%Y-%m-%dT%H:%MZ)"
+          # Rebase onto any manual commits that landed while we were running.
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          git push
+
+      - name: Upload run log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: paper-trader-log-${{ github.run_id }}
+          path: |
+            paper_trader.log
+            paper_trader.log.*
+          if-no-files-found: ignore
+          retention-days: 14

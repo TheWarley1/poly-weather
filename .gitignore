@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Logs (rotated/generated, not source of truth)
+*.log
+paper_trader.log
+pipeline.log
+paper_trader.log.*
+
+# Generated Excel export (regenerable from paper_trades.json via --export)
+paper_trade_tracker.xlsx
+.~lock.*.xlsx#
+
+# Backups
+*.bak
+paper_trades.json.bak
+
+# Atomic-write scratch file
+forecast_logs/__atomic_test__.json
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
