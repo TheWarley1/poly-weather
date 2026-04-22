@@ -23,12 +23,21 @@ import os
 import re
 import sys
 import time
+import threading
 import numpy as np
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta
 from pathlib import Path
 from scipy import stats
 from scipy.stats import skewnorm
 from zoneinfo import ZoneInfo
+
+# Parallelism for the city scan loop. Every per-city API call is I/O-bound
+# (Polymarket + Open-Meteo + NWS), so threads give a near-linear speedup.
+SCAN_WORKERS = 8
+# Lock guarding print() so multi-line city blocks from scan_city_edges
+# don't tear across threads.
+_scan_print_lock = threading.Lock()
 
 # Import shared infrastructure from forecast_logger
 from forecast_logger import (
@@ -1088,34 +1097,64 @@ def main():
     }
 
     new_signals = 0
-    running_exposure = open_exposure  # grows as we commit new signals
-    for city_name, city in cities_to_scan.items():
-        # Stop early if daily budget is exhausted.
+    running_exposure = open_exposure
+
+    # Scan cities in parallel. Each city sees the SAME starting open_exposure —
+    # they can't observe each other's commits during the scan. The reconciliation
+    # loop below commits signals in deterministic city order and enforces the
+    # daily budget cap signal-by-signal, mirroring serial behavior for the final
+    # trade list (though individual trades may be sized slightly differently,
+    # since all cities see the initial budget rather than a shrinking one).
+    def _scan_one(city_name, city):
+        try:
+            signals = scan_city_edges(
+                city_name, city, verbose,
+                bankroll=bankroll,
+                open_exposure=open_exposure,
+            )
+            return city_name, signals, None
+        except Exception as e:
+            return city_name, [], e
+
+    results_by_city = {}  # city_name -> list of signals
+    with ThreadPoolExecutor(max_workers=SCAN_WORKERS) as pool:
+        futures = [pool.submit(_scan_one, name, city)
+                   for name, city in cities_to_scan.items()]
+        for fut in as_completed(futures):
+            city_name, signals, err = fut.result()
+            if err:
+                with _scan_print_lock:
+                    print(f"  [{city_name}] scan ERROR: {err!r}", flush=True)
+                continue
+            results_by_city[city_name] = signals
+
+    # Commit signals in CITIES dict order, respecting the daily budget.
+    for city_name in cities_to_scan.keys():
         if running_exposure >= daily_budget:
             if verbose:
                 print(f"  🧯 Daily exposure budget exhausted at "
-                      f"${running_exposure:.2f}/${daily_budget:.2f} — skipping remaining cities")
+                      f"${running_exposure:.2f}/${daily_budget:.2f} — "
+                      f"skipping remaining cities' signals")
             break
-
-        signals = scan_city_edges(
-            city_name, city, verbose,
-            bankroll=bankroll,
-            open_exposure=running_exposure,
-        )
-
-        for signal in signals:
+        for signal in results_by_city.get(city_name, []):
             key = (signal["slug"], signal["market_date"], signal["bin"])
             if key in existing_keys:
-                continue  # Already have this trade open
-
+                continue
+            # Signal-by-signal budget cap (cities all saw starting open_exposure,
+            # so in aggregate they may have produced > daily_budget worth of signals)
+            if running_exposure + signal["cost"] > daily_budget + 0.01:
+                if verbose:
+                    print(f"  🧯 [{signal['slug']}] {signal['bin']} dropped — "
+                          f"would exceed daily budget "
+                          f"(${running_exposure:.2f}+${signal['cost']:.2f} "
+                          f"> ${daily_budget:.2f})")
+                continue
             signal["logged_at"] = datetime.now().isoformat()
             signal["resolved"] = False
             trades.append(signal)
             existing_keys.add(key)
             running_exposure += signal["cost"]
             new_signals += 1
-
-        time.sleep(0.5)
 
     save_trades(trades)
 
