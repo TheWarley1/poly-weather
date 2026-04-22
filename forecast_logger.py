@@ -28,10 +28,21 @@ import os
 import sys
 import time
 import re
+import threading
 import numpy as np
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
+
+# Parallelism for the per-city loop. I/O-bound (network only), so threads are fine.
+# Each city makes ~6 serial API calls internally; 8 concurrent cities = 8 in-flight
+# requests at once, which is safe for every upstream we hit.
+FORECAST_WORKERS = 8
+
+# Lock guarding print() calls so two threads don't produce torn lines.
+# (print() is mostly line-atomic under CPython, but not guaranteed.)
+_print_lock = threading.Lock()
 
 # ─────────────────────────────────────────────
 # CITY REGISTRY (must match app.py exactly)
@@ -1027,29 +1038,47 @@ def main():
     total_actuals = 0
     total_hist_forecasts = 0
 
-    for city_name, city in cities_to_process.items():
-        if verbose:
-            print(f"\n📍 {city_name} ({city['station']}, {city['unit']})")
+    def _process_city(city_name, city):
+        """Run one city's work in a worker thread. Output interleaves across
+        cities but each [slug]-prefixed line is greppable, so logs stay usable."""
+        err = None
+        counts = {"forecasts": 0, "actuals": 0, "hist_forecasts": 0}
+        try:
+            if verbose:
+                with _print_lock:
+                    print(f"\n📍 {city_name} ({city['station']}, {city['unit']})",
+                          flush=True)
+            if args.backfill or args.backfill_forecasts:
+                if args.backfill:
+                    counts["actuals"] = backfill_actuals_for_city(
+                        city_name, city, days=args.backfill_days, verbose=verbose)
+                if args.backfill_forecasts:
+                    counts["hist_forecasts"] = backfill_forecasts_for_city(
+                        city_name, city, days=args.backfill_days, verbose=verbose)
+            else:
+                counts["forecasts"] = log_forecasts_for_city(
+                    city_name, city, days_ahead=3, verbose=verbose)
+                counts["actuals"] = log_actuals_for_city(
+                    city_name, city, lookback_days=14, verbose=verbose)
+        except Exception as e:
+            err = e
+        return city_name, counts, err
 
-        if args.backfill or args.backfill_forecasts:
-            # Either or both backfill modes.
-            if args.backfill:
-                n = backfill_actuals_for_city(
-                    city_name, city, days=args.backfill_days, verbose=verbose)
-                total_actuals += n
-            if args.backfill_forecasts:
-                nh = backfill_forecasts_for_city(
-                    city_name, city, days=args.backfill_days, verbose=verbose)
-                total_hist_forecasts += nh
-        else:
-            # Standard mode: log forecasts + recent actuals
-            nf = log_forecasts_for_city(city_name, city, days_ahead=3, verbose=verbose)
-            na = log_actuals_for_city(city_name, city, lookback_days=14, verbose=verbose)
-            total_forecasts += nf
-            total_actuals += na
-
-        # Rate limiting between cities
-        time.sleep(0.5)
+    # Fan out: one worker per city, up to FORECAST_WORKERS at once.
+    # All network I/O, so threads are ideal.
+    with ThreadPoolExecutor(max_workers=FORECAST_WORKERS) as pool:
+        futures = [
+            pool.submit(_process_city, name, city)
+            for name, city in cities_to_process.items()
+        ]
+        for fut in as_completed(futures):
+            city_name, counts, err = fut.result()
+            if err:
+                with _print_lock:
+                    print(f"  [{city_name}] ERROR: {err!r}", flush=True)
+            total_forecasts += counts["forecasts"]
+            total_actuals += counts["actuals"]
+            total_hist_forecasts += counts["hist_forecasts"]
 
     print(f"\n{'='*60}")
     if args.backfill or args.backfill_forecasts:
