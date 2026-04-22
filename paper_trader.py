@@ -482,6 +482,51 @@ def build_model_probabilities(forecast_high, bins, unit="F",
     return probs
 
 
+def get_forecast_from_log(log, target_str, max_age_hours=4.0, min_models=3):
+    """Return (forecast, model_highs_dict) for target_str from an already-loaded
+    forecast log, or (None, None) if missing / incomplete / stale.
+
+    forecast_logger.py writes these fields every cycle (runs seconds before
+    paper_trader in the pipeline), so in the common case we can skip the
+    NWS + Open-Meteo fetches entirely — roughly 6-7 API calls saved per
+    (city, day) pair, which is the hot path.
+
+    Safety rails (both cause the caller to fall back to the live API path):
+      - max_age_hours: reject entries older than this. Weather models refresh
+        every 6 hours, so a stale log can be meaningfully wrong near fronts.
+        4h gives one scheduler cycle of headroom before we treat data as old.
+      - min_models: require at least this many ensemble members in model_highs.
+        model_spread is computed as np.std(model_highs.values()) and used as
+        the σ input to the probability model — with too few samples it
+        underestimates uncertainty, inflating edge and manufacturing signal.
+
+    Missing or unparseable updated_at → treated as stale (old log format)."""
+    for entry in log:
+        if entry.get("date") != target_str:
+            continue
+        forecast = entry.get("forecast")
+        model_highs = entry.get("model_highs") or {}
+        if forecast is None or not model_highs:
+            return None, None
+        # Gate 1: need enough ensemble members for a meaningful spread.
+        if len(model_highs) < min_models:
+            return None, None
+        # Gate 2: freshness. Weather forecasts decay; don't reuse stale entries.
+        updated_at = entry.get("updated_at")
+        if not updated_at:
+            return None, None
+        try:
+            ts = datetime.fromisoformat(updated_at)
+        except (ValueError, TypeError):
+            return None, None
+        age_hours = (datetime.now() - ts).total_seconds() / 3600.0
+        if age_hours > max_age_hours:
+            return None, None
+        # Return a copy so caller mutations don't leak back into the log.
+        return forecast, dict(model_highs)
+    return None, None
+
+
 def get_historical_highs(lat, lon, target_date_str, unit="F"):
     month_day = target_date_str[5:]
     records = []
@@ -634,15 +679,24 @@ def scan_city_edges(city_name, city, verbose=True,
         if total_vol < CONFIG["min_volume"]:
             continue
 
-        # Get forecasts
-        nws_high = None
-        if city["unit"] == "F":
-            nws_high = fetch_nws_forecast_high(city["lat"], city["lon"], target_str, city["tz"])
+        # Fast path: reuse the ensemble + model_highs that forecast_logger.py
+        # wrote to forecast_logs/{slug}.json seconds ago. Saves ~7 API calls per
+        # (city, day) pair. model_highs in the log already includes NWS under
+        # the "nws" key for F-unit cities, so we don't need to re-fetch.
+        ensemble_high, converted_highs = get_forecast_from_log(log, target_str)
 
-        model_highs = fetch_openmeteo_multimodel_highs(city["lat"], city["lon"], target_str)
-        ensemble_high, converted_highs = compute_ensemble_high(
-            nws_high, model_highs, days_ahead, city["unit"]
-        )
+        # Fallback: if the log is missing/stale for this date (forecast_logger
+        # didn't run, or errored out for this city), hit the APIs the old way.
+        if ensemble_high is None:
+            nws_high = None
+            if city["unit"] == "F":
+                nws_high = fetch_nws_forecast_high(
+                    city["lat"], city["lon"], target_str, city["tz"])
+            model_highs = fetch_openmeteo_multimodel_highs(
+                city["lat"], city["lon"], target_str)
+            ensemble_high, converted_highs = compute_ensemble_high(
+                nws_high, model_highs, days_ahead, city["unit"]
+            )
 
         if ensemble_high is None:
             continue
