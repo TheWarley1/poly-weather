@@ -1954,5 +1954,33 @@
     "calibrated": true,
     "logged_at": "2026-04-24T13:05:53.006400",
     "resolved": false
+  },
+  {
+    "city": "San Francisco",
+    "slug": "san-francisco",
+    "station": "KSFO",
+    "unit": "F",
+    "market_date": "2026-04-24",
+    "lead_days": 0,
+    "bin": "60-61\u00b0F",
+    "entry_price": 9.5,
+    "shares": 23,
+    "cost": 2.19,
+    "forecast_high": 60.7,
+    "model_prob": 33.0,
+    "model_prob_shrunk": 30.6,
+    "market_prob": 9.5,
+    "edge_pct": 23.5,
+    "edge_sized_pct": 21.1,
+    "kelly_pct": 2.2,
+    "dd_factor": 0.5,
+    "bankroll_at_entry": 650.33,
+    "city_kelly_scalar": 0.75,
+    "city_bss": 0.20103014991197332,
+    "n_models": 5,
+    "model_spread": 1.6,
+    "calibrated": true,
+    "logged_at": "2026-04-24T18:54:30.860421",
+    "resolved": false
   }
 ]
