@@ -1365,58 +1365,56 @@
       "icon_seamless": 81,
       "nws": 79
     },
-    "actual": 82.0,
-    "actual_source": "open_meteo_archive",
-    "resolution_bin": null,
+    "actual": 84.0,
+    "actual_source": "metar_iem",
+    "resolution_bin": "84-85\u00b0F",
     "logged_at": "2026-04-22T09:07:37.154900",
-    "updated_at": "2026-04-25T07:02:30.314595"
+    "updated_at": "2026-04-25T18:35:18.624225"
   },
   {
     "date": "2026-04-25",
-    "forecast": 75.3,
+    "forecast": 74.7,
     "model_highs": {
-      "ecmwf_ifs025": 77,
-      "gfs_seamless": 73,
+      "ecmwf_ifs025": 75,
+      "gfs_seamless": 75,
       "icon_seamless": 71,
-      "gem_seamless": 77,
-      "nws": 77
+      "gem_seamless": 75,
+      "nws": 76
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-04-23T07:19:46.936049",
-    "updated_at": "2026-04-25T12:35:30.108806"
+    "updated_at": "2026-04-25T18:33:38.581387"
   },
   {
     "date": "2026-04-26",
-    "forecast": 80.7,
+    "forecast": 80.3,
     "model_highs": {
-      "ecmwf_ifs025": 80,
-      "gfs_seamless": 83,
-      "icon_seamless": 77,
-      "gem_seamless": 78,
-      "nws": 83
+      "ecmwf_ifs025": 78,
+      "gfs_seamless": 82,
+      "icon_seamless": 78,
+      "gem_seamless": 77,
+      "nws": 84
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-04-24T07:47:58.832676",
-    "updated_at": "2026-04-25T12:35:32.888767"
+    "updated_at": "2026-04-25T18:33:41.693317"
   },
   {
     "date": "2026-04-27",
-    "forecast": 77.9,
+    "forecast": 76.5,
     "model_highs": {
-      "ecmwf_ifs025": 78,
-      "gfs_seamless": 80,
-      "icon_seamless": 74,
+      "ecmwf_ifs025": 76,
       "gem_seamless": 75,
-      "nws": 80
+      "nws": 78
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-04-25T07:02:29.015027",
-    "updated_at": "2026-04-25T12:35:35.562264"
+    "updated_at": "2026-04-25T18:35:17.664353"
   }
 ]
