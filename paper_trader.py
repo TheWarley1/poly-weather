@@ -91,8 +91,8 @@ CONFIG = {
     "starting_bankroll": 1000.0,  # Paper starting stake (fixed; live bankroll computed from P&L)
     "max_bet_frac": 0.05,         # Per-trade cap: 5% of LIVE bankroll
     "max_daily_exposure": 0.25,   # Total open-trade cost cannot exceed 25% of live bankroll
-    "drawdown_soft": 0.20,        # At 20% drawdown, halve Kelly
-    "drawdown_hard": 0.40,        # At 40% drawdown, stop opening new trades
+    "drawdown_soft": 0.99,        # At 20% drawdown, halve Kelly
+    "drawdown_hard": 1,        # At 40% drawdown, stop opening new trades
     "prob_shrinkage": 0.10,       # Pull model_prob 10% toward market price before sizing.
                                   # Margin of safety: we don't trust our σ to the last decimal,
                                   # so we bet a slightly more conservative edge than the raw model says.
