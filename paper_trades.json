@@ -2630,5 +2630,33 @@
     "calibrated": true,
     "logged_at": "2026-05-04T19:29:00.364509",
     "resolved": false
+  },
+  {
+    "city": "Miami",
+    "slug": "miami",
+    "station": "KMIA",
+    "unit": "F",
+    "market_date": "2026-05-05",
+    "lead_days": 1,
+    "bin": "86-87\u00b0F",
+    "entry_price": 21.5,
+    "shares": 9,
+    "cost": 1.94,
+    "forecast_high": 86.0,
+    "model_prob": 33.7,
+    "model_prob_shrunk": 32.5,
+    "market_prob": 21.5,
+    "edge_pct": 12.2,
+    "edge_sized_pct": 11.0,
+    "kelly_pct": 2.6,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 510.82,
+    "city_kelly_scalar": 0.75,
+    "city_bss": 0.2365831389598434,
+    "n_models": 5,
+    "model_spread": 1.4,
+    "calibrated": true,
+    "logged_at": "2026-05-05T01:45:45.534182",
+    "resolved": false
   }
 ]
