@@ -2557,7 +2557,13 @@
     "model_spread": 2.2,
     "calibrated": true,
     "logged_at": "2026-05-04T13:25:44.556175",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "62-63\u00b0F",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -14.08,
+    "return_pct": -100.0,
+    "resolved_at": "2026-05-06T13:31:46.564567"
   },
   {
     "city": "Atlanta",
@@ -2721,7 +2727,13 @@
     "model_spread": 1.7,
     "calibrated": true,
     "logged_at": "2026-05-05T08:11:03.979454",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "64-65\u00b0F",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -10.83,
+    "return_pct": -100.0,
+    "resolved_at": "2026-05-06T13:31:47.034177"
   },
   {
     "city": "Chicago",
@@ -2951,6 +2963,34 @@
     "model_spread": 2.6,
     "calibrated": true,
     "logged_at": "2026-05-06T09:01:20.268601",
+    "resolved": false
+  },
+  {
+    "city": "Chicago",
+    "slug": "chicago",
+    "station": "KORD",
+    "unit": "F",
+    "market_date": "2026-05-07",
+    "lead_days": 1,
+    "bin": "62-63\u00b0F",
+    "entry_price": 12.0,
+    "shares": 150,
+    "cost": 18.0,
+    "forecast_high": 61.0,
+    "model_prob": 26.0,
+    "model_prob_shrunk": 24.6,
+    "market_prob": 12.0,
+    "edge_pct": 14.0,
+    "edge_sized_pct": 12.6,
+    "kelly_pct": 3.6,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 502.59,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.40658899532270387,
+    "n_models": 5,
+    "model_spread": 1.5,
+    "calibrated": true,
+    "logged_at": "2026-05-06T13:45:23.785015",
     "resolved": false
   }
 ]
