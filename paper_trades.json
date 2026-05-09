@@ -3163,7 +3163,13 @@
     "model_spread": 1.1,
     "calibrated": true,
     "logged_at": "2026-05-07T13:44:16.075685",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "92-93\u00b0F",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -15.59,
+    "return_pct": -100.0,
+    "resolved_at": "2026-05-09T07:32:18.483303"
   },
   {
     "city": "Wellington",
@@ -3365,6 +3371,34 @@
     "model_spread": 2.9,
     "calibrated": true,
     "logged_at": "2026-05-08T19:20:34.560266",
+    "resolved": false
+  },
+  {
+    "city": "Miami",
+    "slug": "miami",
+    "station": "KMIA",
+    "unit": "F",
+    "market_date": "2026-05-10",
+    "lead_days": 1,
+    "bin": "92-93\u00b0F",
+    "entry_price": 11.0,
+    "shares": 88,
+    "cost": 9.68,
+    "forecast_high": 90.8,
+    "model_prob": 26.3,
+    "model_prob_shrunk": 24.8,
+    "market_prob": 11.0,
+    "edge_pct": 15.3,
+    "edge_sized_pct": 13.8,
+    "kelly_pct": 2.9,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 333.27,
+    "city_kelly_scalar": 0.75,
+    "city_bss": 0.2365831389598434,
+    "n_models": 5,
+    "model_spread": 1.8,
+    "calibrated": true,
+    "logged_at": "2026-05-09T07:37:35.675153",
     "resolved": false
   }
 ]
