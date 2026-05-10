@@ -1567,11 +1567,11 @@
       "icon_seamless": 20.6,
       "gem_seamless": 20.6
     },
-    "actual": 21.7,
-    "actual_source": "open_meteo_archive",
-    "resolution_bin": null,
+    "actual": 23.0,
+    "actual_source": "metar_iem",
+    "resolution_bin": "23\u00b0C",
     "logged_at": "2026-05-07T08:14:18.994511",
-    "updated_at": "2026-05-09T18:42:07.350348"
+    "updated_at": "2026-05-10T01:49:17.278097"
   },
   {
     "date": "2026-05-10",
@@ -1586,6 +1586,18 @@
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-05-08T07:15:45.128360",
-    "updated_at": "2026-05-09T18:42:05.678306"
+    "updated_at": "2026-05-10T01:47:13.189658"
+  },
+  {
+    "date": "2026-05-11",
+    "forecast": 26.1,
+    "model_highs": {
+      "ecmwf_ifs025": 26.1
+    },
+    "actual": null,
+    "actual_source": null,
+    "resolution_bin": null,
+    "logged_at": "2026-05-10T01:49:15.919959",
+    "updated_at": "2026-05-10T01:49:15.919977"
   }
 ]
