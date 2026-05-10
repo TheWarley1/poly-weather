@@ -3237,7 +3237,13 @@
     "model_spread": 2.4,
     "calibrated": true,
     "logged_at": "2026-05-07T19:33:48.919103",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "62-63\u00b0F",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -4.59,
+    "return_pct": -100.0,
+    "resolved_at": "2026-05-10T12:54:58.663883"
   },
   {
     "city": "San Francisco",
@@ -3597,6 +3603,34 @@
     "model_spread": 0.5,
     "calibrated": true,
     "logged_at": "2026-05-10T08:08:50.948553",
+    "resolved": false
+  },
+  {
+    "city": "New York",
+    "slug": "nyc",
+    "station": "KLGA",
+    "unit": "F",
+    "market_date": "2026-05-10",
+    "lead_days": 0,
+    "bin": "74-75\u00b0F",
+    "entry_price": 14.0,
+    "shares": 51,
+    "cost": 7.14,
+    "forecast_high": 73.8,
+    "model_prob": 38.2,
+    "model_prob_shrunk": 35.8,
+    "market_prob": 14.0,
+    "edge_pct": 24.2,
+    "edge_sized_pct": 21.8,
+    "kelly_pct": 6.3,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 443.45,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.3844847022463673,
+    "n_models": 5,
+    "model_spread": 2.5,
+    "calibrated": true,
+    "logged_at": "2026-05-10T13:08:07.554137",
     "resolved": false
   }
 ]
