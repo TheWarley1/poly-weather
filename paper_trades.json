@@ -4347,7 +4347,13 @@
     "model_spread": 4.4,
     "calibrated": true,
     "logged_at": "2026-05-15T08:54:38.052825",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "64-65\u00b0F",
+    "resolved_price": 100,
+    "revenue": 73.0,
+    "pnl": 61.69,
+    "return_pct": 545.4,
+    "resolved_at": "2026-05-16T12:59:48.993410"
   },
   {
     "city": "Miami",
@@ -4611,6 +4617,34 @@
     "model_spread": 2.2,
     "calibrated": true,
     "logged_at": "2026-05-16T07:57:14.902276",
+    "resolved": false
+  },
+  {
+    "city": "Atlanta",
+    "slug": "atlanta",
+    "station": "KATL",
+    "unit": "F",
+    "market_date": "2026-05-17",
+    "lead_days": 1,
+    "bin": "90-91\u00b0F",
+    "entry_price": 12.5,
+    "shares": 200,
+    "cost": 25.0,
+    "forecast_high": 90.0,
+    "model_prob": 32.2,
+    "model_prob_shrunk": 30.2,
+    "market_prob": 12.5,
+    "edge_pct": 19.7,
+    "edge_sized_pct": 17.7,
+    "kelly_pct": 5.1,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 634.79,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.3989800337915126,
+    "n_models": 5,
+    "model_spread": 2.2,
+    "calibrated": true,
+    "logged_at": "2026-05-16T13:11:08.764846",
     "resolved": false
   }
 ]
