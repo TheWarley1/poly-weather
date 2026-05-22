@@ -1775,11 +1775,11 @@
       "gem_seamless": 60,
       "nws": 54
     },
-    "actual": 58.3,
-    "actual_source": "open_meteo_archive",
+    "actual": 58.0,
+    "actual_source": "metar_iem",
     "resolution_bin": "59\u00b0F or below",
     "logged_at": "2026-05-19T19:41:10.758770",
-    "updated_at": "2026-05-22T08:46:45.085640"
+    "updated_at": "2026-05-22T14:10:55.750302"
   },
   {
     "date": "2026-05-20",
@@ -1799,49 +1799,50 @@
   },
   {
     "date": "2026-05-22",
-    "forecast": 67.3,
+    "forecast": 67.4,
     "model_highs": {
-      "ecmwf_ifs025": 69,
-      "gfs_seamless": 68,
+      "ecmwf_ifs025": 68,
+      "gfs_seamless": 69,
       "icon_seamless": 66,
-      "gem_seamless": 68,
+      "gem_seamless": 69,
       "nws": 66
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-05-20T08:51:13.213918",
-    "updated_at": "2026-05-22T08:45:44.868028"
+    "updated_at": "2026-05-22T14:10:19.201779"
   },
   {
     "date": "2026-05-23",
-    "forecast": 69.6,
+    "forecast": 70.0,
     "model_highs": {
-      "ecmwf_ifs025": 70,
-      "gfs_seamless": 70,
-      "icon_seamless": 66,
-      "gem_seamless": 72,
+      "ecmwf_ifs025": 71,
+      "gfs_seamless": 73,
+      "icon_seamless": 65,
+      "gem_seamless": 69,
       "nws": 70
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-05-21T14:35:39.173099",
-    "updated_at": "2026-05-22T08:45:48.026618"
+    "updated_at": "2026-05-22T14:10:23.427653"
   },
   {
     "date": "2026-05-24",
-    "forecast": 77.3,
+    "forecast": 78.2,
     "model_highs": {
-      "ecmwf_ifs025": 80,
-      "icon_seamless": 80,
-      "gem_seamless": 66,
+      "ecmwf_ifs025": 79,
+      "gfs_seamless": 76,
+      "icon_seamless": 82,
+      "gem_seamless": 77,
       "nws": 77
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-05-22T08:46:44.133495",
-    "updated_at": "2026-05-22T08:46:44.133504"
+    "updated_at": "2026-05-22T14:10:54.498645"
   }
 ]
