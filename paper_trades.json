@@ -5354,7 +5354,13 @@
     "model_spread": 1.3,
     "calibrated": true,
     "logged_at": "2026-05-24T08:32:33.226546",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "32\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -5.16,
+    "return_pct": -100.0,
+    "resolved_at": "2026-05-26T09:38:27.870013"
   },
   {
     "city": "Dallas",
@@ -5522,7 +5528,13 @@
     "model_spread": 1.3,
     "calibrated": true,
     "logged_at": "2026-05-25T10:03:30.303518",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "78-79\u00b0F",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -15.04,
+    "return_pct": -100.0,
+    "resolved_at": "2026-05-26T09:38:28.682003"
   },
   {
     "city": "Toronto",
@@ -5550,6 +5562,34 @@
     "model_spread": 1.4,
     "calibrated": true,
     "logged_at": "2026-05-25T10:03:30.303659",
+    "resolved": false
+  },
+  {
+    "city": "San Francisco",
+    "slug": "san-francisco",
+    "station": "KSFO",
+    "unit": "F",
+    "market_date": "2026-05-26",
+    "lead_days": 0,
+    "bin": "60-61\u00b0F",
+    "entry_price": 16.0,
+    "shares": 74,
+    "cost": 11.84,
+    "forecast_high": 61.7,
+    "model_prob": 30.1,
+    "model_prob_shrunk": 28.7,
+    "market_prob": 16.0,
+    "edge_pct": 14.1,
+    "edge_sized_pct": 12.7,
+    "kelly_pct": 2.8,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 418.49,
+    "city_kelly_scalar": 0.75,
+    "city_bss": 0.20103014991197332,
+    "n_models": 5,
+    "model_spread": 1.8,
+    "calibrated": true,
+    "logged_at": "2026-05-26T09:51:04.108293",
     "resolved": false
   }
 ]
