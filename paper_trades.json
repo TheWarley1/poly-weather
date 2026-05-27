@@ -5614,7 +5614,13 @@
     "model_spread": 1.8,
     "calibrated": true,
     "logged_at": "2026-05-26T09:51:04.108293",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "62-63\u00b0F",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -11.84,
+    "return_pct": -100.0,
+    "resolved_at": "2026-05-27T19:59:42.531248"
   },
   {
     "city": "Miami",
@@ -5732,6 +5738,34 @@
     "model_spread": 2.0,
     "calibrated": true,
     "logged_at": "2026-05-27T15:09:33.934769",
+    "resolved": false
+  },
+  {
+    "city": "London",
+    "slug": "london",
+    "station": "EGLL",
+    "unit": "C",
+    "market_date": "2026-05-29",
+    "lead_days": 2,
+    "bin": "24\u00b0C",
+    "entry_price": 8.3,
+    "shares": 140,
+    "cost": 11.62,
+    "forecast_high": 24.2,
+    "model_prob": 26.9,
+    "model_prob_shrunk": 25.0,
+    "market_prob": 8.3,
+    "edge_pct": 18.6,
+    "edge_sized_pct": 16.7,
+    "kelly_pct": 4.6,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 345.59,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.33550968398825665,
+    "n_models": 4,
+    "model_spread": 1.0,
+    "calibrated": true,
+    "logged_at": "2026-05-27T20:05:36.435568",
     "resolved": false
   }
 ]
