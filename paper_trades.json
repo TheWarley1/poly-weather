@@ -5965,5 +5965,33 @@
     "calibrated": true,
     "logged_at": "2026-05-29T14:40:33.034612",
     "resolved": false
+  },
+  {
+    "city": "Chicago",
+    "slug": "chicago",
+    "station": "KORD",
+    "unit": "F",
+    "market_date": "2026-05-30",
+    "lead_days": 1,
+    "bin": "74\u00b0F or higher",
+    "entry_price": 25.0,
+    "shares": 10,
+    "cost": 2.5,
+    "forecast_high": 73.2,
+    "model_prob": 45.5,
+    "model_prob_shrunk": 43.4,
+    "market_prob": 25.0,
+    "edge_pct": 20.5,
+    "edge_sized_pct": 18.4,
+    "kelly_pct": 6.1,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 329.99,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.40658899532270387,
+    "n_models": 5,
+    "model_spread": 1.4,
+    "calibrated": true,
+    "logged_at": "2026-05-29T20:16:05.269892",
+    "resolved": false
   }
 ]
