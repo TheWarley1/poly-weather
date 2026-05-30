@@ -1864,53 +1864,53 @@
       "icon_seamless": 18.9,
       "gem_seamless": 18.9
     },
-    "actual": 20.4,
-    "actual_source": "open_meteo_archive",
-    "resolution_bin": null,
+    "actual": 20.0,
+    "actual_source": "metar_iem",
+    "resolution_bin": "20\u00b0C",
     "logged_at": "2026-05-27T09:00:16.497430",
-    "updated_at": "2026-05-30T08:18:57.402155"
+    "updated_at": "2026-05-30T13:03:44.207729"
   },
   {
     "date": "2026-05-30",
-    "forecast": 20.6,
+    "forecast": 20.4,
     "model_highs": {
       "ecmwf_ifs025": 21.1,
-      "gfs_seamless": 21.1,
-      "icon_seamless": 21.1,
+      "gfs_seamless": 20.6,
+      "icon_seamless": 20.6,
       "gem_seamless": 17.8
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-05-28T09:47:02.852020",
-    "updated_at": "2026-05-30T08:17:16.292470"
+    "updated_at": "2026-05-30T13:01:50.194778"
   },
   {
     "date": "2026-05-31",
-    "forecast": 21.0,
+    "forecast": 21.2,
     "model_highs": {
       "ecmwf_ifs025": 21.1,
-      "gem_seamless": 20.6
-    },
-    "actual": null,
-    "actual_source": null,
-    "resolution_bin": null,
-    "logged_at": "2026-05-29T09:33:30.533437",
-    "updated_at": "2026-05-30T08:18:52.487777"
-  },
-  {
-    "date": "2026-06-01",
-    "forecast": 21.1,
-    "model_highs": {
-      "ecmwf_ifs025": 20.6,
-      "gfs_seamless": 22.2,
+      "gfs_seamless": 21.7,
       "icon_seamless": 21.1,
       "gem_seamless": 20.6
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
+    "logged_at": "2026-05-29T09:33:30.533437",
+    "updated_at": "2026-05-30T13:01:52.730970"
+  },
+  {
+    "date": "2026-06-01",
+    "forecast": 21.2,
+    "model_highs": {
+      "ecmwf_ifs025": 20.6,
+      "gfs_seamless": 22.2
+    },
+    "actual": null,
+    "actual_source": null,
+    "resolution_bin": null,
     "logged_at": "2026-05-30T08:18:56.020751",
-    "updated_at": "2026-05-30T08:18:56.020756"
+    "updated_at": "2026-05-30T13:03:43.204736"
   }
 ]
