@@ -6770,7 +6770,13 @@
     "model_spread": 1.1,
     "calibrated": true,
     "logged_at": "2026-06-03T02:42:42.968870",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "19\u00b0C",
+    "resolved_price": 100,
+    "revenue": 45.0,
+    "pnl": 28.35,
+    "return_pct": 170.3,
+    "resolved_at": "2026-06-04T02:35:15.916786"
   },
   {
     "city": "Tokyo",
@@ -6944,6 +6950,34 @@
     "model_spread": 2.0,
     "calibrated": true,
     "logged_at": "2026-06-03T20:56:38.072584",
+    "resolved": false
+  },
+  {
+    "city": "Dallas",
+    "slug": "dallas",
+    "station": "KDFW",
+    "unit": "F",
+    "market_date": "2026-06-05",
+    "lead_days": 2,
+    "bin": "88\u00b0F or higher",
+    "entry_price": 10.5,
+    "shares": 146,
+    "cost": 15.33,
+    "forecast_high": 87.0,
+    "model_prob": 44.3,
+    "model_prob_shrunk": 40.9,
+    "market_prob": 10.5,
+    "edge_pct": 33.8,
+    "edge_sized_pct": 30.4,
+    "kelly_pct": 8.5,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 306.55,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.38712339766148884,
+    "n_models": 3,
+    "model_spread": 1.4,
+    "calibrated": true,
+    "logged_at": "2026-06-04T02:45:49.630649",
     "resolved": false
   }
 ]
