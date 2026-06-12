@@ -8198,7 +8198,13 @@
     "model_spread": 0.9,
     "calibrated": true,
     "logged_at": "2026-06-11T15:46:36.048328",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "14\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -3.6,
+    "return_pct": -100.0,
+    "resolved_at": "2026-06-12T14:32:00.347151"
   },
   {
     "city": "Tokyo",
@@ -8310,6 +8316,34 @@
     "model_spread": 0.2,
     "calibrated": true,
     "logged_at": "2026-06-12T10:12:42.650457",
+    "resolved": false
+  },
+  {
+    "city": "New York",
+    "slug": "nyc",
+    "station": "KLGA",
+    "unit": "F",
+    "market_date": "2026-06-12",
+    "lead_days": 0,
+    "bin": "96-97\u00b0F",
+    "entry_price": 15.0,
+    "shares": 21,
+    "cost": 3.15,
+    "forecast_high": 96.3,
+    "model_prob": 35.8,
+    "model_prob_shrunk": 33.7,
+    "market_prob": 15.0,
+    "edge_pct": 20.8,
+    "edge_sized_pct": 18.7,
+    "kelly_pct": 5.5,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 99.72,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.3844847022463673,
+    "n_models": 5,
+    "model_spread": 2.3,
+    "calibrated": true,
+    "logged_at": "2026-06-12T14:39:55.518337",
     "resolved": false
   }
 ]
