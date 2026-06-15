@@ -2157,11 +2157,11 @@
       "gem_seamless": 90,
       "nws": 82
     },
-    "actual": 89.6,
-    "actual_source": "open_meteo_archive",
+    "actual": 90.0,
+    "actual_source": "metar_iem",
     "resolution_bin": "90-91\u00b0F",
     "logged_at": "2026-06-12T02:12:20.034383",
-    "updated_at": "2026-06-14T08:58:47.054873"
+    "updated_at": "2026-06-15T11:40:03.094678"
   },
   {
     "date": "2026-06-14",
@@ -2173,39 +2173,42 @@
       "gem_seamless": 90,
       "nws": 82
     },
-    "actual": null,
-    "actual_source": null,
-    "resolution_bin": null,
+    "actual": 91.2,
+    "actual_source": "open_meteo_archive",
+    "resolution_bin": "92-93\u00b0F",
     "logged_at": "2026-06-13T02:05:01.111893",
-    "updated_at": "2026-06-15T02:29:16.520894"
+    "updated_at": "2026-06-15T11:40:02.293539"
   },
   {
     "date": "2026-06-15",
-    "forecast": 88.9,
+    "forecast": 90.2,
     "model_highs": {
-      "ecmwf_ifs025": 87,
-      "gfs_seamless": 90,
+      "ecmwf_ifs025": 89,
+      "gfs_seamless": 92,
       "icon_seamless": 89,
-      "gem_seamless": 91,
-      "nws": 89
-    },
-    "actual": null,
-    "actual_source": null,
-    "resolution_bin": null,
-    "logged_at": "2026-06-14T02:15:31.835878",
-    "updated_at": "2026-06-15T02:29:19.538507"
-  },
-  {
-    "date": "2026-06-16",
-    "forecast": 88.8,
-    "model_highs": {
-      "ecmwf_ifs025": 88,
+      "gem_seamless": 92,
       "nws": 90
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
+    "logged_at": "2026-06-14T02:15:31.835878",
+    "updated_at": "2026-06-15T11:39:55.597323"
+  },
+  {
+    "date": "2026-06-16",
+    "forecast": 89.8,
+    "model_highs": {
+      "ecmwf_ifs025": 88,
+      "gfs_seamless": 90,
+      "icon_seamless": 90,
+      "gem_seamless": 91,
+      "nws": 91
+    },
+    "actual": null,
+    "actual_source": null,
+    "resolution_bin": null,
     "logged_at": "2026-06-15T02:31:22.203778",
-    "updated_at": "2026-06-15T02:31:22.203787"
+    "updated_at": "2026-06-15T11:39:58.617942"
   }
 ]
