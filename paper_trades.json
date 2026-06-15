@@ -8895,5 +8895,33 @@
     "calibrated": true,
     "logged_at": "2026-06-15T11:49:32.056677",
     "resolved": false
+  },
+  {
+    "city": "Tokyo",
+    "slug": "tokyo",
+    "station": "RJTT",
+    "unit": "C",
+    "market_date": "2026-06-16",
+    "lead_days": 0,
+    "bin": "25\u00b0C",
+    "entry_price": 15.5,
+    "shares": 10,
+    "cost": 1.55,
+    "forecast_high": 25.3,
+    "model_prob": 34.7,
+    "model_prob_shrunk": 32.8,
+    "market_prob": 15.5,
+    "edge_pct": 19.2,
+    "edge_sized_pct": 17.3,
+    "kelly_pct": 3.8,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 62.84,
+    "city_kelly_scalar": 0.75,
+    "city_bss": 0.22473898491401045,
+    "n_models": 3,
+    "model_spread": 0.3,
+    "calibrated": true,
+    "logged_at": "2026-06-15T17:02:04.276756",
+    "resolved": false
   }
 ]
