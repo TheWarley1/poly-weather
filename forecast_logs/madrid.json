@@ -2190,15 +2190,31 @@
   },
   {
     "date": "2026-06-21",
-    "forecast": 38.6,
+    "forecast": 38.5,
     "model_highs": {
       "ecmwf_ifs025": 38.3,
-      "gfs_seamless": 38.9
+      "gfs_seamless": 38.9,
+      "icon_seamless": 38.9,
+      "gem_seamless": 37.8
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-06-19T10:13:51.160294",
-    "updated_at": "2026-06-21T02:32:28.108274"
+    "updated_at": "2026-06-21T09:35:41.260689"
+  },
+  {
+    "date": "2026-06-23",
+    "forecast": 39.7,
+    "model_highs": {
+      "ecmwf_ifs025": 40.6,
+      "gfs_seamless": 39.4,
+      "gem_seamless": 37.8
+    },
+    "actual": null,
+    "actual_source": null,
+    "resolution_bin": null,
+    "logged_at": "2026-06-21T09:36:37.197127",
+    "updated_at": "2026-06-21T09:36:37.197135"
   }
 ]
