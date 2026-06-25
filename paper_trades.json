@@ -10380,7 +10380,13 @@
     "model_spread": 0.9,
     "calibrated": true,
     "logged_at": "2026-06-23T09:00:42.085335",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "29\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -2.47,
+    "return_pct": -100.0,
+    "resolved_at": "2026-06-25T02:07:56.547623"
   },
   {
     "city": "New York",
@@ -10498,7 +10504,13 @@
     "model_spread": 1.5,
     "calibrated": true,
     "logged_at": "2026-06-24T09:08:22.342555",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "41\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -3.58,
+    "return_pct": -100.0,
+    "resolved_at": "2026-06-25T02:07:57.477676"
   },
   {
     "city": "Paris",
@@ -10554,6 +10566,34 @@
     "model_spread": 2.1,
     "calibrated": true,
     "logged_at": "2026-06-24T14:19:58.475509",
+    "resolved": false
+  },
+  {
+    "city": "Atlanta",
+    "slug": "atlanta",
+    "station": "KATL",
+    "unit": "F",
+    "market_date": "2026-06-25",
+    "lead_days": 1,
+    "bin": "88-89\u00b0F",
+    "entry_price": 11.1,
+    "shares": 33,
+    "cost": 3.65,
+    "forecast_high": 88.3,
+    "model_prob": 28.2,
+    "model_prob_shrunk": 26.5,
+    "market_prob": 11.1,
+    "edge_pct": 17.2,
+    "edge_sized_pct": 15.5,
+    "kelly_pct": 4.3,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 82.71,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.3989800337915126,
+    "n_models": 5,
+    "model_spread": 2.1,
+    "calibrated": true,
+    "logged_at": "2026-06-25T02:16:42.485793",
     "resolved": false
   }
 ]
