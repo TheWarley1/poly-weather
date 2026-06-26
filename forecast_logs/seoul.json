@@ -2297,11 +2297,11 @@
       "ecmwf_ifs025": 25.0,
       "gfs_seamless": 21.1
     },
-    "actual": null,
-    "actual_source": null,
-    "resolution_bin": null,
+    "actual": 25.0,
+    "actual_source": "metar_iem",
+    "resolution_bin": "25\u00b0C",
     "logged_at": "2026-06-24T08:53:51.260338",
-    "updated_at": "2026-06-26T13:56:55.108965"
+    "updated_at": "2026-06-26T19:28:37.530231"
   },
   {
     "date": "2026-06-27",
@@ -2318,7 +2318,7 @@
   },
   {
     "date": "2026-06-28",
-    "forecast": 26.3,
+    "forecast": 26.2,
     "model_highs": {
       "ecmwf_ifs025": 27.8,
       "gfs_seamless": 22.2,
@@ -2329,6 +2329,6 @@
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-06-26T08:47:40.620666",
-    "updated_at": "2026-06-26T13:58:48.704793"
+    "updated_at": "2026-06-26T19:28:36.226741"
   }
 ]
