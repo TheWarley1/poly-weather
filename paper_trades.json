@@ -10794,7 +10794,13 @@
     "model_spread": 1.9,
     "calibrated": true,
     "logged_at": "2026-06-26T09:04:11.161525",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "68-69\u00b0F",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -2.42,
+    "return_pct": -100.0,
+    "resolved_at": "2026-06-27T13:08:12.688002"
   },
   {
     "city": "San Francisco",
@@ -11036,6 +11042,34 @@
     "model_spread": 1.7,
     "calibrated": true,
     "logged_at": "2026-06-27T08:43:11.751537",
+    "resolved": false
+  },
+  {
+    "city": "Seattle",
+    "slug": "seattle",
+    "station": "KSEA",
+    "unit": "F",
+    "market_date": "2026-06-28",
+    "lead_days": 1,
+    "bin": "70-71\u00b0F",
+    "entry_price": 11.0,
+    "shares": 13,
+    "cost": 1.43,
+    "forecast_high": 68.9,
+    "model_prob": 23.4,
+    "model_prob_shrunk": 22.2,
+    "market_prob": 11.0,
+    "edge_pct": 12.4,
+    "edge_sized_pct": 11.2,
+    "kelly_pct": 2.4,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 62.87,
+    "city_kelly_scalar": 0.75,
+    "city_bss": 0.2229880965414407,
+    "n_models": 5,
+    "model_spread": 1.4,
+    "calibrated": true,
+    "logged_at": "2026-06-27T13:15:28.345608",
     "resolved": false
   }
 ]
