@@ -11654,7 +11654,13 @@
     "model_spread": 1.2,
     "calibrated": true,
     "logged_at": "2026-07-01T09:43:08.899350",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "25\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -1.53,
+    "return_pct": -100.0,
+    "resolved_at": "2026-07-02T02:05:11.956096"
   },
   {
     "city": "Munich",
@@ -11682,6 +11688,34 @@
     "model_spread": 0.9,
     "calibrated": true,
     "logged_at": "2026-07-01T09:43:08.899358",
+    "resolved": false
+  },
+  {
+    "city": "Warsaw",
+    "slug": "warsaw",
+    "station": "EPWA",
+    "unit": "C",
+    "market_date": "2026-07-02",
+    "lead_days": 0,
+    "bin": "28\u00b0C",
+    "entry_price": 20.5,
+    "shares": 7,
+    "cost": 1.43,
+    "forecast_high": 27.7,
+    "model_prob": 42.0,
+    "model_prob_shrunk": 39.8,
+    "market_prob": 20.5,
+    "edge_pct": 21.5,
+    "edge_sized_pct": 19.3,
+    "kelly_pct": 6.1,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 31.31,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.4104428368701615,
+    "n_models": 3,
+    "model_spread": 0.4,
+    "calibrated": true,
+    "logged_at": "2026-07-02T02:14:53.196900",
     "resolved": false
   }
 ]
