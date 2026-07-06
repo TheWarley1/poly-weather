@@ -88,16 +88,81 @@ NWS_HEADERS = {"User-Agent": "PolymarketWeatherEdge/4.0"}
 MONTH_SLUG = {1: "january", 2: "february", 3: "march", 4: "april", 5: "may", 6: "june",
               7: "july", 8: "august", 9: "september", 10: "october", 11: "november", 12: "december"}
 
-# Same model weights as app.py
+# Ensemble weights per lead day. NWS removed after analysis showed it has 3x
+# the RMSE of GFS (9.97 vs 3.44) and was degrading the ensemble across every US city.
+# GFS is the best model globally, ECMWF excels at medium range (D+2+).
+# These are FALLBACK weights — used only when a city lacks enough calibration data
+# for per-model inverse-RMSE weighting (see compute_model_calibration).
 MODEL_WEIGHTS = {
-    0: {"nws": 3.0, "ecmwf_ifs025": 2.5, "gfs_seamless": 2.0, "icon_seamless": 1.5, "gem_seamless": 1.0},
-    1: {"nws": 2.5, "ecmwf_ifs025": 2.5, "gfs_seamless": 2.0, "icon_seamless": 1.5, "gem_seamless": 1.0},
-    2: {"nws": 2.0, "ecmwf_ifs025": 3.0, "gfs_seamless": 2.0, "icon_seamless": 1.5, "gem_seamless": 1.0},
-    3: {"nws": 1.5, "ecmwf_ifs025": 3.0, "gfs_seamless": 2.0, "icon_seamless": 1.5, "gem_seamless": 1.0},
+    0: {"ecmwf_ifs025": 2.5, "gfs_seamless": 3.0, "icon_seamless": 1.5, "gem_seamless": 1.0},
+    1: {"ecmwf_ifs025": 2.5, "gfs_seamless": 3.0, "icon_seamless": 1.5, "gem_seamless": 1.0},
+    2: {"ecmwf_ifs025": 3.0, "gfs_seamless": 2.5, "icon_seamless": 1.5, "gem_seamless": 1.0},
+    3: {"ecmwf_ifs025": 3.0, "gfs_seamless": 2.5, "icon_seamless": 1.5, "gem_seamless": 1.0},
 }
 
 LOG_DIR = Path(__file__).parent / "forecast_logs"
 LOG_DIR.mkdir(exist_ok=True)
+
+
+def compute_model_calibration(slug, unit, min_pairs=10):
+    """Compute per-model bias and inverse-RMSE weights from the forecast log.
+
+    Reads every paired (model_high, actual) observation in {slug}.json, filters
+    corrupt entries, and returns two dicts indexed by model name:
+
+      model_weights  — normalized inverse-RMSE weights (sum to 1.0)
+      model_biases   — mean(actual - model_high) for each model
+
+    Cities with fewer than min_pairs for a model get no calibration for that
+    model — the caller falls back to the fixed MODEL_WEIGHTS table and zero bias.
+
+    Returns ({}, {}) if no usable calibration data exists.
+    """
+    log = load_forecast_log(slug)
+
+    model_errors = {}  # model_name -> [error, ...]
+    for entry in log:
+        actual = entry.get("actual")
+        model_highs = entry.get("model_highs", {})
+        forecast = entry.get("forecast")
+        if actual is None or not is_sane_temp(actual, unit):
+            continue
+        # Filter corrupt entries (same gate as model_analysis.py)
+        if forecast is not None:
+            max_err = 15.0 if unit == "F" else 10.0
+            if abs(actual - forecast) > max_err:
+                continue
+        for model, high in model_highs.items():
+            if high is not None and is_sane_temp(high, unit):
+                model_errors.setdefault(model, []).append(actual - high)
+
+    if not model_errors:
+        return {}, {}
+
+    model_rmse = {}
+    model_bias = {}
+    for model, errs in model_errors.items():
+        if len(errs) < min_pairs:
+            continue
+        arr = np.array(errs)
+        model_rmse[model] = float(np.sqrt(np.mean(arr ** 2)))
+        model_bias[model] = round(float(np.mean(arr)), 2)
+
+    if not model_rmse:
+        return {}, {}
+
+    # Inverse RMSE → normalize so weights sum to 1.0
+    inv_rmse = {m: 1.0 / r for m, r in model_rmse.items()}
+    total = sum(inv_rmse.values())
+    model_weights = {m: w / total for m, w in inv_rmse.items()}
+
+    return model_weights, model_bias
+
+
+# Cache per-city calibration so we don't re-read & recompute on every call.
+# compute_ensemble_high is called 3x per city per pipeline run — the log
+# doesn't change between calls within a single run.
+_model_calibration_cache = {}
 
 
 def city_today(city):
@@ -392,31 +457,65 @@ def fetch_openmeteo_historical_multimodel_highs(lat, lon, start_date, end_date, 
     return per_date
 
 
-def compute_ensemble_high(nws_high, model_highs, lead_days, city_unit):
-    """Weighted ensemble of all model forecasts. Returns (ensemble_high, model_highs_dict)."""
+def compute_ensemble_high(model_highs, lead_days, city_unit,
+                          slug=None, use_calibration=True):
+    """Weighted ensemble of all model forecasts.
+
+    If use_calibration is True and the city has enough paired observations:
+      • Each model's forecast is bias-corrected (forecast − model_bias) so
+        systematic under/over-estimation is removed before blending.
+      • Models are weighted by inverse-RMSE (more accurate models get more
+        influence), computed per-city from the forecast log.
+      • This replaces the one-size-fits-all MODEL_WEIGHTS table.
+
+    Falls back to fixed MODEL_WEIGHTS for cities with insufficient calibration.
+
+    Returns (ensemble_high, model_highs_dict) where model_highs_dict values
+    are in the city's native unit.
+    """
     all_highs = dict(model_highs)  # copy
-    if nws_high is not None:
-        all_highs["nws"] = nws_high
 
     if not all_highs:
         return None, {}
 
-    weights_table = MODEL_WEIGHTS.get(min(lead_days, 3), MODEL_WEIGHTS[3])
+    # Try per-city calibration if requested
+    cal_weights = None
+    cal_biases = None
+    if use_calibration and slug:
+        if slug not in _model_calibration_cache:
+            _model_calibration_cache[slug] = compute_model_calibration(slug, city_unit)
+        cal_weights, cal_biases = _model_calibration_cache[slug]
+
+    # Choose weight source: per-city inverse-RMSE if available, else fixed table
+    if cal_weights and any(m in cal_weights for m in all_highs):
+        weights_table = cal_weights
+        default_weight = 0.1  # low default for uncalibrated models
+    else:
+        weights_table = MODEL_WEIGHTS.get(min(lead_days, 3), MODEL_WEIGHTS[3])
+        default_weight = 1.0
+
     total_weight = 0
     weighted_sum = 0
     for model, high in all_highs.items():
-        w = weights_table.get(model, 1.0)
-        # Convert to city unit if needed
+        w = weights_table.get(model, default_weight)
+        # Convert to city unit
         if city_unit == "C":
-            high_converted = round((high - 32) * 5 / 9, 1)
+            high_c = round((high - 32) * 5 / 9, 1)
         else:
-            high_converted = high
-        weighted_sum += high_converted * w
+            high_c = high
+
+        # Apply per-model bias correction (correct BEFORE blending)
+        if cal_biases and model in cal_biases:
+            bias = cal_biases[model]
+            high_c = round(high_c + bias, 1)  # bias = actual - forecast,
+                                               # so corrected = forecast + bias
+
+        weighted_sum += high_c * w
         total_weight += w
 
     ensemble_high = round(weighted_sum / total_weight, 1) if total_weight > 0 else None
 
-    # Return model highs in city unit
+    # Return model highs in city unit (raw, uncorrected — stored for later calibration)
     converted_highs = {}
     for model, high in all_highs.items():
         if city_unit == "C":
@@ -650,14 +749,11 @@ def log_forecasts_for_city(city_name, city, days_ahead=3, verbose=True):
         if event is None or event.get("closed"):
             continue
 
-        # Fetch forecasts
-        nws_high = None
-        if city["unit"] == "F":
-            nws_high = fetch_nws_forecast_high(city["lat"], city["lon"], target_str, city["tz"])
-
+        # Fetch forecasts (Open-Meteo multi-model only; NWS removed after analysis
+        # showed it had 3x worse RMSE than GFS in every US city)
         model_highs = fetch_openmeteo_multimodel_highs(city["lat"], city["lon"], target_str)
         ensemble_high, converted_highs = compute_ensemble_high(
-            nws_high, model_highs, lead_days, city["unit"]
+            model_highs, lead_days, city["unit"], slug=slug
         )
 
         if ensemble_high is not None:
@@ -936,10 +1032,10 @@ def backfill_forecasts_for_city(city_name, city, days=90, verbose=True):
             highs_in_f = dict(model_highs)
 
         ensemble_high, converted_highs = compute_ensemble_high(
-            nws_high=None,
-            model_highs=highs_in_f,
+            highs_in_f,
             lead_days=1,
             city_unit=city["unit"],
+            slug=slug,
         )
 
         if ensemble_high is None:

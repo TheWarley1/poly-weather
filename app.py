@@ -146,13 +146,14 @@ MONTH_SLUG = {1: "january", 2: "february", 3: "march", 4: "april", 5: "may", 6: 
               7: "july", 8: "august", 9: "september", 10: "october", 11: "november", 12: "december"}
 
 # Lead-time-dependent model weights (higher = more trusted at that lead time)
-# NWS is best at short range; ECMWF best at medium range
+# NWS removed after analysis showed it had 3x the RMSE of GFS (9.97 vs 3.44)
+# and was degrading the ensemble in every US city.
+# GFS is best at short range; ECMWF best at medium range.
 MODEL_WEIGHTS = {
-    # lead_days: {model: weight}
-    0: {"nws": 3.0, "ecmwf_ifs025": 2.5, "gfs_seamless": 2.0, "icon_seamless": 1.5, "gem_seamless": 1.0},
-    1: {"nws": 2.5, "ecmwf_ifs025": 2.5, "gfs_seamless": 2.0, "icon_seamless": 1.5, "gem_seamless": 1.0},
-    2: {"nws": 2.0, "ecmwf_ifs025": 3.0, "gfs_seamless": 2.0, "icon_seamless": 1.5, "gem_seamless": 1.0},
-    3: {"nws": 1.5, "ecmwf_ifs025": 3.0, "gfs_seamless": 2.0, "icon_seamless": 1.5, "gem_seamless": 1.0},
+    0: {"ecmwf_ifs025": 2.5, "gfs_seamless": 3.0, "icon_seamless": 1.5, "gem_seamless": 1.0},
+    1: {"ecmwf_ifs025": 2.5, "gfs_seamless": 3.0, "icon_seamless": 1.5, "gem_seamless": 1.0},
+    2: {"ecmwf_ifs025": 3.0, "gfs_seamless": 2.5, "icon_seamless": 1.5, "gem_seamless": 1.0},
+    3: {"ecmwf_ifs025": 3.0, "gfs_seamless": 2.5, "icon_seamless": 1.5, "gem_seamless": 1.0},
 }
 
 
@@ -436,9 +437,10 @@ def get_historical_highs(lat, lon, target_date_str):
 # ─────────────────────────────────────────────
 # MULTI-MODEL ENSEMBLE
 # ─────────────────────────────────────────────
-def compute_ensemble_forecast(nws_df, multimodel_data, target_str, lead_days, city_unit, wu_offset=0):
+def compute_ensemble_forecast(nws_df, multimodel_data, target_str, lead_days, city_unit, wu_offset=0, slug=None):
     """
     Compute weighted ensemble forecast high from multiple models.
+    Uses per-city inverse-RMSE weights when calibration data is available.
     Returns: (ensemble_high, model_highs_dict, model_spread, source_parts)
     """
     col = "temp_f" if city_unit == "F" else "temp_c"
@@ -447,13 +449,7 @@ def compute_ensemble_forecast(nws_df, multimodel_data, target_str, lead_days, ci
     model_highs = {}
     source_parts = []
 
-    # NWS forecast
-    if nws_df is not None and not nws_df.empty:
-        day_nws = nws_df[nws_df["date"] == target_str]
-        if not day_nws.empty:
-            nws_high = int(day_nws[col].max())
-            model_highs["nws"] = nws_high
-            source_parts.append(f"NWS: {nws_high}°")
+    # NWS removed from ensemble — see forecast_logger.py MODEL_WEIGHTS comment
 
     # Open-Meteo multi-model forecasts
     for model_name, model_df in multimodel_data.items():
@@ -467,11 +463,24 @@ def compute_ensemble_forecast(nws_df, multimodel_data, target_str, lead_days, ci
     if not model_highs:
         return None, {}, 0, []
 
+    # Try per-city calibration for better weighting and bias correction
+    cal_weights = None
+    cal_biases = None
+    if slug:
+        from forecast_logger import compute_model_calibration
+        cal_weights, cal_biases = compute_model_calibration(slug, city_unit)
+
     # Weighted average
     total_weight = 0
     weighted_sum = 0
     for model, high in model_highs.items():
-        w = weights_table.get(model, 1.0)
+        if cal_weights and model in cal_weights:
+            w = cal_weights[model]  # per-city inverse-RMSE weight
+        else:
+            w = weights_table.get(model, 0.5)
+        # Apply per-model bias correction
+        if cal_biases and model in cal_biases:
+            high = round(high + cal_biases[model], 1)
         weighted_sum += high * w
         total_weight += w
 

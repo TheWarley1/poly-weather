@@ -45,7 +45,7 @@ from forecast_logger import (
     LOG_DIR, NWS_HEADERS,
     load_forecast_log, city_today,
     build_event_slug, fetch_polymarket_event, get_resolution_winner,
-    fetch_nws_forecast_high, fetch_openmeteo_multimodel_highs,
+    fetch_openmeteo_multimodel_highs,
     compute_ensemble_high,
     is_sane_temp,
     retry_get,  # PATCH L
@@ -687,15 +687,12 @@ def scan_city_edges(city_name, city, verbose=True,
 
         # Fallback: if the log is missing/stale for this date (forecast_logger
         # didn't run, or errored out for this city), hit the APIs the old way.
+        # NWS removed — analysis showed it had 3x worse RMSE than GFS everywhere.
         if ensemble_high is None:
-            nws_high = None
-            if city["unit"] == "F":
-                nws_high = fetch_nws_forecast_high(
-                    city["lat"], city["lon"], target_str, city["tz"])
             model_highs = fetch_openmeteo_multimodel_highs(
                 city["lat"], city["lon"], target_str)
             ensemble_high, converted_highs = compute_ensemble_high(
-                nws_high, model_highs, days_ahead, city["unit"]
+                model_highs, days_ahead, city["unit"], slug=slug
             )
 
         if ensemble_high is None:
