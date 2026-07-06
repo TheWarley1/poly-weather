@@ -45,6 +45,9 @@ jobs:
       - name: Run paper trader
         run: python -u paper_trader.py 2>&1 | tee paper_trader.stdout.log
 
+      - name: Run monitor
+        run: python -u monitor.py 2>&1 | tee monitor.stdout.log
+
       - name: Commit updated state
         run: |
           git config user.name  "github-actions[bot]"
@@ -69,5 +72,7 @@ jobs:
             paper_trader.log.*
             forecast_logger.stdout.log
             paper_trader.stdout.log
+            monitor.stdout.log
+            monitor_logs/
           if-no-files-found: ignore
           retention-days: 14
