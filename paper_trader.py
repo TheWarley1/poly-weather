@@ -706,13 +706,12 @@ def scan_city_edges(city_name, city, verbose=True,
         if ensemble_high is None:
             continue
 
-        # Apply WU station offset (systematic difference between our data source and Polymarket resolution)
+        # Apply WU station offset (systematic location mismatch between our
+        # coords and Polymarket's WU resolution station).
+        # Per-model bias correction is already applied inside compute_ensemble_high
+        # when use_calibration=True, so we do NOT re-apply empirical_bias here.
         if wu_offset != 0:
             ensemble_high = round(ensemble_high + wu_offset, 1)
-
-        # Apply empirical bias correction (forecast vs actual from calibration loop)
-        if empirical_bias is not None:
-            ensemble_high = round(ensemble_high + empirical_bias, 1)
 
         # Model spread for uncertainty
         spread_vals = list(converted_highs.values())

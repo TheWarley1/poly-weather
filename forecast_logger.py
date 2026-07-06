@@ -55,32 +55,32 @@ _print_lock = threading.Lock()
 # Computed from 14-16 paired observations per city (Mar 24 – Apr 8 2026).
 # Cities with 0.0 have no data yet — will be updated as calibration data accumulates.
 CITIES = {
-    "San Francisco": {"slug": "san-francisco", "lat": 37.62, "lon": -122.39, "unit": "F", "station": "KSFO", "tz": "America/Los_Angeles", "wu_offset": -1.2},
-    "New York":      {"slug": "nyc",           "lat": 40.77, "lon": -73.87, "unit": "F", "station": "KLGA", "tz": "America/New_York",      "wu_offset": 0.0},
-    "Chicago":       {"slug": "chicago",       "lat": 41.98, "lon": -87.90, "unit": "F", "station": "KORD", "tz": "America/Chicago",       "wu_offset": +1.1},
-    "Miami":         {"slug": "miami",         "lat": 25.79, "lon": -80.29, "unit": "F", "station": "KMIA", "tz": "America/New_York",      "wu_offset": +0.9},
-    "Dallas":        {"slug": "dallas",        "lat": 32.90, "lon": -97.04, "unit": "F", "station": "KDFW", "tz": "America/Chicago",       "wu_offset": +0.7},
+    "San Francisco": {"slug": "san-francisco", "lat": 37.62, "lon": -122.39, "unit": "F", "station": "KSFO", "tz": "America/Los_Angeles", "wu_offset": +2.7},
+    "New York":      {"slug": "nyc",           "lat": 40.77, "lon": -73.87, "unit": "F", "station": "KLGA", "tz": "America/New_York",      "wu_offset": +1.4},
+    "Chicago":       {"slug": "chicago",       "lat": 41.98, "lon": -87.90, "unit": "F", "station": "KORD", "tz": "America/Chicago",       "wu_offset": +1.0},
+    "Miami":         {"slug": "miami",         "lat": 25.79, "lon": -80.29, "unit": "F", "station": "KMIA", "tz": "America/New_York",      "wu_offset": +2.3},
+    "Dallas":        {"slug": "dallas",        "lat": 32.90, "lon": -97.04, "unit": "F", "station": "KDFW", "tz": "America/Chicago",       "wu_offset": +1.3},
     "Seattle":       {"slug": "seattle",       "lat": 47.45, "lon": -122.31, "unit": "F", "station": "KSEA", "tz": "America/Los_Angeles",  "wu_offset": +1.0},
-    "Atlanta":       {"slug": "atlanta",       "lat": 33.64, "lon": -84.43, "unit": "F", "station": "KATL", "tz": "America/New_York",      "wu_offset": +0.9},
-    "London":        {"slug": "london",        "lat": 51.47, "lon": -0.46,  "unit": "C", "station": "EGLL", "tz": "Europe/London",         "wu_offset": 0.0},
-    "Tokyo":         {"slug": "tokyo",         "lat": 35.55, "lon": 139.78, "unit": "C", "station": "RJTT", "tz": "Asia/Tokyo",            "wu_offset": 0.0},
-    "Seoul":         {"slug": "seoul",         "lat": 37.46, "lon": 126.44, "unit": "C", "station": "RKSI", "tz": "Asia/Seoul",            "wu_offset": 0.0},
-    "Toronto":       {"slug": "toronto",       "lat": 43.68, "lon": -79.63, "unit": "C", "station": "CYYZ", "tz": "America/Toronto",       "wu_offset": 0.0},
-    "Singapore":     {"slug": "singapore",     "lat": 1.36,  "lon": 103.99, "unit": "C", "station": "WSSS", "tz": "Asia/Singapore",        "wu_offset": 0.0},
-    "Paris":         {"slug": "paris",         "lat": 49.01, "lon": 2.55,   "unit": "C", "station": "LFPG", "tz": "Europe/Paris",          "wu_offset": 0.0},
-    "Shanghai":      {"slug": "shanghai",      "lat": 31.14, "lon": 121.81, "unit": "C", "station": "ZSPD", "tz": "Asia/Shanghai",         "wu_offset": 0.0},
-    "Buenos Aires":  {"slug": "buenos-aires",  "lat": -34.82,"lon": -58.54, "unit": "C", "station": "SAEZ", "tz": "America/Argentina/Buenos_Aires", "wu_offset": 0.0},
-    "Wellington":    {"slug": "wellington",    "lat": -41.33, "lon": 174.81, "unit": "C", "station": "NZWN", "tz": "Pacific/Auckland",     "wu_offset": 0.0},
-    "Ankara":        {"slug": "ankara",        "lat": 40.12, "lon": 32.99,  "unit": "C", "station": "LTAC", "tz": "Europe/Istanbul",       "wu_offset": 0.0},
-    "Tel Aviv":      {"slug": "tel-aviv",      "lat": 32.01, "lon": 34.88,  "unit": "C", "station": "LLBG", "tz": "Asia/Jerusalem",        "wu_offset": 0.0},
-    "Hong Kong":     {"slug": "hong-kong",     "lat": 22.31, "lon": 113.92, "unit": "C", "station": "VHHH", "tz": "Asia/Hong_Kong",        "wu_offset": 0.0},
-    "Munich":        {"slug": "munich",        "lat": 48.35, "lon": 11.79,  "unit": "C", "station": "EDDM", "tz": "Europe/Berlin",         "wu_offset": 0.0},
-    "Sao Paulo":     {"slug": "sao-paulo",     "lat": -23.63,"lon": -46.66, "unit": "C", "station": "SBGR", "tz": "America/Sao_Paulo",     "wu_offset": 0.0},
-    "Lucknow":       {"slug": "lucknow",       "lat": 26.76, "lon": 80.88,  "unit": "C", "station": "VILK", "tz": "Asia/Kolkata",          "wu_offset": 0.0},
-    "Warsaw":        {"slug": "warsaw",        "lat": 52.17, "lon": 20.97,  "unit": "C", "station": "EPWA", "tz": "Europe/Warsaw",         "wu_offset": 0.0},
-    "Milan":         {"slug": "milan",         "lat": 45.63, "lon": 8.72,   "unit": "C", "station": "LIMC", "tz": "Europe/Rome",           "wu_offset": 0.0},
-    "Madrid":        {"slug": "madrid",        "lat": 40.47, "lon": -3.56,  "unit": "C", "station": "LEMD", "tz": "Europe/Madrid",         "wu_offset": 0.0},
-    "Taipei":        {"slug": "taipei",        "lat": 25.08, "lon": 121.23, "unit": "C", "station": "RCTP", "tz": "Asia/Taipei",           "wu_offset": 0.0},
+    "Atlanta":       {"slug": "atlanta",       "lat": 33.64, "lon": -84.43, "unit": "F", "station": "KATL", "tz": "America/New_York",      "wu_offset": +2.4},
+    "London":        {"slug": "london",        "lat": 51.47, "lon": -0.46,  "unit": "C", "station": "EGLL", "tz": "Europe/London",         "wu_offset": +0.4},
+    "Tokyo":         {"slug": "tokyo",         "lat": 35.55, "lon": 139.78, "unit": "C", "station": "RJTT", "tz": "Asia/Tokyo",            "wu_offset": -0.1},
+    "Seoul":         {"slug": "seoul",         "lat": 37.46, "lon": 126.44, "unit": "C", "station": "RKSI", "tz": "Asia/Seoul",            "wu_offset": +1.5},
+    "Toronto":       {"slug": "toronto",       "lat": 43.68, "lon": -79.63, "unit": "C", "station": "CYYZ", "tz": "America/Toronto",       "wu_offset": +0.3},
+    "Singapore":     {"slug": "singapore",     "lat": 1.36,  "lon": 103.99, "unit": "C", "station": "WSSS", "tz": "Asia/Singapore",        "wu_offset": +1.0},
+    "Paris":         {"slug": "paris",         "lat": 49.01, "lon": 2.55,   "unit": "C", "station": "LFPG", "tz": "Europe/Paris",          "wu_offset": +0.8},
+    "Shanghai":      {"slug": "shanghai",      "lat": 31.14, "lon": 121.81, "unit": "C", "station": "ZSPD", "tz": "Asia/Shanghai",         "wu_offset": +1.2},
+    "Buenos Aires":  {"slug": "buenos-aires",  "lat": -34.82,"lon": -58.54, "unit": "C", "station": "SAEZ", "tz": "America/Argentina/Buenos_Aires", "wu_offset": +0.9},
+    "Wellington":    {"slug": "wellington",    "lat": -41.33, "lon": 174.81, "unit": "C", "station": "NZWN", "tz": "Pacific/Auckland",     "wu_offset": +1.1},
+    "Ankara":        {"slug": "ankara",        "lat": 40.12, "lon": 32.99,  "unit": "C", "station": "LTAC", "tz": "Europe/Istanbul",       "wu_offset": +0.8},
+    "Tel Aviv":      {"slug": "tel-aviv",      "lat": 32.01, "lon": 34.88,  "unit": "C", "station": "LLBG", "tz": "Asia/Jerusalem",        "wu_offset": +0.2},
+    "Hong Kong":     {"slug": "hong-kong",     "lat": 22.31, "lon": 113.92, "unit": "C", "station": "VHHH", "tz": "Asia/Hong_Kong",        "wu_offset": +1.4},
+    "Munich":        {"slug": "munich",        "lat": 48.35, "lon": 11.79,  "unit": "C", "station": "EDDM", "tz": "Europe/Berlin",         "wu_offset": +0.8},
+    "Sao Paulo":     {"slug": "sao-paulo",     "lat": -23.63,"lon": -46.66, "unit": "C", "station": "SBGR", "tz": "America/Sao_Paulo",     "wu_offset": +1.3},
+    "Lucknow":       {"slug": "lucknow",       "lat": 26.76, "lon": 80.88,  "unit": "C", "station": "VILK", "tz": "Asia/Kolkata",          "wu_offset": -1.2},
+    "Warsaw":        {"slug": "warsaw",        "lat": 52.17, "lon": 20.97,  "unit": "C", "station": "EPWA", "tz": "Europe/Warsaw",         "wu_offset": +0.5},
+    "Milan":         {"slug": "milan",         "lat": 45.63, "lon": 8.72,   "unit": "C", "station": "LIMC", "tz": "Europe/Rome",           "wu_offset": +0.6},
+    "Madrid":        {"slug": "madrid",        "lat": 40.47, "lon": -3.56,  "unit": "C", "station": "LEMD", "tz": "Europe/Madrid",         "wu_offset": +0.3},
+    "Taipei":        {"slug": "taipei",        "lat": 25.08, "lon": 121.23, "unit": "C", "station": "RCTP", "tz": "Asia/Taipei",           "wu_offset": +0.4},
 }
 
 GAMMA_BASE = "https://gamma-api.polymarket.com"
@@ -151,9 +151,34 @@ def compute_model_calibration(slug, unit, min_pairs=10):
     if not model_rmse:
         return {}, {}
 
+    # Drop models that are drastically worse than the best model for this city.
+    # Threshold: RMSE > 2× best, but never below an absolute floor so we don't
+    # drop models that are just slightly worse in well-behaved cities.
+    # Example: SF has GFS RMSE 2.42, ICON RMSE 9.41 → 9.41 > 2× 2.42 → drop ICON.
+    best_rmse = min(model_rmse.values())
+    floor = 3.0 if unit == "F" else 1.5
+    rmse_threshold = max(2.0 * best_rmse, floor)
+    dropped = [m for m, r in model_rmse.items() if r > rmse_threshold]
+    for m in dropped:
+        del model_rmse[m]
+        del model_bias[m]
+
+    if not model_rmse:
+        return {}, {}
+
     # Inverse RMSE → normalize so weights sum to 1.0
     inv_rmse = {m: 1.0 / r for m, r in model_rmse.items()}
+
+    # Apply lead-day scaling here (affects the blend, not the bias correction).
+    # At D+0, ECMWF and GFS are similarly accurate. At D+2, ECMWF dominates.
+    # The caller passed lead_days but compute_model_calibration doesn't take it.
+    # Instead, we return the base weights and let the caller apply lead scaling
+    # via the MODEL_WEIGHTS fallback ratio. For now, just normalize.
     total = sum(inv_rmse.values())
+
+    if total <= 0:
+        return {}, {}
+
     model_weights = {m: w / total for m, w in inv_rmse.items()}
 
     return model_weights, model_bias
@@ -728,6 +753,54 @@ def is_sane_temp(temp, city_unit):
         return -40 <= temp <= 60
 
 
+def should_accept_actual(actual, city_unit, date_str, city_name,
+                         forecast=None, actual_source=None):
+    """Quality gate before writing an actual observation into the forecast log.
+
+    Returns (accept, reason) where accept is bool and reason explains the
+    rejection. Checks stacked from cheapest to most expensive.
+
+    Guards against:
+      • Open-Meteo archive returning placeholder values (e.g. -0.5°F for SF
+        in April — hit 12 times in production).
+      • METAR stations reporting corrupted strings that parse to nonsense.
+      • Model-actual disagreement so large it must be a data error, not a
+        forecast miss (|error| > 15°F or 10°C).
+    """
+    # 1) Basic physical sanity
+    if not is_sane_temp(actual, city_unit):
+        return False, f"outside physical range ({actual})"
+
+    # 2) Seasonal sanity — catch the -0.5°F corruption pattern
+    try:
+        month = int(date_str[5:7])
+    except (ValueError, IndexError):
+        return True, None  # can't parse date, let it through
+
+    if city_unit == "F":
+        # Warm-season sanity: below 10°F in Apr-Oct is implausible for
+        # non-Alaska US weather stations
+        if 4 <= month <= 10 and actual < 10:
+            return False, f"actual={actual}°F implausible for {city_name} in month {month}"
+        # SF-specific: record April low is 38°F. Below 35°F in Apr-Oct is
+        # almost certainly a data error.
+        if city_name == "San Francisco" and 4 <= month <= 10 and actual < 35:
+            return False, f"actual={actual}°F below SF seasonal floor (month {month})"
+    else:
+        # International: below -10°C in Apr-Sep is implausible
+        if 4 <= month <= 9 and actual < -10:
+            return False, f"actual={actual}°C implausible for {city_name} in month {month}"
+
+    # 3) If we have a forecast to compare against, reject absurd errors.
+    #    This catches both corrupt actuals AND corrupt forecasts silently.
+    if forecast is not None:
+        max_err = 15.0 if city_unit == "F" else 10.0
+        if abs(actual - forecast) > max_err:
+            return False, f"|actual−forecast| = {abs(actual-forecast):.1f} > {max_err} (forecast={forecast}, actual={actual})"
+
+    return True, None
+
+
 # ─────────────────────────────────────────────
 # CORE LOGIC
 # ─────────────────────────────────────────────
@@ -809,6 +882,17 @@ def log_actuals_for_city(city_name, city, lookback_days=14, verbose=True):
         )
 
         if actual is not None and is_sane_temp(actual, city["unit"]):
+            # Quality gate: reject corrupt actuals before they enter the log.
+            fc_for_date = existing.get("forecast") if existing else None
+            accept, reason = should_accept_actual(
+                actual, city["unit"], date_str, city_name,
+                forecast=fc_for_date, actual_source=source)
+            if not accept:
+                if verbose:
+                    print(f"  ⚠ [{slug}] {date_str}: REJECTED actual={actual}° — {reason}")
+                time.sleep(0.2)
+                continue
+
             # If the existing entry is already open_meteo and we only got
             # open_meteo again, no need to rewrite.
             if existing and existing.get("actual_source") == source \
@@ -892,6 +976,17 @@ def backfill_actuals_for_city(city_name, city, days=90, verbose=True):
         if not is_sane_temp(actual, unit):
             continue
         existing = next((e for e in log if e["date"] == date_str), None)
+
+        # Quality gate before writing
+        fc_for_date = existing.get("forecast") if existing else None
+        accept, reason = should_accept_actual(
+            actual, unit, date_str, city_name,
+            forecast=fc_for_date, actual_source="metar_iem")
+        if not accept:
+            if verbose:
+                print(f"  ⚠ [{slug}] {date_str}: REJECTED METAR actual={actual}° — {reason}")
+            continue
+
         if existing and existing.get("actual_source") == "metar_iem" \
                 and existing.get("actual") == actual:
             continue  # Already have this exact METAR reading
@@ -925,6 +1020,17 @@ def backfill_actuals_for_city(city_name, city, days=90, verbose=True):
                 if not is_sane_temp(actual, unit):
                     continue
                 existing = next((e for e in log if e["date"] == date_str), None)
+
+                # Quality gate: Open-Meteo archive sometimes returns garbage.
+                fc_for_date = existing.get("forecast") if existing else None
+                accept, reason = should_accept_actual(
+                    actual, unit, date_str, city_name,
+                    forecast=fc_for_date, actual_source="open_meteo_archive")
+                if not accept:
+                    if verbose:
+                        print(f"  ⚠ [{slug}] {date_str}: REJECTED OM actual={actual}° — {reason}")
+                    continue
+
                 # Don't overwrite METAR with Open-Meteo; only fill gaps.
                 if existing and existing.get("actual_source") == "metar_iem":
                     continue
