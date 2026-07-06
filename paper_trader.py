@@ -91,8 +91,8 @@ CONFIG = {
     "starting_bankroll": 1000.0,  # Paper starting stake (fixed; live bankroll computed from P&L)
     "max_bet_frac": 0.05,         # Per-trade cap: 5% of LIVE bankroll
     "max_daily_exposure": 0.25,   # Total open-trade cost cannot exceed 25% of live bankroll
-    "drawdown_soft": 0.99,        # At 20% drawdown, halve Kelly
-    "drawdown_hard": 1,        # At 40% drawdown, stop opening new trades
+    "drawdown_soft": 0.20,         # At 20% drawdown, halve Kelly
+    "drawdown_hard": 0.40,          # At 40% drawdown, stop opening new trades
     "prob_shrinkage": 0.10,       # Pull model_prob 10% toward market price before sizing.
                                   # Margin of safety: we don't trust our σ to the last decimal,
                                   # so we bet a slightly more conservative edge than the raw model says.
@@ -444,6 +444,14 @@ def build_model_probabilities(forecast_high, bins, unit="F",
     (σ roughly doubles from D+0 to D+2). This reduces model_prob on deep
     bins at longer leads and blocks the "edge" that wasn't real.
 
+    PATCH M: July 2026. After 359 resolved paper trades (11.98% win rate,
+    -28% ROI), the model is still drastically overconfident. Per-model
+    analysis across 4,165 paired observations shows US ensemble RMSE is
+    2.1-3.5°F, international 0.9-2.1°C. The old floor of 1.5°F/0.8°C was
+    unrealistically tight. Raised to 2.5°F/1.2°C to match actual empirical
+    errors. Hard floor raised to 2.0°F/1.0°C. Lead-day scaler bumped to
+    0.8 (D+1 σ = 1.8× D+0) after D+1 trades showed -58% ROI.
+
     Historical data is still used — but only for skew-shape, and only when
     we have enough of it (n ≥ 20) to make skew estimation stable.
     """
@@ -453,14 +461,14 @@ def build_model_probabilities(forecast_high, bins, unit="F",
     elif model_spread is not None and model_spread > 1.0:
         base_std = model_spread * 1.5
     else:
-        base_std = 1.5 if unit == "F" else 0.8  # D+0 floor
+        base_std = 2.5 if unit == "F" else 1.2  # D+0 floor (PATCH M: raised from 1.5/0.8)
 
-    # 2) Scale with lead time (more uncertainty further out). PATCH H: 0.5
-    #    per lead, not 0.3, after live data showed D+1 σ was too narrow.
-    effective_std = base_std * (1.0 + 0.5 * max(0, lead_days))
+    # 2) Scale with lead time. PATCH H: 0.5 → PATCH M: 0.8 after D+1 showed -58% ROI.
+    effective_std = base_std * (1.0 + 0.8 * max(0, lead_days))
 
-    # 3) Hard floor so we never imply super-confident forecasts.
-    effective_std = max(effective_std, 1.0 if unit == "F" else 0.6)
+    # 3) Hard floor — never imply super-confident forecasts.
+    #    PATCH M: raised from 1.0/0.6 to 2.0/1.0.
+    effective_std = max(effective_std, 2.0 if unit == "F" else 1.0)
 
     # 4) Skew only if we have a stable sample.
     skew_param = 0

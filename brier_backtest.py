@@ -70,12 +70,11 @@ def build_distribution(forecast_high, unit, model_highs=None, empirical_std=None
     elif model_spread is not None and model_spread > 1.0:
         base_std = model_spread * 1.5
     else:
-        base_std = 1.5 if unit == "F" else 0.8
+        base_std = 2.5 if unit == "F" else 1.2  # PATCH M: raised from 1.5/0.8
 
-    # PATCH H: widened from 0.3 to 0.5 — see paper_trader.build_model_probabilities
-    # for rationale. Keeps backtest apples-to-apples with live sizing.
-    effective_std = base_std * (1.0 + 0.5 * max(0, lead_days))
-    effective_std = max(effective_std, 1.0 if unit == "F" else 0.6)
+    # PATCH M: scaler widened to 0.8 to match paper_trader.py.
+    effective_std = base_std * (1.0 + 0.8 * max(0, lead_days))
+    effective_std = max(effective_std, 2.0 if unit == "F" else 1.0)  # PATCH M: raised from 1.0/0.6
 
     return skewnorm(a=0, loc=forecast_high, scale=effective_std), effective_std
 
