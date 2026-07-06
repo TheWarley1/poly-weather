@@ -306,5 +306,33 @@
     "calibrated": true,
     "logged_at": "2026-07-06T02:07:42.762618",
     "resolved": false
+  },
+  {
+    "city": "New York",
+    "slug": "nyc",
+    "station": "KLGA",
+    "unit": "F",
+    "market_date": "2026-07-06",
+    "lead_days": 0,
+    "bin": "74-75\u00b0F",
+    "entry_price": 14.5,
+    "shares": 95,
+    "cost": 13.77,
+    "forecast_high": 74.9,
+    "model_prob": 35.0,
+    "model_prob_shrunk": 32.9,
+    "market_prob": 14.5,
+    "edge_pct": 20.5,
+    "edge_sized_pct": 18.4,
+    "kelly_pct": 5.4,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 1000.0,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.3774665566784732,
+    "n_models": 4,
+    "model_spread": 0.7,
+    "calibrated": true,
+    "logged_at": "2026-07-06T10:10:26.869916",
+    "resolved": false
   }
 ]
