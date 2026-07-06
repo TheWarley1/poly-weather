@@ -1,25 +1,50 @@
 {
-  "timestamp": "2026-07-06T10:10:27.369021",
+  "timestamp": "2026-07-06T15:11:07.132245",
   "trading": {
-    "total": 12,
+    "total": 13,
     "open": 12,
-    "resolved": 0,
+    "resolved": 1,
     "voided": 0,
     "wins": 0,
-    "losses": 0,
-    "win_rate": null,
-    "total_cost": 0,
-    "total_pnl": 0,
-    "roi": null,
-    "bankroll": 1000.0,
-    "drawdown_pct": 0.0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_cost": 29.7,
+    "total_pnl": -29.7,
+    "roi": -100.0,
+    "bankroll": 970.3,
+    "drawdown_pct": 3.0,
     "avg_win": null,
-    "avg_loss": null,
+    "avg_loss": 29.7,
     "profit_factor": null
   },
-  "lead_days": {},
-  "top_cities": [],
-  "bottom_cities": [],
+  "lead_days": {
+    "D+0": {
+      "trades": 1,
+      "wins": 0,
+      "win_rate": 0.0,
+      "cost": 29.7,
+      "pnl": -29.7,
+      "roi": -100.0
+    }
+  },
+  "top_cities": [
+    {
+      "city": "Wellington",
+      "trades": 1,
+      "wins": 0,
+      "win_rate": 0.0,
+      "pnl": -29.7
+    }
+  ],
+  "bottom_cities": [
+    {
+      "city": "Wellington",
+      "trades": 1,
+      "wins": 0,
+      "win_rate": 0.0,
+      "pnl": -29.7
+    }
+  ],
   "calibration": {
     "san-francisco": {
       "city": "San Francisco",
@@ -32,7 +57,7 @@
     },
     "nyc": {
       "city": "New York",
-      "paired": 160,
+      "paired": 161,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -46,7 +71,7 @@
     },
     "miami": {
       "city": "Miami",
-      "paired": 159,
+      "paired": 160,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -134,7 +159,7 @@
     },
     "wellington": {
       "city": "Wellington",
-      "paired": 160,
+      "paired": 161,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -221,7 +246,7 @@
   },
   "recent": {
     "signals_generated": 12,
-    "resolved_in_period": 0,
+    "resolved_in_period": 1,
     "days": 7
   },
   "drawdown": "OK"
