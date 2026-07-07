@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-07-07T09:37:11.752158",
+  "timestamp": "2026-07-07T14:19:18.610618",
   "trading": {
-    "total": 25,
+    "total": 26,
     "open": 11,
-    "resolved": 14,
+    "resolved": 15,
     "voided": 0,
     "wins": 2,
-    "losses": 12,
-    "win_rate": 0.14285714285714285,
-    "total_cost": 303.85,
-    "total_pnl": 96.15,
-    "roi": 31.6,
-    "bankroll": 1096.15,
+    "losses": 13,
+    "win_rate": 0.13333333333333333,
+    "total_cost": 321.85,
+    "total_pnl": 78.15,
+    "roi": 24.3,
+    "bankroll": 1078.15,
     "drawdown_pct": 0.0,
     "avg_win": 178.2,
-    "avg_loss": 21.69,
-    "profit_factor": 1.37
+    "avg_loss": 21.4,
+    "profit_factor": 1.28
   },
   "lead_days": {
     "D+0": {
-      "trades": 13,
+      "trades": 14,
       "wins": 2,
-      "win_rate": 15.4,
-      "cost": 286.85,
-      "pnl": 113.15,
-      "roi": 39.4
+      "win_rate": 14.3,
+      "cost": 304.85,
+      "pnl": 95.15,
+      "roi": 31.2
     },
     "D+1": {
       "trades": 1,
@@ -88,13 +88,6 @@
       "pnl": -28.0
     },
     {
-      "city": "Wellington",
-      "trades": 1,
-      "wins": 0,
-      "win_rate": 0.0,
-      "pnl": -29.7
-    },
-    {
       "city": "Dallas",
       "trades": 1,
       "wins": 0,
@@ -107,6 +100,13 @@
       "wins": 0,
       "win_rate": 0.0,
       "pnl": -32.47
+    },
+    {
+      "city": "Wellington",
+      "trades": 2,
+      "wins": 0,
+      "win_rate": 0.0,
+      "pnl": -47.7
     }
   ],
   "calibration": {
@@ -121,7 +121,7 @@
     },
     "nyc": {
       "city": "New York",
-      "paired": 161,
+      "paired": 162,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -223,7 +223,7 @@
     },
     "wellington": {
       "city": "Wellington",
-      "paired": 161,
+      "paired": 162,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -310,7 +310,7 @@
   },
   "recent": {
     "signals_generated": 11,
-    "resolved_in_period": 14,
+    "resolved_in_period": 15,
     "days": 7
   },
   "drawdown": "OK"

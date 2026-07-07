@@ -669,7 +669,13 @@
     "model_spread": 0.6,
     "calibrated": true,
     "logged_at": "2026-07-07T02:03:18.308367",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "13\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -18.0,
+    "return_pct": -100.0,
+    "resolved_at": "2026-07-07T14:07:28.127446"
   },
   {
     "city": "Dallas",
@@ -781,6 +787,34 @@
     "model_spread": 2.1,
     "calibrated": true,
     "logged_at": "2026-07-07T09:37:11.247564",
+    "resolved": false
+  },
+  {
+    "city": "New York",
+    "slug": "nyc",
+    "station": "KLGA",
+    "unit": "F",
+    "market_date": "2026-07-07",
+    "lead_days": 0,
+    "bin": "72-73\u00b0F",
+    "entry_price": 12.5,
+    "shares": 200,
+    "cost": 25.0,
+    "forecast_high": 72.6,
+    "model_prob": 35.5,
+    "model_prob_shrunk": 33.2,
+    "market_prob": 12.5,
+    "edge_pct": 23.0,
+    "edge_sized_pct": 20.7,
+    "kelly_pct": 5.9,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 1078.15,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.3774665566784732,
+    "n_models": 4,
+    "model_spread": 1.9,
+    "calibrated": true,
+    "logged_at": "2026-07-07T14:19:18.044202",
     "resolved": false
   }
 ]
