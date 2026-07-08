@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-07-08T08:24:08.611676",
+  "timestamp": "2026-07-08T13:34:30.021629",
   "trading": {
-    "total": 38,
-    "open": 11,
-    "resolved": 27,
+    "total": 41,
+    "open": 13,
+    "resolved": 28,
     "voided": 0,
     "wins": 6,
-    "losses": 21,
-    "win_rate": 0.2222222222222222,
-    "total_cost": 606.35,
-    "total_pnl": 593.65,
-    "roi": 97.9,
-    "bankroll": 1593.65,
+    "losses": 22,
+    "win_rate": 0.21428571428571427,
+    "total_cost": 641.4,
+    "total_pnl": 558.6,
+    "roi": 87.1,
+    "bankroll": 1558.6,
     "drawdown_pct": 0.0,
     "avg_win": 179.48,
-    "avg_loss": 23.01,
-    "profit_factor": 2.23
+    "avg_loss": 23.56,
+    "profit_factor": 2.08
   },
   "lead_days": {
     "D+0": {
-      "trades": 23,
+      "trades": 24,
       "wins": 5,
-      "win_rate": 21.7,
-      "cost": 532.85,
-      "pnl": 467.15,
-      "roi": 87.7
+      "win_rate": 20.8,
+      "cost": 567.9,
+      "pnl": 432.1,
+      "roi": 76.1
     },
     "D+1": {
       "trades": 4,
@@ -74,11 +74,11 @@
   ],
   "bottom_cities": [
     {
-      "city": "Paris",
+      "city": "San Francisco",
       "trades": 1,
       "wins": 0,
       "win_rate": 0.0,
-      "pnl": -31.0
+      "pnl": -35.05
     },
     {
       "city": "Atlanta",
@@ -223,7 +223,7 @@
     },
     "wellington": {
       "city": "Wellington",
-      "paired": 162,
+      "paired": 163,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -309,8 +309,8 @@
     }
   },
   "recent": {
-    "signals_generated": 11,
-    "resolved_in_period": 27,
+    "signals_generated": 13,
+    "resolved_in_period": 28,
     "days": 7
   },
   "drawdown": "OK"
