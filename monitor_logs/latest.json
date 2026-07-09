@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-07-09T14:42:25.400971",
+  "timestamp": "2026-07-09T19:27:26.219834",
   "trading": {
-    "total": 56,
-    "open": 15,
-    "resolved": 41,
+    "total": 57,
+    "open": 14,
+    "resolved": 43,
     "voided": 0,
     "wins": 8,
-    "losses": 33,
-    "win_rate": 0.1951219512195122,
-    "total_cost": 998.64,
-    "total_pnl": 601.36,
-    "roi": 60.2,
-    "bankroll": 1601.36,
+    "losses": 35,
+    "win_rate": 0.18604651162790697,
+    "total_cost": 1050.64,
+    "total_pnl": 549.36,
+    "roi": 52.3,
+    "bankroll": 1549.36,
     "drawdown_pct": 0.0,
     "avg_win": 178.6,
-    "avg_loss": 25.07,
-    "profit_factor": 1.73
+    "avg_loss": 25.13,
+    "profit_factor": 1.62
   },
   "lead_days": {
     "D+0": {
-      "trades": 36,
+      "trades": 38,
       "wins": 6,
-      "win_rate": 16.7,
-      "cost": 896.14,
-      "pnl": 303.86,
-      "roi": 33.9
+      "win_rate": 15.8,
+      "cost": 948.14,
+      "pnl": 251.86,
+      "roi": 26.6
     },
     "D+1": {
       "trades": 5,
@@ -59,10 +59,10 @@
     },
     {
       "city": "Shanghai",
-      "trades": 1,
+      "trades": 2,
       "wins": 1,
-      "win_rate": 100.0,
-      "pnl": 174.8
+      "win_rate": 50.0,
+      "pnl": 149.8
     },
     {
       "city": "Dallas",
@@ -73,13 +73,6 @@
     }
   ],
   "bottom_cities": [
-    {
-      "city": "Munich",
-      "trades": 2,
-      "wins": 0,
-      "win_rate": 0.0,
-      "pnl": -59.0
-    },
     {
       "city": "Toronto",
       "trades": 3,
@@ -93,6 +86,13 @@
       "wins": 0,
       "win_rate": 0.0,
       "pnl": -61.5
+    },
+    {
+      "city": "Tokyo",
+      "trades": 2,
+      "wins": 0,
+      "win_rate": 0.0,
+      "pnl": -69.9
     },
     {
       "city": "Paris",
@@ -172,14 +172,14 @@
     },
     "tokyo": {
       "city": "Tokyo",
-      "paired": 162,
+      "paired": 163,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "seoul": {
       "city": "Seoul",
-      "paired": 161,
+      "paired": 162,
       "models_used": 3,
       "models_dropped": [
         "gfs_seamless"
@@ -195,7 +195,7 @@
     },
     "singapore": {
       "city": "Singapore",
-      "paired": 161,
+      "paired": 162,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -209,7 +209,7 @@
     },
     "shanghai": {
       "city": "Shanghai",
-      "paired": 163,
+      "paired": 164,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -244,7 +244,7 @@
     },
     "hong-kong": {
       "city": "Hong Kong",
-      "paired": 166,
+      "paired": 167,
       "models_used": 3,
       "models_dropped": [
         "gfs_seamless"
@@ -270,7 +270,7 @@
     },
     "lucknow": {
       "city": "Lucknow",
-      "paired": 165,
+      "paired": 166,
       "models_used": 3,
       "models_dropped": [
         "gfs_seamless"
@@ -302,15 +302,15 @@
     },
     "taipei": {
       "city": "Taipei",
-      "paired": 166,
+      "paired": 167,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     }
   },
   "recent": {
-    "signals_generated": 15,
-    "resolved_in_period": 41,
+    "signals_generated": 14,
+    "resolved_in_period": 43,
     "days": 7
   },
   "drawdown": "OK"
