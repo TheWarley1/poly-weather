@@ -1,15 +1,5 @@
 [
   {
-    "date": "2026-01-10",
-    "forecast": null,
-    "model_highs": {},
-    "actual": 38.1,
-    "actual_source": "open_meteo_archive",
-    "resolution_bin": null,
-    "logged_at": "2026-04-07T08:14:40.079323",
-    "updated_at": "2026-04-07T08:14:40.079324"
-  },
-  {
     "date": "2026-01-11",
     "forecast": null,
     "model_highs": {},
@@ -2518,40 +2508,52 @@
       "icon_seamless": 89,
       "gem_seamless": 90
     },
-    "actual": 88.6,
-    "actual_source": "open_meteo_archive",
+    "actual": 88.0,
+    "actual_source": "metar_iem",
     "resolution_bin": "88-89\u00b0F",
     "logged_at": "2026-07-07T09:18:56.942296",
-    "updated_at": "2026-07-09T08:59:42.859120"
+    "updated_at": "2026-07-10T01:29:39.816639"
   },
   {
     "date": "2026-07-09",
-    "forecast": 86.7,
+    "forecast": 86.5,
     "model_highs": {
-      "ecmwf_ifs025": 86,
-      "gfs_seamless": 88,
-      "icon_seamless": 85,
-      "gem_seamless": 88
+      "ecmwf_ifs025": 84,
+      "gfs_seamless": 87,
+      "icon_seamless": 86,
+      "gem_seamless": 89
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-07-08T08:03:43.790580",
-    "updated_at": "2026-07-09T19:16:51.515428"
+    "updated_at": "2026-07-10T01:27:32.485268"
   },
   {
     "date": "2026-07-10",
-    "forecast": 80.9,
+    "forecast": 81.2,
     "model_highs": {
       "ecmwf_ifs025": 82,
       "gfs_seamless": 81,
       "icon_seamless": 80,
-      "gem_seamless": 81
+      "gem_seamless": 82
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-07-09T01:32:31.409621",
-    "updated_at": "2026-07-09T19:16:54.126783"
+    "updated_at": "2026-07-10T01:27:35.958261"
+  },
+  {
+    "date": "2026-07-11",
+    "forecast": 86.0,
+    "model_highs": {
+      "ecmwf_ifs025": 85
+    },
+    "actual": null,
+    "actual_source": null,
+    "resolution_bin": null,
+    "logged_at": "2026-07-10T01:29:38.634858",
+    "updated_at": "2026-07-10T01:29:38.634864"
   }
 ]

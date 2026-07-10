@@ -1011,7 +1011,13 @@
     "model_spread": 0.9,
     "calibrated": true,
     "logged_at": "2026-07-08T01:36:08.575794",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "34\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -31.4,
+    "return_pct": -100.0,
+    "resolved_at": "2026-07-10T01:33:35.753220"
   },
   {
     "city": "Paris",
@@ -1073,7 +1079,13 @@
     "model_spread": 0.6,
     "calibrated": true,
     "logged_at": "2026-07-08T01:36:08.575819",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "31\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -18.0,
+    "return_pct": -100.0,
+    "resolved_at": "2026-07-10T01:33:36.049622"
   },
   {
     "city": "Munich",
@@ -1537,7 +1549,13 @@
     "model_spread": 1.2,
     "calibrated": true,
     "logged_at": "2026-07-09T01:44:29.085918",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "33\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -22.0,
+    "return_pct": -100.0,
+    "resolved_at": "2026-07-10T01:33:36.545721"
   },
   {
     "city": "Shanghai",
@@ -1599,7 +1617,13 @@
     "model_spread": 0.8,
     "calibrated": true,
     "logged_at": "2026-07-09T01:44:29.085930",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "18\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -21.0,
+    "return_pct": -100.0,
+    "resolved_at": "2026-07-10T01:33:36.848505"
   },
   {
     "city": "Milan",
@@ -1627,7 +1651,13 @@
     "model_spread": 0.7,
     "calibrated": true,
     "logged_at": "2026-07-09T01:44:29.085934",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "34\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -35.0,
+    "return_pct": -100.0,
+    "resolved_at": "2026-07-10T01:33:37.141353"
   },
   {
     "city": "San Francisco",
@@ -1851,6 +1881,62 @@
     "model_spread": 0.9,
     "calibrated": true,
     "logged_at": "2026-07-09T19:27:25.792302",
+    "resolved": false
+  },
+  {
+    "city": "Paris",
+    "slug": "paris",
+    "station": "LFPG",
+    "unit": "C",
+    "market_date": "2026-07-10",
+    "lead_days": 0,
+    "bin": "36\u00b0C",
+    "entry_price": 25.5,
+    "shares": 200,
+    "cost": 51.0,
+    "forecast_high": 36.0,
+    "model_prob": 38.3,
+    "model_prob_shrunk": 37.0,
+    "market_prob": 25.5,
+    "edge_pct": 12.8,
+    "edge_sized_pct": 11.5,
+    "kelly_pct": 3.9,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 1421.96,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.36777404543934633,
+    "n_models": 4,
+    "model_spread": 1.2,
+    "calibrated": true,
+    "logged_at": "2026-07-10T01:43:00.528493",
+    "resolved": false
+  },
+  {
+    "city": "Ankara",
+    "slug": "ankara",
+    "station": "LTAC",
+    "unit": "C",
+    "market_date": "2026-07-10",
+    "lead_days": 0,
+    "bin": "30\u00b0C",
+    "entry_price": 19.5,
+    "shares": 200,
+    "cost": 39.0,
+    "forecast_high": 29.8,
+    "model_prob": 37.6,
+    "model_prob_shrunk": 35.8,
+    "market_prob": 19.5,
+    "edge_pct": 18.1,
+    "edge_sized_pct": 16.3,
+    "kelly_pct": 5.1,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 1421.96,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.35081805318237846,
+    "n_models": 3,
+    "model_spread": 0.2,
+    "calibrated": true,
+    "logged_at": "2026-07-10T01:43:00.528506",
     "resolved": false
   }
 ]
