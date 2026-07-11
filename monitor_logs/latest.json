@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-07-11T07:38:33.867181",
+  "timestamp": "2026-07-11T13:05:43.693731",
   "trading": {
-    "total": 78,
+    "total": 79,
     "open": 13,
-    "resolved": 65,
+    "resolved": 66,
     "voided": 0,
     "wins": 11,
-    "losses": 54,
-    "win_rate": 0.16923076923076924,
-    "total_cost": 1731.15,
-    "total_pnl": 468.85,
-    "roi": 27.1,
-    "bankroll": 1468.85,
+    "losses": 55,
+    "win_rate": 0.16666666666666666,
+    "total_cost": 1744.93,
+    "total_pnl": 455.07,
+    "roi": 26.1,
+    "bankroll": 1455.07,
     "drawdown_pct": 0.0,
     "avg_win": 175.98,
-    "avg_loss": 27.17,
-    "profit_factor": 1.32
+    "avg_loss": 26.92,
+    "profit_factor": 1.31
   },
   "lead_days": {
     "D+0": {
-      "trades": 57,
+      "trades": 58,
       "wins": 9,
-      "win_rate": 15.8,
-      "cost": 1560.25,
-      "pnl": 239.75,
-      "roi": 15.4
+      "win_rate": 15.5,
+      "cost": 1574.03,
+      "pnl": 225.97,
+      "roi": 14.4
     },
     "D+1": {
       "trades": 8,
@@ -74,18 +74,18 @@
   ],
   "bottom_cities": [
     {
-      "city": "Tokyo",
-      "trades": 2,
-      "wins": 0,
-      "win_rate": 0.0,
-      "pnl": -69.9
-    },
-    {
       "city": "Miami",
       "trades": 3,
       "wins": 0,
       "win_rate": 0.0,
       "pnl": -77.58
+    },
+    {
+      "city": "San Francisco",
+      "trades": 3,
+      "wins": 0,
+      "win_rate": 0.0,
+      "pnl": -80.83
     },
     {
       "city": "Toronto",
@@ -156,7 +156,7 @@
     },
     "atlanta": {
       "city": "Atlanta",
-      "paired": 164,
+      "paired": 165,
       "models_used": 3,
       "models_dropped": [
         "gem_seamless"
@@ -223,7 +223,7 @@
     },
     "wellington": {
       "city": "Wellington",
-      "paired": 165,
+      "paired": 166,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -310,7 +310,7 @@
   },
   "recent": {
     "signals_generated": 13,
-    "resolved_in_period": 65,
+    "resolved_in_period": 66,
     "days": 7
   },
   "drawdown": "OK"
