@@ -1,15 +1,5 @@
 [
   {
-    "date": "2026-01-11",
-    "forecast": null,
-    "model_highs": {},
-    "actual": 33.5,
-    "actual_source": "open_meteo_archive",
-    "resolution_bin": null,
-    "logged_at": "2026-04-07T08:14:40.079327",
-    "updated_at": "2026-04-07T08:14:40.079328"
-  },
-  {
     "date": "2026-01-12",
     "forecast": null,
     "model_highs": {},
@@ -2523,33 +2513,33 @@
       "icon_seamless": 86,
       "gem_seamless": 89
     },
-    "actual": 84.7,
-    "actual_source": "open_meteo_archive",
+    "actual": 86.0,
+    "actual_source": "metar_iem",
     "resolution_bin": "86-87\u00b0F",
     "logged_at": "2026-07-08T08:03:43.790580",
-    "updated_at": "2026-07-10T08:55:55.511825"
+    "updated_at": "2026-07-11T01:20:52.310245"
   },
   {
     "date": "2026-07-10",
-    "forecast": 82.5,
+    "forecast": 81.7,
     "model_highs": {
-      "ecmwf_ifs025": 83,
-      "gfs_seamless": 83,
-      "icon_seamless": 82,
+      "ecmwf_ifs025": 82,
+      "gfs_seamless": 82,
+      "icon_seamless": 81,
       "gem_seamless": 82
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-07-09T01:32:31.409621",
-    "updated_at": "2026-07-10T19:12:15.995382"
+    "updated_at": "2026-07-11T01:20:45.952374"
   },
   {
     "date": "2026-07-11",
-    "forecast": 83.4,
+    "forecast": 82.7,
     "model_highs": {
-      "ecmwf_ifs025": 85,
-      "gfs_seamless": 84,
+      "ecmwf_ifs025": 83,
+      "gfs_seamless": 83,
       "icon_seamless": 82,
       "gem_seamless": 83
     },
@@ -2557,6 +2547,21 @@
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-07-10T01:29:38.634858",
-    "updated_at": "2026-07-10T19:12:19.522431"
+    "updated_at": "2026-07-11T01:20:48.540339"
+  },
+  {
+    "date": "2026-07-12",
+    "forecast": 85.3,
+    "model_highs": {
+      "ecmwf_ifs025": 88,
+      "gfs_seamless": 84,
+      "icon_seamless": 85,
+      "gem_seamless": 85
+    },
+    "actual": null,
+    "actual_source": null,
+    "resolution_bin": null,
+    "logged_at": "2026-07-11T01:20:51.077588",
+    "updated_at": "2026-07-11T01:20:51.077599"
   }
 ]
