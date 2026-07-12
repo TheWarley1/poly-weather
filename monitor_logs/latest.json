@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-07-12T01:39:51.911688",
+  "timestamp": "2026-07-12T08:10:54.903666",
   "trading": {
-    "total": 83,
-    "open": 11,
-    "resolved": 72,
+    "total": 88,
+    "open": 12,
+    "resolved": 76,
     "voided": 0,
-    "wins": 11,
-    "losses": 61,
-    "win_rate": 0.1527777777777778,
-    "total_cost": 1893.33,
-    "total_pnl": 306.67,
-    "roi": 16.2,
-    "bankroll": 1306.67,
+    "wins": 12,
+    "losses": 64,
+    "win_rate": 0.15789473684210525,
+    "total_cost": 2009.08,
+    "total_pnl": 388.92,
+    "roi": 19.4,
+    "bankroll": 1388.92,
     "drawdown_pct": 0.0,
-    "avg_win": 175.98,
-    "avg_loss": 26.71,
-    "profit_factor": 1.19
+    "avg_win": 175.75,
+    "avg_loss": 26.88,
+    "profit_factor": 1.23
   },
   "lead_days": {
     "D+0": {
-      "trades": 64,
-      "wins": 9,
-      "win_rate": 14.1,
-      "cost": 1722.43,
-      "pnl": 77.57,
-      "roi": 4.5
+      "trades": 68,
+      "wins": 10,
+      "win_rate": 14.7,
+      "cost": 1838.18,
+      "pnl": 159.82,
+      "roi": 8.7
     },
     "D+1": {
       "trades": 8,
@@ -37,18 +37,18 @@
   },
   "top_cities": [
     {
+      "city": "New York",
+      "trades": 7,
+      "wins": 3,
+      "win_rate": 42.9,
+      "pnl": 452.77
+    },
+    {
       "city": "London",
       "trades": 5,
       "wins": 2,
       "win_rate": 40.0,
       "pnl": 282.4
-    },
-    {
-      "city": "New York",
-      "trades": 6,
-      "wins": 2,
-      "win_rate": 33.3,
-      "pnl": 279.52
     },
     {
       "city": "Seoul",
@@ -66,26 +66,26 @@
     },
     {
       "city": "Chicago",
-      "trades": 2,
+      "trades": 3,
       "wins": 1,
-      "win_rate": 50.0,
-      "pnl": 140.0
+      "win_rate": 33.3,
+      "pnl": 113.0
     }
   ],
   "bottom_cities": [
-    {
-      "city": "San Francisco",
-      "trades": 3,
-      "wins": 0,
-      "win_rate": 0.0,
-      "pnl": -80.83
-    },
     {
       "city": "Toronto",
       "trades": 4,
       "wins": 0,
       "win_rate": 0.0,
       "pnl": -89.0
+    },
+    {
+      "city": "Miami",
+      "trades": 4,
+      "wins": 0,
+      "win_rate": 0.0,
+      "pnl": -103.58
     },
     {
       "city": "Tokyo",
@@ -112,7 +112,7 @@
   "calibration": {
     "san-francisco": {
       "city": "San Francisco",
-      "paired": 156,
+      "paired": 157,
       "models_used": 3,
       "models_dropped": [
         "icon_seamless"
@@ -121,21 +121,21 @@
     },
     "nyc": {
       "city": "New York",
-      "paired": 166,
+      "paired": 167,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "chicago": {
       "city": "Chicago",
-      "paired": 166,
+      "paired": 167,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "miami": {
       "city": "Miami",
-      "paired": 165,
+      "paired": 166,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -149,14 +149,14 @@
     },
     "seattle": {
       "city": "Seattle",
-      "paired": 166,
+      "paired": 167,
       "models_used": 5,
       "models_dropped": [],
       "nws_dropped": true
     },
     "atlanta": {
       "city": "Atlanta",
-      "paired": 165,
+      "paired": 166,
       "models_used": 3,
       "models_dropped": [
         "gem_seamless"
@@ -188,7 +188,7 @@
     },
     "toronto": {
       "city": "Toronto",
-      "paired": 163,
+      "paired": 164,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -216,7 +216,7 @@
     },
     "buenos-aires": {
       "city": "Buenos Aires",
-      "paired": 164,
+      "paired": 165,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -263,7 +263,7 @@
     },
     "sao-paulo": {
       "city": "Sao Paulo",
-      "paired": 167,
+      "paired": 168,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -309,8 +309,8 @@
     }
   },
   "recent": {
-    "signals_generated": 11,
-    "resolved_in_period": 72,
+    "signals_generated": 12,
+    "resolved_in_period": 76,
     "days": 7
   },
   "drawdown": "OK"
