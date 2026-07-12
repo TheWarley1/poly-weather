@@ -1,38 +1,46 @@
 {
-  "timestamp": "2026-07-12T13:06:03.089116",
+  "timestamp": "2026-07-12T19:03:03.779538",
   "trading": {
-    "total": 89,
-    "open": 13,
-    "resolved": 76,
+    "total": 92,
+    "open": 12,
+    "resolved": 80,
     "voided": 0,
-    "wins": 12,
-    "losses": 64,
-    "win_rate": 0.15789473684210525,
-    "total_cost": 2009.08,
-    "total_pnl": 388.92,
-    "roi": 19.4,
-    "bankroll": 1388.92,
+    "wins": 13,
+    "losses": 67,
+    "win_rate": 0.1625,
+    "total_cost": 2104.68,
+    "total_pnl": 493.32,
+    "roi": 23.4,
+    "bankroll": 1493.32,
     "drawdown_pct": 0.0,
-    "avg_win": 175.75,
-    "avg_loss": 26.88,
-    "profit_factor": 1.23
+    "avg_win": 176.0,
+    "avg_loss": 26.79,
+    "profit_factor": 1.27
   },
   "lead_days": {
     "D+0": {
-      "trades": 68,
+      "trades": 70,
       "wins": 10,
-      "win_rate": 14.7,
-      "cost": 1838.18,
-      "pnl": 159.82,
-      "roi": 8.7
+      "win_rate": 14.3,
+      "cost": 1893.18,
+      "pnl": 104.82,
+      "roi": 5.5
     },
     "D+1": {
-      "trades": 8,
+      "trades": 9,
       "wins": 2,
-      "win_rate": 25.0,
-      "cost": 170.9,
-      "pnl": 229.1,
-      "roi": 134.1
+      "win_rate": 22.2,
+      "cost": 190.5,
+      "pnl": 209.5,
+      "roi": 110.0
+    },
+    "D+2": {
+      "trades": 1,
+      "wins": 1,
+      "win_rate": 100.0,
+      "cost": 21.0,
+      "pnl": 179.0,
+      "roi": 852.4
     }
   },
   "top_cities": [
@@ -44,6 +52,13 @@
       "pnl": 452.77
     },
     {
+      "city": "Seoul",
+      "trades": 3,
+      "wins": 2,
+      "win_rate": 66.7,
+      "pnl": 340.1
+    },
+    {
       "city": "London",
       "trades": 5,
       "wins": 2,
@@ -51,18 +66,11 @@
       "pnl": 282.4
     },
     {
-      "city": "Seoul",
-      "trades": 2,
-      "wins": 1,
-      "win_rate": 50.0,
-      "pnl": 161.1
-    },
-    {
       "city": "Shanghai",
-      "trades": 2,
+      "trades": 3,
       "wins": 1,
-      "win_rate": 50.0,
-      "pnl": 149.8
+      "win_rate": 33.3,
+      "pnl": 130.8
     },
     {
       "city": "Chicago",
@@ -88,18 +96,18 @@
       "pnl": -103.58
     },
     {
-      "city": "Tokyo",
-      "trades": 3,
-      "wins": 0,
-      "win_rate": 0.0,
-      "pnl": -103.9
-    },
-    {
       "city": "Milan",
       "trades": 3,
       "wins": 0,
       "win_rate": 0.0,
       "pnl": -105.6
+    },
+    {
+      "city": "Tokyo",
+      "trades": 4,
+      "wins": 0,
+      "win_rate": 0.0,
+      "pnl": -139.9
     },
     {
       "city": "Paris",
@@ -172,14 +180,14 @@
     },
     "tokyo": {
       "city": "Tokyo",
-      "paired": 165,
+      "paired": 166,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "seoul": {
       "city": "Seoul",
-      "paired": 164,
+      "paired": 165,
       "models_used": 3,
       "models_dropped": [
         "gfs_seamless"
@@ -195,7 +203,7 @@
     },
     "singapore": {
       "city": "Singapore",
-      "paired": 164,
+      "paired": 165,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -209,7 +217,7 @@
     },
     "shanghai": {
       "city": "Shanghai",
-      "paired": 166,
+      "paired": 167,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -244,7 +252,7 @@
     },
     "hong-kong": {
       "city": "Hong Kong",
-      "paired": 169,
+      "paired": 170,
       "models_used": 3,
       "models_dropped": [
         "gfs_seamless"
@@ -270,7 +278,7 @@
     },
     "lucknow": {
       "city": "Lucknow",
-      "paired": 168,
+      "paired": 169,
       "models_used": 3,
       "models_dropped": [
         "gfs_seamless"
@@ -302,15 +310,15 @@
     },
     "taipei": {
       "city": "Taipei",
-      "paired": 169,
+      "paired": 170,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     }
   },
   "recent": {
-    "signals_generated": 13,
-    "resolved_in_period": 76,
+    "signals_generated": 12,
+    "resolved_in_period": 80,
     "days": 7
   },
   "drawdown": "OK"
