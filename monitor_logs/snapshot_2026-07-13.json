@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-07-13T09:00:58.472190",
+  "timestamp": "2026-07-13T14:16:07.045512",
   "trading": {
-    "total": 101,
-    "open": 12,
+    "total": 102,
+    "open": 13,
     "resolved": 89,
     "voided": 0,
     "wins": 14,
@@ -120,7 +120,7 @@
   "calibration": {
     "san-francisco": {
       "city": "San Francisco",
-      "paired": 157,
+      "paired": 158,
       "models_used": 3,
       "models_dropped": [
         "icon_seamless"
@@ -165,8 +165,9 @@
     "atlanta": {
       "city": "Atlanta",
       "paired": 167,
-      "models_used": 3,
+      "models_used": 2,
       "models_dropped": [
+        "ecmwf_ifs025",
         "gem_seamless"
       ],
       "nws_dropped": true
@@ -231,7 +232,7 @@
     },
     "wellington": {
       "city": "Wellington",
-      "paired": 167,
+      "paired": 168,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -317,7 +318,7 @@
     }
   },
   "recent": {
-    "signals_generated": 12,
+    "signals_generated": 13,
     "resolved_in_period": 89,
     "days": 7
   },
