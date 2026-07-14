@@ -1,38 +1,38 @@
 {
-  "timestamp": "2026-07-14T01:21:06.353975",
+  "timestamp": "2026-07-14T07:53:57.222700",
   "trading": {
-    "total": 110,
-    "open": 14,
-    "resolved": 96,
+    "total": 115,
+    "open": 12,
+    "resolved": 103,
     "voided": 0,
     "wins": 14,
-    "losses": 82,
-    "win_rate": 0.14583333333333334,
-    "total_cost": 2615.08,
-    "total_pnl": 182.92,
-    "roi": 7.0,
-    "bankroll": 1182.92,
+    "losses": 89,
+    "win_rate": 0.13592233009708737,
+    "total_cost": 2782.7,
+    "total_pnl": 15.3,
+    "roi": 0.5,
+    "bankroll": 1015.3,
     "drawdown_pct": 0.0,
     "avg_win": 174.65,
-    "avg_loss": 27.59,
-    "profit_factor": 1.08
+    "avg_loss": 27.3,
+    "profit_factor": 1.01
   },
   "lead_days": {
     "D+0": {
-      "trades": 83,
+      "trades": 88,
       "wins": 11,
-      "win_rate": 13.3,
-      "cost": 2297.58,
-      "pnl": -99.58,
-      "roi": -4.3
+      "win_rate": 12.5,
+      "cost": 2438.58,
+      "pnl": -240.58,
+      "roi": -9.9
     },
     "D+1": {
-      "trades": 11,
+      "trades": 13,
       "wins": 2,
-      "win_rate": 18.2,
-      "cost": 227.5,
-      "pnl": 172.5,
-      "roi": 75.8
+      "win_rate": 15.4,
+      "cost": 254.12,
+      "pnl": 145.88,
+      "roi": 57.4
     },
     "D+2": {
       "trades": 2,
@@ -46,10 +46,10 @@
   "top_cities": [
     {
       "city": "New York",
-      "trades": 8,
+      "trades": 9,
       "wins": 3,
-      "win_rate": 37.5,
-      "pnl": 421.77
+      "win_rate": 33.3,
+      "pnl": 404.77
     },
     {
       "city": "Seoul",
@@ -120,7 +120,7 @@
   "calibration": {
     "san-francisco": {
       "city": "San Francisco",
-      "paired": 158,
+      "paired": 159,
       "models_used": 3,
       "models_dropped": [
         "icon_seamless"
@@ -129,7 +129,7 @@
     },
     "nyc": {
       "city": "New York",
-      "paired": 168,
+      "paired": 169,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -143,28 +143,28 @@
     },
     "miami": {
       "city": "Miami",
-      "paired": 167,
+      "paired": 168,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "dallas": {
       "city": "Dallas",
-      "paired": 167,
+      "paired": 168,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "seattle": {
       "city": "Seattle",
-      "paired": 168,
+      "paired": 169,
       "models_used": 5,
       "models_dropped": [],
       "nws_dropped": true
     },
     "atlanta": {
       "city": "Atlanta",
-      "paired": 167,
+      "paired": 168,
       "models_used": 2,
       "models_dropped": [
         "ecmwf_ifs025",
@@ -197,7 +197,7 @@
     },
     "toronto": {
       "city": "Toronto",
-      "paired": 165,
+      "paired": 166,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -225,7 +225,7 @@
     },
     "buenos-aires": {
       "city": "Buenos Aires",
-      "paired": 166,
+      "paired": 167,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -274,7 +274,7 @@
     },
     "sao-paulo": {
       "city": "Sao Paulo",
-      "paired": 169,
+      "paired": 170,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -320,8 +320,8 @@
     }
   },
   "recent": {
-    "signals_generated": 14,
-    "resolved_in_period": 92,
+    "signals_generated": 12,
+    "resolved_in_period": 96,
     "days": 7
   },
   "drawdown": "OK"
