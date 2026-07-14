@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-07-14T07:53:57.222700",
+  "timestamp": "2026-07-14T13:17:52.434626",
   "trading": {
-    "total": 115,
+    "total": 116,
     "open": 12,
-    "resolved": 103,
+    "resolved": 104,
     "voided": 0,
     "wins": 14,
-    "losses": 89,
-    "win_rate": 0.13592233009708737,
-    "total_cost": 2782.7,
-    "total_pnl": 15.3,
-    "roi": 0.5,
-    "bankroll": 1015.3,
-    "drawdown_pct": 0.0,
+    "losses": 90,
+    "win_rate": 0.1346153846153846,
+    "total_cost": 2798.9,
+    "total_pnl": -0.9,
+    "roi": -0.0,
+    "bankroll": 999.1,
+    "drawdown_pct": 0.1,
     "avg_win": 174.65,
-    "avg_loss": 27.3,
-    "profit_factor": 1.01
+    "avg_loss": 27.18,
+    "profit_factor": 1.0
   },
   "lead_days": {
     "D+0": {
-      "trades": 88,
+      "trades": 89,
       "wins": 11,
-      "win_rate": 12.5,
-      "cost": 2438.58,
-      "pnl": -240.58,
-      "roi": -9.9
+      "win_rate": 12.4,
+      "cost": 2454.78,
+      "pnl": -256.78,
+      "roi": -10.5
     },
     "D+1": {
       "trades": 13,
@@ -136,7 +136,7 @@
     },
     "chicago": {
       "city": "Chicago",
-      "paired": 168,
+      "paired": 169,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -232,7 +232,7 @@
     },
     "wellington": {
       "city": "Wellington",
-      "paired": 168,
+      "paired": 169,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -321,7 +321,7 @@
   },
   "recent": {
     "signals_generated": 12,
-    "resolved_in_period": 96,
+    "resolved_in_period": 90,
     "days": 7
   },
   "drawdown": "OK"
