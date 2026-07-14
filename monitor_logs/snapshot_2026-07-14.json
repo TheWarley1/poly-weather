@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-07-14T13:17:52.434626",
+  "timestamp": "2026-07-14T19:16:41.859544",
   "trading": {
-    "total": 116,
+    "total": 117,
     "open": 12,
-    "resolved": 104,
+    "resolved": 105,
     "voided": 0,
     "wins": 14,
-    "losses": 90,
-    "win_rate": 0.1346153846153846,
-    "total_cost": 2798.9,
-    "total_pnl": -0.9,
-    "roi": -0.0,
-    "bankroll": 999.1,
-    "drawdown_pct": 0.1,
+    "losses": 91,
+    "win_rate": 0.13333333333333333,
+    "total_cost": 2823.9,
+    "total_pnl": -25.9,
+    "roi": -0.9,
+    "bankroll": 974.1,
+    "drawdown_pct": 2.6,
     "avg_win": 174.65,
-    "avg_loss": 27.18,
-    "profit_factor": 1.0
+    "avg_loss": 27.15,
+    "profit_factor": 0.99
   },
   "lead_days": {
     "D+0": {
-      "trades": 89,
+      "trades": 90,
       "wins": 11,
-      "win_rate": 12.4,
-      "cost": 2454.78,
-      "pnl": -256.78,
-      "roi": -10.5
+      "win_rate": 12.2,
+      "cost": 2479.78,
+      "pnl": -281.78,
+      "roi": -11.4
     },
     "D+1": {
       "trades": 13,
@@ -181,14 +181,14 @@
     },
     "tokyo": {
       "city": "Tokyo",
-      "paired": 167,
+      "paired": 168,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "seoul": {
       "city": "Seoul",
-      "paired": 166,
+      "paired": 167,
       "models_used": 3,
       "models_dropped": [
         "gfs_seamless"
@@ -204,7 +204,7 @@
     },
     "singapore": {
       "city": "Singapore",
-      "paired": 166,
+      "paired": 167,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -218,7 +218,7 @@
     },
     "shanghai": {
       "city": "Shanghai",
-      "paired": 168,
+      "paired": 169,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -255,7 +255,7 @@
     },
     "hong-kong": {
       "city": "Hong Kong",
-      "paired": 171,
+      "paired": 172,
       "models_used": 3,
       "models_dropped": [
         "gfs_seamless"
@@ -281,7 +281,7 @@
     },
     "lucknow": {
       "city": "Lucknow",
-      "paired": 170,
+      "paired": 171,
       "models_used": 3,
       "models_dropped": [
         "gfs_seamless"
@@ -313,7 +313,7 @@
     },
     "taipei": {
       "city": "Taipei",
-      "paired": 171,
+      "paired": 172,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
