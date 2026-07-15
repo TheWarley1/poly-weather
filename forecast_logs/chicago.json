@@ -1,15 +1,5 @@
 [
   {
-    "date": "2026-01-15",
-    "forecast": null,
-    "model_highs": {},
-    "actual": 21.6,
-    "actual_source": "open_meteo_archive",
-    "resolution_bin": null,
-    "logged_at": "2026-04-07T08:14:40.079343",
-    "updated_at": "2026-04-07T08:14:40.079344"
-  },
-  {
     "date": "2026-01-16",
     "forecast": null,
     "model_highs": {},
@@ -2543,18 +2533,18 @@
       "icon_seamless": 92,
       "gem_seamless": 94
     },
-    "actual": 94.1,
-    "actual_source": "open_meteo_archive",
+    "actual": 92.0,
+    "actual_source": "metar_iem",
     "resolution_bin": "92-93\u00b0F",
     "logged_at": "2026-07-12T01:24:26.214373",
-    "updated_at": "2026-07-14T13:00:38.834502"
+    "updated_at": "2026-07-15T01:11:34.310143"
   },
   {
     "date": "2026-07-14",
-    "forecast": 97.2,
+    "forecast": 96.5,
     "model_highs": {
-      "ecmwf_ifs025": 97,
-      "gfs_seamless": 98,
+      "ecmwf_ifs025": 96,
+      "gfs_seamless": 96,
       "icon_seamless": 96,
       "gem_seamless": 98
     },
@@ -2562,21 +2552,35 @@
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-07-13T01:24:12.516651",
-    "updated_at": "2026-07-14T18:57:47.513660"
+    "updated_at": "2026-07-15T01:10:32.641772"
   },
   {
     "date": "2026-07-15",
-    "forecast": 98.2,
+    "forecast": 97.9,
     "model_highs": {
       "ecmwf_ifs025": 98,
-      "gfs_seamless": 99,
-      "icon_seamless": 96,
-      "gem_seamless": 100
+      "gfs_seamless": 98,
+      "icon_seamless": 97,
+      "gem_seamless": 99
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-07-14T07:42:52.930704",
-    "updated_at": "2026-07-14T18:57:51.003468"
+    "updated_at": "2026-07-15T01:10:36.326811"
+  },
+  {
+    "date": "2026-07-16",
+    "forecast": 92.0,
+    "model_highs": {
+      "ecmwf_ifs025": 96,
+      "icon_seamless": 91,
+      "gem_seamless": 89
+    },
+    "actual": null,
+    "actual_source": null,
+    "resolution_bin": null,
+    "logged_at": "2026-07-15T01:11:32.897104",
+    "updated_at": "2026-07-15T01:11:32.897112"
   }
 ]

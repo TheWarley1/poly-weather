@@ -169,16 +169,6 @@
     "updated_at": "2026-04-20T21:01:26.440021"
   },
   {
-    "date": "2026-01-15",
-    "forecast": null,
-    "model_highs": {},
-    "actual": 72.0,
-    "actual_source": "open_meteo_archive",
-    "resolution_bin": null,
-    "logged_at": "2026-04-08T00:01:30.321946",
-    "updated_at": "2026-04-08T00:01:30.321954"
-  },
-  {
     "date": "2026-01-16",
     "forecast": null,
     "model_highs": {},
@@ -2549,32 +2539,46 @@
   },
   {
     "date": "2026-07-14",
-    "forecast": 93.0,
+    "forecast": 94.0,
     "model_highs": {
-      "ecmwf_ifs025": 92,
-      "gfs_seamless": 93,
-      "icon_seamless": 91,
-      "gem_seamless": 92
-    },
-    "actual": null,
-    "actual_source": null,
-    "resolution_bin": null,
-    "logged_at": "2026-07-13T01:24:12.522339",
-    "updated_at": "2026-07-14T18:57:47.511792"
-  },
-  {
-    "date": "2026-07-15",
-    "forecast": 93.7,
-    "model_highs": {
-      "ecmwf_ifs025": 92,
-      "gfs_seamless": 93,
-      "icon_seamless": 92,
+      "ecmwf_ifs025": 90,
+      "gfs_seamless": 96,
+      "icon_seamless": 90,
       "gem_seamless": 94
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
+    "logged_at": "2026-07-13T01:24:12.522339",
+    "updated_at": "2026-07-15T01:10:32.771182"
+  },
+  {
+    "date": "2026-07-15",
+    "forecast": 93.2,
+    "model_highs": {
+      "ecmwf_ifs025": 92,
+      "gfs_seamless": 93,
+      "icon_seamless": 91,
+      "gem_seamless": 93
+    },
+    "actual": null,
+    "actual_source": null,
+    "resolution_bin": null,
     "logged_at": "2026-07-14T07:42:52.964409",
-    "updated_at": "2026-07-14T18:57:50.988654"
+    "updated_at": "2026-07-15T01:10:36.859001"
+  },
+  {
+    "date": "2026-07-16",
+    "forecast": 95.1,
+    "model_highs": {
+      "gfs_seamless": 96,
+      "icon_seamless": 93,
+      "gem_seamless": 94
+    },
+    "actual": null,
+    "actual_source": null,
+    "resolution_bin": null,
+    "logged_at": "2026-07-15T01:11:33.710183",
+    "updated_at": "2026-07-15T01:11:33.710195"
   }
 ]
