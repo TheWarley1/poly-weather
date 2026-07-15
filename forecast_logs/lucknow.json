@@ -2443,16 +2443,32 @@
   },
   {
     "date": "2026-07-16",
-    "forecast": 32.7,
+    "forecast": 31.3,
     "model_highs": {
       "ecmwf_ifs025": 33.3,
-      "gfs_seamless": 41.7,
-      "icon_seamless": 30.0
+      "gfs_seamless": 41.1,
+      "icon_seamless": 28.9,
+      "gem_seamless": 29.4
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-07-14T07:44:50.228975",
-    "updated_at": "2026-07-15T01:13:39.000920"
+    "updated_at": "2026-07-15T07:51:26.431461"
+  },
+  {
+    "date": "2026-07-17",
+    "forecast": 32.2,
+    "model_highs": {
+      "ecmwf_ifs025": 32.8,
+      "gfs_seamless": 37.2,
+      "icon_seamless": 31.7,
+      "gem_seamless": 31.7
+    },
+    "actual": null,
+    "actual_source": null,
+    "resolution_bin": null,
+    "logged_at": "2026-07-15T07:51:28.975198",
+    "updated_at": "2026-07-15T07:51:28.975205"
   }
 ]
