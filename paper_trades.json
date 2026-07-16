@@ -4550,5 +4550,33 @@
     "calibrated": true,
     "logged_at": "2026-07-16T13:32:48.857870",
     "resolved": false
+  },
+  {
+    "city": "Seattle",
+    "slug": "seattle",
+    "station": "KSEA",
+    "unit": "F",
+    "market_date": "2026-07-16",
+    "lead_days": 0,
+    "bin": "70-71\u00b0F",
+    "entry_price": 12.0,
+    "shares": 20,
+    "cost": 2.4,
+    "forecast_high": 71.5,
+    "model_prob": 34.1,
+    "model_prob_shrunk": 31.9,
+    "market_prob": 12.0,
+    "edge_pct": 22.1,
+    "edge_sized_pct": 19.9,
+    "kelly_pct": 2.8,
+    "dd_factor": 0.5,
+    "bankroll_at_entry": 758.97,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.3112088835995339,
+    "n_models": 4,
+    "model_spread": 0.7,
+    "calibrated": true,
+    "logged_at": "2026-07-16T19:10:06.591321",
+    "resolved": false
   }
 ]
