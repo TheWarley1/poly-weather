@@ -4983,7 +4983,13 @@
     "model_spread": 1.1,
     "calibrated": true,
     "logged_at": "2026-07-18T01:30:55.149093",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "29\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -33.41,
+    "return_pct": -100.0,
+    "resolved_at": "2026-07-18T18:47:06.671307"
   },
   {
     "city": "New York",
@@ -5151,6 +5157,34 @@
     "model_spread": 2.0,
     "calibrated": true,
     "logged_at": "2026-07-18T13:02:41.419594",
+    "resolved": false
+  },
+  {
+    "city": "Chicago",
+    "slug": "chicago",
+    "station": "KORD",
+    "unit": "F",
+    "market_date": "2026-07-18",
+    "lead_days": 0,
+    "bin": "88-89\u00b0F",
+    "entry_price": 20.0,
+    "shares": 125,
+    "cost": 25.0,
+    "forecast_high": 89.4,
+    "model_prob": 34.9,
+    "model_prob_shrunk": 33.4,
+    "market_prob": 20.0,
+    "edge_pct": 14.9,
+    "edge_sized_pct": 13.4,
+    "kelly_pct": 4.2,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 842.02,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.3898966609345452,
+    "n_models": 4,
+    "model_spread": 0.9,
+    "calibrated": true,
+    "logged_at": "2026-07-18T18:56:25.260572",
     "resolved": false
   }
 ]
