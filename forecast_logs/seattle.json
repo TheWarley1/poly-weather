@@ -1,15 +1,5 @@
 [
   {
-    "date": "2026-01-18",
-    "forecast": null,
-    "model_highs": {},
-    "actual": 46.7,
-    "actual_source": "open_meteo_archive",
-    "resolution_bin": null,
-    "logged_at": "2026-04-07T08:10:12.031792",
-    "updated_at": "2026-04-07T08:10:12.031793"
-  },
-  {
     "date": "2026-01-19",
     "forecast": 45.1,
     "model_highs": {
@@ -2558,40 +2548,52 @@
       "icon_seamless": 67,
       "gem_seamless": 68
     },
-    "actual": 68.8,
-    "actual_source": "open_meteo_archive",
+    "actual": 64.0,
+    "actual_source": "metar_iem",
     "resolution_bin": "64-65\u00b0F",
     "logged_at": "2026-07-15T01:11:59.236247",
-    "updated_at": "2026-07-17T07:48:42.606027"
+    "updated_at": "2026-07-18T01:17:09.800969"
   },
   {
     "date": "2026-07-17",
-    "forecast": 72.1,
+    "forecast": 71.2,
     "model_highs": {
-      "ecmwf_ifs025": 70,
-      "gfs_seamless": 72,
-      "icon_seamless": 70,
-      "gem_seamless": 74
+      "ecmwf_ifs025": 71,
+      "gfs_seamless": 70,
+      "icon_seamless": 69,
+      "gem_seamless": 73
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-07-16T01:20:40.203008",
-    "updated_at": "2026-07-17T18:49:28.746590"
+    "updated_at": "2026-07-18T01:15:02.237370"
   },
   {
     "date": "2026-07-18",
-    "forecast": 73.7,
+    "forecast": 74.3,
     "model_highs": {
       "ecmwf_ifs025": 72,
-      "gfs_seamless": 73,
+      "gfs_seamless": 74,
       "icon_seamless": 72,
-      "gem_seamless": 76
+      "gem_seamless": 77
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-07-17T01:25:05.816152",
-    "updated_at": "2026-07-17T18:49:32.273848"
+    "updated_at": "2026-07-18T01:15:05.717513"
+  },
+  {
+    "date": "2026-07-19",
+    "forecast": 75.3,
+    "model_highs": {
+      "ecmwf_ifs025": 74
+    },
+    "actual": null,
+    "actual_source": null,
+    "resolution_bin": null,
+    "logged_at": "2026-07-18T01:17:08.577057",
+    "updated_at": "2026-07-18T01:17:08.577069"
   }
 ]
