@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-07-18T07:41:47.501574",
+  "timestamp": "2026-07-18T13:02:41.894817",
   "trading": {
-    "total": 152,
+    "total": 153,
     "open": 8,
-    "resolved": 144,
+    "resolved": 145,
     "voided": 0,
     "wins": 18,
-    "losses": 126,
-    "win_rate": 0.125,
-    "total_cost": 3577.82,
-    "total_pnl": -114.82,
-    "roi": -3.2,
-    "bankroll": 885.18,
-    "drawdown_pct": 11.5,
+    "losses": 127,
+    "win_rate": 0.12413793103448276,
+    "total_cost": 3587.57,
+    "total_pnl": -124.57,
+    "roi": -3.5,
+    "bankroll": 875.43,
+    "drawdown_pct": 12.5,
     "avg_win": 167.51,
-    "avg_loss": 24.84,
+    "avg_loss": 24.72,
     "profit_factor": 0.96
   },
   "lead_days": {
     "D+0": {
-      "trades": 117,
+      "trades": 118,
       "wins": 14,
-      "win_rate": 12.0,
-      "cost": 3053.71,
-      "pnl": -390.71,
-      "roi": -12.8
+      "win_rate": 11.9,
+      "cost": 3063.46,
+      "pnl": -400.46,
+      "roi": -13.1
     },
     "D+1": {
       "trades": 24,
@@ -120,7 +120,7 @@
   "calibration": {
     "san-francisco": {
       "city": "San Francisco",
-      "paired": 162,
+      "paired": 163,
       "models_used": 3,
       "models_dropped": [
         "icon_seamless"
@@ -232,7 +232,7 @@
     },
     "wellington": {
       "city": "Wellington",
-      "paired": 172,
+      "paired": 173,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
