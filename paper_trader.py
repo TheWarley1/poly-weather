@@ -669,7 +669,10 @@ def scan_city_edges(city_name, city, verbose=True,
                   f"(need {CONFIG['min_calibration_obs']}) and no station offset")
         return []
 
-    for days_ahead in range(0, 3):
+    # D+0 blocked after 1 week of live data: 83 trades at -4.3% ROI, 13.3% actual
+    # win rate vs 32.9% predicted. The model is structurally overconfident at 0-day
+    # lead. D+1 (18.2% WR, +75.8% ROI) and D+2 are the viable horizons.
+    for days_ahead in range(1, 3):
         target_date = today + timedelta(days=days_ahead)
         target_str = target_date.strftime("%Y-%m-%d")
 
