@@ -5255,7 +5255,13 @@
     "model_spread": 1.3,
     "calibrated": true,
     "logged_at": "2026-07-19T01:36:58.069643",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "21\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -15.79,
+    "return_pct": -100.0,
+    "resolved_at": "2026-07-20T01:30:16.794455"
   },
   {
     "city": "New York",
@@ -5395,7 +5401,13 @@
     "model_spread": 1.3,
     "calibrated": true,
     "logged_at": "2026-07-19T08:13:56.890473",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "24\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -18.5,
+    "return_pct": -100.0,
+    "resolved_at": "2026-07-20T01:30:17.501900"
   },
   {
     "city": "Buenos Aires",
@@ -5451,7 +5463,13 @@
     "model_spread": 1.2,
     "calibrated": true,
     "logged_at": "2026-07-19T08:13:56.890483",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "34\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -17.5,
+    "return_pct": -100.0,
+    "resolved_at": "2026-07-20T01:30:18.128083"
   },
   {
     "city": "Warsaw",
@@ -5479,7 +5497,13 @@
     "model_spread": 0.4,
     "calibrated": true,
     "logged_at": "2026-07-19T08:13:56.890488",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "27\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -16.1,
+    "return_pct": -100.0,
+    "resolved_at": "2026-07-20T01:30:18.372580"
   },
   {
     "city": "Milan",
@@ -5535,6 +5559,40 @@
     "model_spread": 0.4,
     "calibrated": true,
     "logged_at": "2026-07-19T13:03:45.987761",
+    "resolved": true,
+    "outcome_bin": "36\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -6.04,
+    "return_pct": -100.0,
+    "resolved_at": "2026-07-20T01:30:18.649006"
+  },
+  {
+    "city": "Wellington",
+    "slug": "wellington",
+    "station": "NZWN",
+    "unit": "C",
+    "market_date": "2026-07-21",
+    "lead_days": 1,
+    "bin": "14\u00b0C",
+    "entry_price": 8.6,
+    "shares": 92,
+    "cost": 7.87,
+    "forecast_high": 13.5,
+    "model_prob": 21.5,
+    "model_prob_shrunk": 20.2,
+    "market_prob": 8.6,
+    "edge_pct": 12.9,
+    "edge_sized_pct": 11.6,
+    "kelly_pct": 1.2,
+    "dd_factor": 0.5,
+    "bankroll_at_entry": 657.66,
+    "city_kelly_scalar": 0.75,
+    "city_bss": 0.17926492747210343,
+    "n_models": 4,
+    "model_spread": 0.5,
+    "calibrated": true,
+    "logged_at": "2026-07-20T01:35:16.183794",
     "resolved": false
   }
 ]
