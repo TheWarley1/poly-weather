@@ -1,18 +1,5 @@
 [
   {
-    "date": "2026-01-21",
-    "forecast": 29.4,
-    "model_highs": {
-      "ecmwf_ifs025": 28.6,
-      "gfs_seamless": 30.3
-    },
-    "actual": 30.0,
-    "actual_source": "metar_iem",
-    "resolution_bin": null,
-    "logged_at": "2026-04-07T08:14:40.079368",
-    "updated_at": "2026-04-20T21:00:16.639582"
-  },
-  {
     "date": "2026-01-22",
     "forecast": 26.6,
     "model_highs": {
@@ -2552,11 +2539,11 @@
       "icon_seamless": 89,
       "gem_seamless": 89
     },
-    "actual": 89.9,
-    "actual_source": "open_meteo_archive",
+    "actual": 91.0,
+    "actual_source": "metar_iem",
     "resolution_bin": "90-91\u00b0F",
     "logged_at": "2026-07-17T01:25:05.923810",
-    "updated_at": "2026-07-19T07:54:28.560642"
+    "updated_at": "2026-07-21T01:22:37.970792"
   },
   {
     "date": "2026-07-19",
@@ -2575,32 +2562,44 @@
   },
   {
     "date": "2026-07-20",
-    "forecast": 84.2,
+    "forecast": 82.4,
     "model_highs": {
-      "ecmwf_ifs025": 85,
-      "gfs_seamless": 81,
-      "icon_seamless": 87,
-      "gem_seamless": 84
+      "ecmwf_ifs025": 79,
+      "gfs_seamless": 83,
+      "icon_seamless": 84,
+      "gem_seamless": 83
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-07-19T01:22:45.880724",
-    "updated_at": "2026-07-20T19:20:49.341801"
+    "updated_at": "2026-07-21T01:20:31.792402"
   },
   {
     "date": "2026-07-21",
     "forecast": 84.1,
     "model_highs": {
-      "ecmwf_ifs025": 85,
-      "gfs_seamless": 83,
-      "icon_seamless": 84,
-      "gem_seamless": 85
+      "ecmwf_ifs025": 81,
+      "gfs_seamless": 86,
+      "icon_seamless": 83,
+      "gem_seamless": 86
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-07-20T01:26:05.270160",
-    "updated_at": "2026-07-20T19:20:52.113363"
+    "updated_at": "2026-07-21T01:20:34.674197"
+  },
+  {
+    "date": "2026-07-22",
+    "forecast": 71.9,
+    "model_highs": {
+      "ecmwf_ifs025": 71
+    },
+    "actual": null,
+    "actual_source": null,
+    "resolution_bin": null,
+    "logged_at": "2026-07-21T01:22:36.976676",
+    "updated_at": "2026-07-21T01:22:36.976685"
   }
 ]
