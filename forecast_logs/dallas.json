@@ -1,18 +1,5 @@
 [
   {
-    "date": "2026-01-24",
-    "forecast": 35.8,
-    "model_highs": {
-      "icon_seamless": 36.2,
-      "gem_seamless": 35.1
-    },
-    "actual": 33.0,
-    "actual_source": "metar_iem",
-    "resolution_bin": null,
-    "logged_at": "2026-04-07T08:10:01.319036",
-    "updated_at": "2026-04-20T21:00:33.151903"
-  },
-  {
     "date": "2026-01-25",
     "forecast": 20.3,
     "model_highs": {
@@ -2567,40 +2554,52 @@
       "icon_seamless": 105,
       "gem_seamless": 102
     },
-    "actual": 105.3,
-    "actual_source": "open_meteo_archive",
+    "actual": 105.0,
+    "actual_source": "metar_iem",
     "resolution_bin": "108-109\u00b0F",
     "logged_at": "2026-07-21T01:21:57.000305",
-    "updated_at": "2026-07-23T08:06:28.393574"
+    "updated_at": "2026-07-24T01:25:25.041887"
   },
   {
     "date": "2026-07-23",
-    "forecast": 97.6,
+    "forecast": 97.4,
     "model_highs": {
       "ecmwf_ifs025": 96,
-      "gfs_seamless": 96,
+      "gfs_seamless": 97,
       "icon_seamless": 98,
-      "gem_seamless": 97
+      "gem_seamless": 95
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-07-22T01:19:25.572327",
-    "updated_at": "2026-07-23T18:55:48.592476"
+    "updated_at": "2026-07-24T01:23:04.265136"
   },
   {
     "date": "2026-07-24",
-    "forecast": 96.2,
+    "forecast": 96.1,
     "model_highs": {
       "ecmwf_ifs025": 99,
-      "gfs_seamless": 94,
-      "icon_seamless": 96,
+      "gfs_seamless": 93,
+      "icon_seamless": 97,
       "gem_seamless": 94
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-07-23T01:28:08.288928",
-    "updated_at": "2026-07-23T18:55:51.271601"
+    "updated_at": "2026-07-24T01:23:07.699512"
+  },
+  {
+    "date": "2026-07-25",
+    "forecast": 98.3,
+    "model_highs": {
+      "gem_seamless": 97
+    },
+    "actual": null,
+    "actual_source": null,
+    "resolution_bin": null,
+    "logged_at": "2026-07-24T01:25:23.783200",
+    "updated_at": "2026-07-24T01:25:23.783211"
   }
 ]
