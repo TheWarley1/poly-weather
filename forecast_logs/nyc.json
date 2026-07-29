@@ -1,18 +1,5 @@
 [
   {
-    "date": "2026-01-29",
-    "forecast": 23.4,
-    "model_highs": {
-      "gfs_seamless": 23.4,
-      "icon_seamless": 23.3
-    },
-    "actual": 24.0,
-    "actual_source": "metar_iem",
-    "resolution_bin": null,
-    "logged_at": "2026-04-07T08:09:14.805193",
-    "updated_at": "2026-04-20T20:59:46.056037"
-  },
-  {
     "date": "2026-01-30",
     "forecast": 18.8,
     "model_highs": {
@@ -2566,11 +2553,11 @@
       "icon_seamless": 83,
       "gem_seamless": 83
     },
-    "actual": 85.8,
-    "actual_source": "open_meteo_archive",
+    "actual": 82.0,
+    "actual_source": "metar_iem",
     "resolution_bin": "82-83\u00b0F",
     "logged_at": "2026-07-25T01:23:53.930815",
-    "updated_at": "2026-07-27T09:21:56.669671"
+    "updated_at": "2026-07-29T01:22:33.864557"
   },
   {
     "date": "2026-07-27",
@@ -2589,10 +2576,10 @@
   },
   {
     "date": "2026-07-28",
-    "forecast": 81.5,
+    "forecast": 80.9,
     "model_highs": {
-      "ecmwf_ifs025": 81,
-      "gfs_seamless": 82,
+      "ecmwf_ifs025": 80,
+      "gfs_seamless": 81,
       "icon_seamless": 79,
       "gem_seamless": 82
     },
@@ -2600,21 +2587,32 @@
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-07-27T01:32:43.167689",
-    "updated_at": "2026-07-28T19:02:07.779693"
+    "updated_at": "2026-07-29T01:20:12.945428"
   },
   {
     "date": "2026-07-29",
-    "forecast": 81.8,
+    "forecast": 81.1,
     "model_highs": {
-      "ecmwf_ifs025": 84,
-      "gfs_seamless": 79,
-      "icon_seamless": 81,
-      "gem_seamless": 82
+      "ecmwf_ifs025": 81,
+      "gfs_seamless": 81,
+      "gem_seamless": 80
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-07-28T01:19:19.320683",
-    "updated_at": "2026-07-28T19:02:10.445323"
+    "updated_at": "2026-07-29T01:20:16.590334"
+  },
+  {
+    "date": "2026-07-30",
+    "forecast": 81.4,
+    "model_highs": {
+      "gem_seamless": 80
+    },
+    "actual": null,
+    "actual_source": null,
+    "resolution_bin": null,
+    "logged_at": "2026-07-29T01:22:32.905758",
+    "updated_at": "2026-07-29T01:22:32.905766"
   }
 ]
