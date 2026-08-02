@@ -1,122 +1,25 @@
 {
-  "timestamp": "2026-08-02T12:56:35.363779",
+  "timestamp": "2026-08-02T19:01:45.833319",
   "trading": {
-    "total": 166,
-    "open": 0,
-    "resolved": 166,
+    "total": 2,
+    "open": 2,
+    "resolved": 0,
     "voided": 0,
-    "wins": 19,
-    "losses": 147,
-    "win_rate": 0.1144578313253012,
-    "total_cost": 4002.18,
-    "total_pnl": -459.18,
-    "roi": -11.5,
-    "bankroll": 657.66,
-    "drawdown_pct": 34.2,
-    "avg_win": 162.08,
-    "avg_loss": 24.07,
-    "profit_factor": 0.87
+    "wins": 0,
+    "losses": 0,
+    "win_rate": null,
+    "total_cost": 0,
+    "total_pnl": 0,
+    "roi": null,
+    "bankroll": 1000.0,
+    "drawdown_pct": 0.0,
+    "avg_win": null,
+    "avg_loss": null,
+    "profit_factor": null
   },
-  "lead_days": {
-    "D+0": {
-      "trades": 133,
-      "wins": 15,
-      "win_rate": 11.3,
-      "cost": 3395.58,
-      "pnl": -652.58,
-      "roi": -19.2
-    },
-    "D+1": {
-      "trades": 30,
-      "wins": 3,
-      "win_rate": 10.0,
-      "cost": 500.2,
-      "pnl": 99.8,
-      "roi": 20.0
-    },
-    "D+2": {
-      "trades": 3,
-      "wins": 1,
-      "win_rate": 33.3,
-      "cost": 106.4,
-      "pnl": 93.6,
-      "roi": 88.0
-    }
-  },
-  "top_cities": [
-    {
-      "city": "Seoul",
-      "trades": 6,
-      "wins": 2,
-      "win_rate": 33.3,
-      "pnl": 294.31
-    },
-    {
-      "city": "New York",
-      "trades": 15,
-      "wins": 3,
-      "win_rate": 20.0,
-      "pnl": 262.94
-    },
-    {
-      "city": "London",
-      "trades": 10,
-      "wins": 2,
-      "win_rate": 20.0,
-      "pnl": 180.61
-    },
-    {
-      "city": "Miami",
-      "trades": 10,
-      "wins": 2,
-      "win_rate": 20.0,
-      "pnl": 178.09
-    },
-    {
-      "city": "Shanghai",
-      "trades": 3,
-      "wins": 1,
-      "win_rate": 33.3,
-      "pnl": 130.8
-    }
-  ],
-  "bottom_cities": [
-    {
-      "city": "Warsaw",
-      "trades": 4,
-      "wins": 0,
-      "win_rate": 0.0,
-      "pnl": -133.2
-    },
-    {
-      "city": "Milan",
-      "trades": 5,
-      "wins": 0,
-      "win_rate": 0.0,
-      "pnl": -136.54
-    },
-    {
-      "city": "Paris",
-      "trades": 8,
-      "wins": 0,
-      "win_rate": 0.0,
-      "pnl": -218.34
-    },
-    {
-      "city": "Toronto",
-      "trades": 9,
-      "wins": 0,
-      "win_rate": 0.0,
-      "pnl": -235.6
-    },
-    {
-      "city": "Tokyo",
-      "trades": 7,
-      "wins": 0,
-      "win_rate": 0.0,
-      "pnl": -242.31
-    }
-  ],
+  "lead_days": {},
+  "top_cities": [],
+  "bottom_cities": [],
   "calibration": {
     "san-francisco": {
       "city": "San Francisco",
@@ -181,14 +84,14 @@
     },
     "tokyo": {
       "city": "Tokyo",
-      "paired": 172,
+      "paired": 173,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "seoul": {
       "city": "Seoul",
-      "paired": 173,
+      "paired": 174,
       "models_used": 3,
       "models_dropped": [
         "gfs_seamless"
@@ -204,7 +107,7 @@
     },
     "singapore": {
       "city": "Singapore",
-      "paired": 171,
+      "paired": 172,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -218,7 +121,7 @@
     },
     "shanghai": {
       "city": "Shanghai",
-      "paired": 173,
+      "paired": 174,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -255,7 +158,7 @@
     },
     "hong-kong": {
       "city": "Hong Kong",
-      "paired": 176,
+      "paired": 177,
       "models_used": 3,
       "models_dropped": [
         "gfs_seamless"
@@ -281,7 +184,7 @@
     },
     "lucknow": {
       "city": "Lucknow",
-      "paired": 175,
+      "paired": 176,
       "models_used": 3,
       "models_dropped": [
         "gfs_seamless"
@@ -313,16 +216,16 @@
     },
     "taipei": {
       "city": "Taipei",
-      "paired": 176,
+      "paired": 177,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     }
   },
   "recent": {
-    "signals_generated": 0,
+    "signals_generated": 2,
     "resolved_in_period": 0,
     "days": 7
   },
-  "drawdown": "HALVED"
+  "drawdown": "OK"
 }
