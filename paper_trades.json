@@ -82,5 +82,33 @@
     "calibrated": true,
     "logged_at": "2026-08-03T01:35:01.198794",
     "resolved": false
+  },
+  {
+    "city": "Chicago",
+    "slug": "chicago",
+    "station": "KORD",
+    "unit": "F",
+    "market_date": "2026-08-04",
+    "lead_days": 1,
+    "bin": "88-89\u00b0F",
+    "entry_price": 9.5,
+    "shares": 200,
+    "cost": 19.0,
+    "forecast_high": 86.9,
+    "model_prob": 22.1,
+    "model_prob_shrunk": 20.8,
+    "market_prob": 9.5,
+    "edge_pct": 12.6,
+    "edge_sized_pct": 11.3,
+    "kelly_pct": 3.1,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 1000.0,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.3898966609345452,
+    "n_models": 4,
+    "model_spread": 1.6,
+    "calibrated": true,
+    "logged_at": "2026-08-03T09:08:22.459600",
+    "resolved": false
   }
 ]
