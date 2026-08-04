@@ -25,7 +25,13 @@
     "model_spread": 1.5,
     "calibrated": true,
     "logged_at": "2026-08-02T19:01:45.456450",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "98-99\u00b0F",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -18.0,
+    "return_pct": -100.0,
+    "resolved_at": "2026-08-04T08:19:49.355244"
   },
   {
     "city": "Ankara",
@@ -87,7 +93,13 @@
     "model_spread": 2.5,
     "calibrated": true,
     "logged_at": "2026-08-03T01:35:01.198794",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "90-91\u00b0F",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -18.0,
+    "return_pct": -100.0,
+    "resolved_at": "2026-08-04T08:19:49.593751"
   },
   {
     "city": "Chicago",
@@ -199,6 +211,34 @@
     "model_spread": null,
     "calibrated": true,
     "logged_at": "2026-08-04T01:27:34.722052",
+    "resolved": false
+  },
+  {
+    "city": "Dallas",
+    "slug": "dallas",
+    "station": "KDFW",
+    "unit": "F",
+    "market_date": "2026-08-05",
+    "lead_days": 1,
+    "bin": "102-103\u00b0F",
+    "entry_price": 11.5,
+    "shares": 200,
+    "cost": 23.0,
+    "forecast_high": 102.7,
+    "model_prob": 26.0,
+    "model_prob_shrunk": 24.6,
+    "market_prob": 11.5,
+    "edge_pct": 14.5,
+    "edge_sized_pct": 13.1,
+    "kelly_pct": 3.7,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 946.0,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.3396374112271374,
+    "n_models": 4,
+    "model_spread": 0.8,
+    "calibrated": true,
+    "logged_at": "2026-08-04T08:25:58.260009",
     "resolved": false
   }
 ]
