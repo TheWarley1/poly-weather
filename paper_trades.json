@@ -331,7 +331,13 @@
     "model_spread": 3.0,
     "calibrated": true,
     "logged_at": "2026-08-04T13:54:30.585303",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "35\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -18.0,
+    "return_pct": -100.0,
+    "resolved_at": "2026-08-06T23:50:42.814869"
   },
   {
     "city": "Munich",
@@ -393,7 +399,13 @@
     "model_spread": 2.0,
     "calibrated": true,
     "logged_at": "2026-08-04T13:54:30.585313",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "24\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -28.08,
+    "return_pct": -100.0,
+    "resolved_at": "2026-08-06T23:50:43.082499"
   },
   {
     "city": "Warsaw",
@@ -489,7 +501,13 @@
     "model_spread": 0.9,
     "calibrated": true,
     "logged_at": "2026-08-05T08:24:25.425844",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "25\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -23.0,
+    "return_pct": -100.0,
+    "resolved_at": "2026-08-06T23:50:43.536358"
   },
   {
     "city": "Dallas",
@@ -629,6 +647,34 @@
     "model_spread": 0.7,
     "calibrated": true,
     "logged_at": "2026-08-06T13:41:59.064494",
+    "resolved": false
+  },
+  {
+    "city": "Taipei",
+    "slug": "taipei",
+    "station": "RCTP",
+    "unit": "C",
+    "market_date": "2026-08-08",
+    "lead_days": 1,
+    "bin": "32\u00b0C or higher",
+    "entry_price": 34.5,
+    "shares": 128,
+    "cost": 44.16,
+    "forecast_high": 31.7,
+    "model_prob": 53.5,
+    "model_prob_shrunk": 51.6,
+    "market_prob": 34.5,
+    "edge_pct": 19.0,
+    "edge_sized_pct": 17.1,
+    "kelly_pct": 4.9,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 897.92,
+    "city_kelly_scalar": 0.75,
+    "city_bss": 0.20064775201077634,
+    "n_models": 4,
+    "model_spread": 0.9,
+    "calibrated": true,
+    "logged_at": "2026-08-06T23:56:11.568371",
     "resolved": false
   }
 ]
