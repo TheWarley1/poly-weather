@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-08-06T01:28:40.557445",
+  "timestamp": "2026-08-06T08:23:38.901242",
   "trading": {
     "total": 19,
-    "open": 10,
-    "resolved": 9,
+    "open": 8,
+    "resolved": 11,
     "voided": 0,
     "wins": 1,
-    "losses": 8,
-    "win_rate": 0.1111111111111111,
-    "total_cost": 170.0,
-    "total_pnl": 30.0,
-    "roi": 17.6,
+    "losses": 10,
+    "win_rate": 0.09090909090909091,
+    "total_cost": 214.0,
+    "total_pnl": -14.0,
+    "roi": -6.5,
     "bankroll": 1030.0,
     "drawdown_pct": 0.0,
     "avg_win": 175.0,
-    "avg_loss": 18.12,
-    "profit_factor": 1.21
+    "avg_loss": 18.9,
+    "profit_factor": 0.93
   },
   "lead_days": {
     "D+1": {
-      "trades": 9,
+      "trades": 11,
       "wins": 1,
-      "win_rate": 11.1,
-      "cost": 170.0,
-      "pnl": 30.0,
-      "roi": 17.6
+      "win_rate": 9.1,
+      "cost": 214.0,
+      "pnl": -14.0,
+      "roi": -6.5
     }
   },
   "top_cities": [
@@ -43,48 +43,11 @@
       "pnl": -16.0
     },
     {
-      "city": "Dallas",
-      "trades": 1,
-      "wins": 0,
-      "win_rate": 0.0,
-      "pnl": -18.0
-    },
-    {
       "city": "Miami",
       "trades": 1,
       "wins": 0,
       "win_rate": 0.0,
       "pnl": -18.0
-    },
-    {
-      "city": "Chicago",
-      "trades": 1,
-      "wins": 0,
-      "win_rate": 0.0,
-      "pnl": -19.0
-    }
-  ],
-  "bottom_cities": [
-    {
-      "city": "Dallas",
-      "trades": 1,
-      "wins": 0,
-      "win_rate": 0.0,
-      "pnl": -18.0
-    },
-    {
-      "city": "Miami",
-      "trades": 1,
-      "wins": 0,
-      "win_rate": 0.0,
-      "pnl": -18.0
-    },
-    {
-      "city": "Chicago",
-      "trades": 1,
-      "wins": 0,
-      "win_rate": 0.0,
-      "pnl": -19.0
     },
     {
       "city": "Warsaw",
@@ -92,6 +55,43 @@
       "wins": 0,
       "win_rate": 0.0,
       "pnl": -33.0
+    },
+    {
+      "city": "Chicago",
+      "trades": 2,
+      "wins": 0,
+      "win_rate": 0.0,
+      "pnl": -40.0
+    }
+  ],
+  "bottom_cities": [
+    {
+      "city": "Miami",
+      "trades": 1,
+      "wins": 0,
+      "win_rate": 0.0,
+      "pnl": -18.0
+    },
+    {
+      "city": "Warsaw",
+      "trades": 2,
+      "wins": 0,
+      "win_rate": 0.0,
+      "pnl": -33.0
+    },
+    {
+      "city": "Chicago",
+      "trades": 2,
+      "wins": 0,
+      "win_rate": 0.0,
+      "pnl": -40.0
+    },
+    {
+      "city": "Dallas",
+      "trades": 2,
+      "wins": 0,
+      "win_rate": 0.0,
+      "pnl": -41.0
     },
     {
       "city": "Ankara",
@@ -113,42 +113,42 @@
     },
     "nyc": {
       "city": "New York",
-      "paired": 172,
+      "paired": 173,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "chicago": {
       "city": "Chicago",
-      "paired": 172,
+      "paired": 173,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "miami": {
       "city": "Miami",
-      "paired": 171,
+      "paired": 172,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "dallas": {
       "city": "Dallas",
-      "paired": 171,
+      "paired": 172,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "seattle": {
       "city": "Seattle",
-      "paired": 172,
+      "paired": 173,
       "models_used": 5,
       "models_dropped": [],
       "nws_dropped": true
     },
     "atlanta": {
       "city": "Atlanta",
-      "paired": 171,
+      "paired": 172,
       "models_used": 2,
       "models_dropped": [
         "ecmwf_ifs025",
@@ -181,7 +181,7 @@
     },
     "toronto": {
       "city": "Toronto",
-      "paired": 169,
+      "paired": 170,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -258,7 +258,7 @@
     },
     "sao-paulo": {
       "city": "Sao Paulo",
-      "paired": 173,
+      "paired": 174,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -304,8 +304,8 @@
     }
   },
   "recent": {
-    "signals_generated": 10,
-    "resolved_in_period": 9,
+    "signals_generated": 8,
+    "resolved_in_period": 11,
     "days": 7
   },
   "drawdown": "OK"
