@@ -1,18 +1,5 @@
 [
   {
-    "date": "2026-02-07",
-    "forecast": 25.9,
-    "model_highs": {
-      "gfs_seamless": 25.6,
-      "icon_seamless": 26.4
-    },
-    "actual": 28.0,
-    "actual_source": "metar_iem",
-    "resolution_bin": null,
-    "logged_at": "2026-04-07T08:09:14.805243",
-    "updated_at": "2026-04-20T20:59:46.056103"
-  },
-  {
     "date": "2026-02-08",
     "forecast": 18.1,
     "model_highs": {
@@ -2598,17 +2585,17 @@
       "icon_seamless": 84,
       "gem_seamless": 83
     },
-    "actual": 82.9,
-    "actual_source": "open_meteo_archive",
+    "actual": 84.0,
+    "actual_source": "metar_iem",
     "resolution_bin": "84-85\u00b0F",
     "logged_at": "2026-08-04T01:16:54.530742",
-    "updated_at": "2026-08-06T08:10:50.894048"
+    "updated_at": "2026-08-07T02:00:21.200500"
   },
   {
     "date": "2026-08-06",
-    "forecast": 88.9,
+    "forecast": 89.2,
     "model_highs": {
-      "ecmwf_ifs025": 88,
+      "ecmwf_ifs025": 89,
       "gfs_seamless": 89,
       "icon_seamless": 89,
       "gem_seamless": 88
@@ -2617,13 +2604,13 @@
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-08-05T01:19:48.078503",
-    "updated_at": "2026-08-06T23:46:14.528959"
+    "updated_at": "2026-08-07T01:58:41.098077"
   },
   {
     "date": "2026-08-07",
-    "forecast": 89.5,
+    "forecast": 90.0,
     "model_highs": {
-      "ecmwf_ifs025": 87,
+      "ecmwf_ifs025": 89,
       "gfs_seamless": 92,
       "icon_seamless": 87,
       "gem_seamless": 90
@@ -2632,6 +2619,19 @@
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-08-06T01:17:36.348880",
-    "updated_at": "2026-08-06T23:46:17.979389"
+    "updated_at": "2026-08-07T01:58:43.975382"
+  },
+  {
+    "date": "2026-08-08",
+    "forecast": 90.4,
+    "model_highs": {
+      "ecmwf_ifs025": 91,
+      "gem_seamless": 88
+    },
+    "actual": null,
+    "actual_source": null,
+    "resolution_bin": null,
+    "logged_at": "2026-08-07T02:00:19.859471",
+    "updated_at": "2026-08-07T02:00:19.859481"
   }
 ]
