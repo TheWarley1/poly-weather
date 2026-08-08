@@ -733,7 +733,13 @@
     "model_spread": 0.6,
     "calibrated": true,
     "logged_at": "2026-08-07T02:08:44.934856",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "13\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -16.0,
+    "return_pct": -100.0,
+    "resolved_at": "2026-08-08T18:24:50.420768"
   },
   {
     "city": "Dallas",
@@ -929,6 +935,34 @@
     "model_spread": 0.7,
     "calibrated": true,
     "logged_at": "2026-08-08T12:29:46.691722",
+    "resolved": false
+  },
+  {
+    "city": "Shanghai",
+    "slug": "shanghai",
+    "station": "ZSPD",
+    "unit": "C",
+    "market_date": "2026-08-10",
+    "lead_days": 1,
+    "bin": "31\u00b0C",
+    "entry_price": 8.0,
+    "shares": 151,
+    "cost": 12.08,
+    "forecast_high": 30.7,
+    "model_prob": 20.6,
+    "model_prob_shrunk": 19.3,
+    "market_prob": 8.0,
+    "edge_pct": 12.6,
+    "edge_sized_pct": 11.3,
+    "kelly_pct": 1.5,
+    "dd_factor": 0.5,
+    "bankroll_at_entry": 783.92,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.32673898654848643,
+    "n_models": 4,
+    "model_spread": 0.7,
+    "calibrated": true,
+    "logged_at": "2026-08-08T18:31:27.335142",
     "resolved": false
   }
 ]
