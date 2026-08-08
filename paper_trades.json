@@ -603,7 +603,13 @@
     "model_spread": 0.2,
     "calibrated": true,
     "logged_at": "2026-08-06T01:28:40.076705",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "33\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -20.0,
+    "return_pct": -100.0,
+    "resolved_at": "2026-08-08T00:45:21.394939"
   },
   {
     "city": "Warsaw",
@@ -631,7 +637,13 @@
     "model_spread": 1.0,
     "calibrated": true,
     "logged_at": "2026-08-06T01:28:40.076718",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "24\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -21.0,
+    "return_pct": -100.0,
+    "resolved_at": "2026-08-08T00:45:21.635878"
   },
   {
     "city": "Dallas",
@@ -855,6 +867,34 @@
     "model_spread": 0.9,
     "calibrated": true,
     "logged_at": "2026-08-07T18:48:30.355446",
+    "resolved": false
+  },
+  {
+    "city": "Tel Aviv",
+    "slug": "tel-aviv",
+    "station": "LLBG",
+    "unit": "C",
+    "market_date": "2026-08-09",
+    "lead_days": 1,
+    "bin": "34\u00b0C",
+    "entry_price": 9.0,
+    "shares": 200,
+    "cost": 18.0,
+    "forecast_high": 33.5,
+    "model_prob": 22.9,
+    "model_prob_shrunk": 21.5,
+    "market_prob": 9.0,
+    "edge_pct": 13.9,
+    "edge_sized_pct": 12.5,
+    "kelly_pct": 2.6,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 816.92,
+    "city_kelly_scalar": 0.75,
+    "city_bss": 0.24817506748116247,
+    "n_models": 3,
+    "model_spread": 1.0,
+    "calibrated": true,
+    "logged_at": "2026-08-08T00:50:25.208694",
     "resolved": false
   }
 ]
