@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-08-08T06:42:14.771464",
+  "timestamp": "2026-08-08T12:29:47.144271",
   "trading": {
-    "total": 28,
-    "open": 8,
+    "total": 29,
+    "open": 9,
     "resolved": 20,
     "voided": 0,
     "wins": 1,
@@ -11,8 +11,8 @@
     "total_cost": 400.08,
     "total_pnl": -200.08,
     "roi": -50.0,
-    "bankroll": 816.92,
-    "drawdown_pct": 18.3,
+    "bankroll": 799.92,
+    "drawdown_pct": 20.0,
     "avg_win": 175.0,
     "avg_loss": 19.74,
     "profit_factor": 0.47
@@ -112,7 +112,7 @@
   "calibration": {
     "san-francisco": {
       "city": "San Francisco",
-      "paired": 164,
+      "paired": 165,
       "models_used": 3,
       "models_dropped": [
         "icon_seamless"
@@ -149,7 +149,7 @@
     },
     "seattle": {
       "city": "Seattle",
-      "paired": 172,
+      "paired": 173,
       "models_used": 5,
       "models_dropped": [],
       "nws_dropped": true
@@ -223,7 +223,7 @@
     },
     "wellington": {
       "city": "Wellington",
-      "paired": 173,
+      "paired": 174,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -311,9 +311,9 @@
     }
   },
   "recent": {
-    "signals_generated": 8,
+    "signals_generated": 9,
     "resolved_in_period": 20,
     "days": 7
   },
-  "drawdown": "OK"
+  "drawdown": "HALVED"
 }
