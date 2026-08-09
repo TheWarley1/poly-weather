@@ -1050,5 +1050,33 @@
     "calibrated": true,
     "logged_at": "2026-08-09T12:35:44.422654",
     "resolved": false
+  },
+  {
+    "city": "Paris",
+    "slug": "paris",
+    "station": "LFPG",
+    "unit": "C",
+    "market_date": "2026-08-10",
+    "lead_days": 1,
+    "bin": "33\u00b0C",
+    "entry_price": 8.5,
+    "shares": 167,
+    "cost": 14.2,
+    "forecast_high": 32.4,
+    "model_prob": 23.1,
+    "model_prob_shrunk": 21.7,
+    "market_prob": 8.5,
+    "edge_pct": 14.6,
+    "edge_sized_pct": 13.2,
+    "kelly_pct": 1.8,
+    "dd_factor": 0.5,
+    "bankroll_at_entry": 791.76,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.36777404543934633,
+    "n_models": 4,
+    "model_spread": 1.7,
+    "calibrated": true,
+    "logged_at": "2026-08-09T18:33:43.485156",
+    "resolved": false
   }
 ]
