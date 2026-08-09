@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-08-09T06:45:39.158572",
+  "timestamp": "2026-08-09T12:35:44.866226",
   "trading": {
-    "total": 31,
+    "total": 32,
     "open": 6,
-    "resolved": 25,
+    "resolved": 26,
     "voided": 0,
     "wins": 2,
-    "losses": 23,
-    "win_rate": 0.08,
-    "total_cost": 519.24,
-    "total_pnl": -191.24,
-    "roi": -36.8,
-    "bankroll": 826.76,
-    "drawdown_pct": 17.3,
+    "losses": 24,
+    "win_rate": 0.07692307692307693,
+    "total_cost": 536.24,
+    "total_pnl": -208.24,
+    "roi": -38.8,
+    "bankroll": 791.76,
+    "drawdown_pct": 20.8,
     "avg_win": 129.42,
-    "avg_loss": 19.57,
-    "profit_factor": 0.58
+    "avg_loss": 19.46,
+    "profit_factor": 0.55
   },
   "lead_days": {
     "D+1": {
-      "trades": 23,
+      "trades": 24,
       "wins": 2,
-      "win_rate": 8.7,
-      "cost": 473.16,
-      "pnl": -145.16,
-      "roi": -30.7
+      "win_rate": 8.3,
+      "cost": 490.16,
+      "pnl": -162.16,
+      "roi": -33.1
     },
     "D+2": {
       "trades": 2,
@@ -51,6 +51,13 @@
       "pnl": 83.84
     },
     {
+      "city": "London",
+      "trades": 1,
+      "wins": 0,
+      "win_rate": 0.0,
+      "pnl": -17.0
+    },
+    {
       "city": "Miami",
       "trades": 1,
       "wins": 0,
@@ -63,13 +70,6 @@
       "wins": 0,
       "win_rate": 0.0,
       "pnl": -18.0
-    },
-    {
-      "city": "Chicago",
-      "trades": 2,
-      "wins": 0,
-      "win_rate": 0.0,
-      "pnl": -40.0
     }
   ],
   "bottom_cities": [
@@ -112,7 +112,7 @@
   "calibration": {
     "san-francisco": {
       "city": "San Francisco",
-      "paired": 164,
+      "paired": 165,
       "models_used": 3,
       "models_dropped": [
         "icon_seamless"
@@ -149,7 +149,7 @@
     },
     "seattle": {
       "city": "Seattle",
-      "paired": 172,
+      "paired": 173,
       "models_used": 5,
       "models_dropped": [],
       "nws_dropped": true
@@ -223,7 +223,7 @@
     },
     "wellington": {
       "city": "Wellington",
-      "paired": 173,
+      "paired": 174,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -312,8 +312,8 @@
   },
   "recent": {
     "signals_generated": 6,
-    "resolved_in_period": 25,
+    "resolved_in_period": 26,
     "days": 7
   },
-  "drawdown": "OK"
+  "drawdown": "HALVED"
 }
