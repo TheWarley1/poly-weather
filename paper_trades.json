@@ -705,7 +705,13 @@
     "model_spread": 0.9,
     "calibrated": true,
     "logged_at": "2026-08-06T23:56:11.568371",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "32\u00b0C or higher",
+    "resolved_price": 100,
+    "revenue": 128.0,
+    "pnl": 83.84,
+    "return_pct": 189.9,
+    "resolved_at": "2026-08-09T00:49:18.602664"
   },
   {
     "city": "Wellington",
@@ -795,7 +801,13 @@
     "model_spread": 1.3,
     "calibrated": true,
     "logged_at": "2026-08-07T07:10:50.548676",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "30\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -17.0,
+    "return_pct": -100.0,
+    "resolved_at": "2026-08-09T00:49:19.053802"
   },
   {
     "city": "London",
@@ -851,7 +863,13 @@
     "model_spread": 1.7,
     "calibrated": true,
     "logged_at": "2026-08-07T18:48:30.355423",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "31\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -24.0,
+    "return_pct": -100.0,
+    "resolved_at": "2026-08-09T00:49:19.507938"
   },
   {
     "city": "Shanghai",
@@ -963,6 +981,34 @@
     "model_spread": 0.7,
     "calibrated": true,
     "logged_at": "2026-08-08T18:31:27.335142",
+    "resolved": false
+  },
+  {
+    "city": "London",
+    "slug": "london",
+    "station": "EGLL",
+    "unit": "C",
+    "market_date": "2026-08-10",
+    "lead_days": 1,
+    "bin": "28\u00b0C",
+    "entry_price": 12.5,
+    "shares": 200,
+    "cost": 25.0,
+    "forecast_high": 27.6,
+    "model_prob": 26.5,
+    "model_prob_shrunk": 25.1,
+    "market_prob": 12.5,
+    "edge_pct": 14.0,
+    "edge_sized_pct": 12.6,
+    "kelly_pct": 3.6,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 826.76,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.3665753837726863,
+    "n_models": 4,
+    "model_spread": 0.8,
+    "calibrated": true,
+    "logged_at": "2026-08-09T00:54:05.209729",
     "resolved": false
   }
 ]
