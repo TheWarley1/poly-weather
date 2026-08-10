@@ -909,7 +909,13 @@
     "model_spread": 0.9,
     "calibrated": true,
     "logged_at": "2026-08-07T18:48:30.355446",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "28\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -17.0,
+    "return_pct": -100.0,
+    "resolved_at": "2026-08-10T00:50:33.983481"
   },
   {
     "city": "Tel Aviv",
@@ -1077,6 +1083,34 @@
     "model_spread": 1.7,
     "calibrated": true,
     "logged_at": "2026-08-09T18:33:43.485156",
+    "resolved": false
+  },
+  {
+    "city": "Paris",
+    "slug": "paris",
+    "station": "LFPG",
+    "unit": "C",
+    "market_date": "2026-08-11",
+    "lead_days": 1,
+    "bin": "33\u00b0C",
+    "entry_price": 8.5,
+    "shares": 157,
+    "cost": 13.35,
+    "forecast_high": 32.3,
+    "model_prob": 22.5,
+    "model_prob_shrunk": 21.1,
+    "market_prob": 8.5,
+    "edge_pct": 14.0,
+    "edge_sized_pct": 12.6,
+    "kelly_pct": 1.7,
+    "dd_factor": 0.5,
+    "bankroll_at_entry": 774.76,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.36777404543934633,
+    "n_models": 4,
+    "model_spread": 2.0,
+    "calibrated": true,
+    "logged_at": "2026-08-10T00:56:25.195842",
     "resolved": false
   }
 ]
