@@ -2548,11 +2548,11 @@
       "icon_seamless": 62,
       "gem_seamless": 74
     },
-    "actual": 77.2,
-    "actual_source": "open_meteo_archive",
-    "resolution_bin": null,
+    "actual": 70.0,
+    "actual_source": "metar_iem",
+    "resolution_bin": "75\u00b0F or below",
     "logged_at": "2026-08-08T06:31:46.298243",
-    "updated_at": "2026-08-10T07:03:59.635224"
+    "updated_at": "2026-08-11T18:42:33.519005"
   },
   {
     "date": "2026-08-10",
@@ -2571,10 +2571,10 @@
   },
   {
     "date": "2026-08-11",
-    "forecast": 72.7,
+    "forecast": 73.0,
     "model_highs": {
       "ecmwf_ifs025": 68,
-      "gfs_seamless": 77,
+      "gfs_seamless": 78,
       "icon_seamless": 63,
       "gem_seamless": 70
     },
@@ -2582,21 +2582,21 @@
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-08-10T07:03:55.668260",
-    "updated_at": "2026-08-11T12:36:05.850550"
+    "updated_at": "2026-08-11T18:42:26.730471"
   },
   {
     "date": "2026-08-12",
-    "forecast": 71.6,
+    "forecast": 71.5,
     "model_highs": {
       "ecmwf_ifs025": 69,
       "gfs_seamless": 74,
-      "icon_seamless": 66,
+      "icon_seamless": 65,
       "gem_seamless": 68
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-08-11T06:44:46.203557",
-    "updated_at": "2026-08-11T12:36:08.434288"
+    "updated_at": "2026-08-11T18:42:29.754992"
   }
 ]
