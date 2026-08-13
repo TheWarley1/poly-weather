@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-08-13T07:18:13.686466",
+  "timestamp": "2026-08-13T12:52:39.852832",
   "trading": {
-    "total": 48,
+    "total": 49,
     "open": 9,
-    "resolved": 39,
+    "resolved": 40,
     "voided": 0,
-    "wins": 2,
+    "wins": 3,
     "losses": 37,
-    "win_rate": 0.05128205128205128,
-    "total_cost": 721.7,
-    "total_pnl": -393.7,
-    "roi": -54.6,
-    "bankroll": 606.3,
-    "drawdown_pct": 39.4,
-    "avg_win": 129.42,
+    "win_rate": 0.075,
+    "total_cost": 732.06,
+    "total_pnl": -295.06,
+    "roi": -40.3,
+    "bankroll": 704.94,
+    "drawdown_pct": 29.5,
+    "avg_win": 119.16,
     "avg_loss": 17.64,
-    "profit_factor": 0.4
+    "profit_factor": 0.55
   },
   "lead_days": {
     "D+1": {
-      "trades": 37,
-      "wins": 2,
-      "win_rate": 5.4,
-      "cost": 675.62,
-      "pnl": -347.62,
-      "roi": -51.5
+      "trades": 38,
+      "wins": 3,
+      "win_rate": 7.9,
+      "cost": 685.98,
+      "pnl": -248.98,
+      "roi": -36.3
     },
     "D+2": {
       "trades": 2,
@@ -42,6 +42,13 @@
       "wins": 1,
       "win_rate": 20.0,
       "pnl": 100.45
+    },
+    {
+      "city": "Seattle",
+      "trades": 1,
+      "wins": 1,
+      "win_rate": 100.0,
+      "pnl": 98.64
     },
     {
       "city": "Taipei",
@@ -63,13 +70,6 @@
       "wins": 0,
       "win_rate": 0.0,
       "pnl": -18.0
-    },
-    {
-      "city": "Shanghai",
-      "trades": 2,
-      "wins": 0,
-      "win_rate": 0.0,
-      "pnl": -29.08
     }
   ],
   "bottom_cities": [
@@ -221,7 +221,7 @@
     },
     "wellington": {
       "city": "Wellington",
-      "paired": 173,
+      "paired": 174,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -310,7 +310,7 @@
   },
   "recent": {
     "signals_generated": 9,
-    "resolved_in_period": 30,
+    "resolved_in_period": 29,
     "days": 7
   },
   "drawdown": "HALVED"
