@@ -1623,7 +1623,13 @@
     "model_spread": 2.5,
     "calibrated": true,
     "logged_at": "2026-08-13T07:18:13.194984",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "76-77\u00b0F",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -10.53,
+    "return_pct": -100.0,
+    "resolved_at": "2026-08-15T12:15:03.321895"
   },
   {
     "city": "Dallas",
@@ -1651,7 +1657,13 @@
     "model_spread": 1.3,
     "calibrated": true,
     "logged_at": "2026-08-13T12:52:39.417672",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "100-101\u00b0F",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -11.12,
+    "return_pct": -100.0,
+    "resolved_at": "2026-08-15T12:15:03.700498"
   },
   {
     "city": "Wellington",
@@ -1875,6 +1887,34 @@
     "model_spread": 2.0,
     "calibrated": true,
     "logged_at": "2026-08-15T00:41:21.832246",
+    "resolved": false
+  },
+  {
+    "city": "Milan",
+    "slug": "milan",
+    "station": "LIMC",
+    "unit": "C",
+    "market_date": "2026-08-16",
+    "lead_days": 1,
+    "bin": "36\u00b0C",
+    "entry_price": 8.5,
+    "shares": 111,
+    "cost": 9.44,
+    "forecast_high": 35.7,
+    "model_prob": 21.2,
+    "model_prob_shrunk": 19.9,
+    "market_prob": 8.5,
+    "edge_pct": 12.7,
+    "edge_sized_pct": 11.4,
+    "kelly_pct": 1.6,
+    "dd_factor": 0.5,
+    "bankroll_at_entry": 605.28,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.3525963858310618,
+    "n_models": 4,
+    "model_spread": 1.3,
+    "calibrated": true,
+    "logged_at": "2026-08-15T12:16:51.860326",
     "resolved": false
   }
 ]
