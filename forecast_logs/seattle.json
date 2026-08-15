@@ -1,18 +1,5 @@
 [
   {
-    "date": "2026-02-15",
-    "forecast": 44.9,
-    "model_highs": {
-      "ecmwf_ifs025": 44.8,
-      "icon_seamless": 45.1
-    },
-    "actual": 46.0,
-    "actual_source": "metar_iem",
-    "resolution_bin": null,
-    "logged_at": "2026-04-07T08:10:12.032013",
-    "updated_at": "2026-04-20T21:00:50.003120"
-  },
-  {
     "date": "2026-02-16",
     "forecast": 42.6,
     "model_highs": {
@@ -2572,11 +2559,11 @@
       "icon_seamless": 73,
       "gem_seamless": 75
     },
-    "actual": 77.1,
-    "actual_source": "open_meteo_archive",
+    "actual": 74.0,
+    "actual_source": "metar_iem",
     "resolution_bin": "74-75\u00b0F",
     "logged_at": "2026-08-09T06:36:00.164032",
-    "updated_at": "2026-08-11T12:36:12.141803"
+    "updated_at": "2026-08-15T00:32:24.729359"
   },
   {
     "date": "2026-08-11",
@@ -2625,32 +2612,30 @@
   },
   {
     "date": "2026-08-14",
-    "forecast": 80.6,
+    "forecast": 79.2,
     "model_highs": {
       "ecmwf_ifs025": 81,
-      "gfs_seamless": 79,
-      "icon_seamless": 79,
-      "gem_seamless": 82
-    },
-    "actual": null,
-    "actual_source": null,
-    "resolution_bin": null,
-    "logged_at": "2026-08-13T07:07:03.690240",
-    "updated_at": "2026-08-14T18:37:19.525014"
-  },
-  {
-    "date": "2026-08-15",
-    "forecast": 78.5,
-    "model_highs": {
-      "ecmwf_ifs025": 80,
-      "gfs_seamless": 76,
-      "icon_seamless": 77,
+      "gfs_seamless": 78,
+      "icon_seamless": 76,
       "gem_seamless": 80
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
+    "logged_at": "2026-08-13T07:07:03.690240",
+    "updated_at": "2026-08-15T00:30:34.155241"
+  },
+  {
+    "date": "2026-08-15",
+    "forecast": 78.4,
+    "model_highs": {
+      "ecmwf_ifs025": 80,
+      "gfs_seamless": 76
+    },
+    "actual": null,
+    "actual_source": null,
+    "resolution_bin": null,
     "logged_at": "2026-08-14T07:03:31.292358",
-    "updated_at": "2026-08-14T18:37:23.215471"
+    "updated_at": "2026-08-15T00:31:58.370475"
   }
 ]
