@@ -2618,24 +2618,40 @@
       "icon_seamless": 80,
       "gem_seamless": 82
     },
-    "actual": null,
-    "actual_source": null,
-    "resolution_bin": null,
+    "actual": 81.6,
+    "actual_source": "open_meteo_archive",
+    "resolution_bin": "80-81\u00b0F",
     "logged_at": "2026-08-16T00:31:46.668841",
-    "updated_at": "2026-08-17T00:30:16.890338"
+    "updated_at": "2026-08-17T06:27:14.167757"
   },
   {
     "date": "2026-08-17",
-    "forecast": 83.6,
+    "forecast": 81.9,
     "model_highs": {
-      "ecmwf_ifs025": 83,
-      "gfs_seamless": 86,
-      "icon_seamless": 81
+      "ecmwf_ifs025": 82,
+      "gfs_seamless": 83,
+      "icon_seamless": 79,
+      "gem_seamless": 82
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-08-16T06:18:37.516347",
-    "updated_at": "2026-08-17T00:31:01.459889"
+    "updated_at": "2026-08-17T06:27:09.226974"
+  },
+  {
+    "date": "2026-08-18",
+    "forecast": 85.4,
+    "model_highs": {
+      "ecmwf_ifs025": 84,
+      "gfs_seamless": 86,
+      "icon_seamless": 83,
+      "gem_seamless": 87
+    },
+    "actual": null,
+    "actual_source": null,
+    "resolution_bin": null,
+    "logged_at": "2026-08-17T06:27:12.787008",
+    "updated_at": "2026-08-17T06:27:12.787015"
   }
 ]
