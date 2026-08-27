@@ -1,18 +1,5 @@
 [
   {
-    "date": "2026-02-27",
-    "forecast": 65.4,
-    "model_highs": {
-      "ecmwf_ifs025": 65.2,
-      "gfs_seamless": 65.7
-    },
-    "actual": 69.0,
-    "actual_source": "metar_iem",
-    "resolution_bin": null,
-    "logged_at": "2026-04-07T08:10:22.633122",
-    "updated_at": "2026-04-20T21:01:08.441620"
-  },
-  {
     "date": "2026-02-28",
     "forecast": 68.1,
     "model_highs": {
@@ -2635,11 +2622,11 @@
       "icon_seamless": 91,
       "gem_seamless": 89
     },
-    "actual": 90.7,
-    "actual_source": "open_meteo_archive",
+    "actual": 92.0,
+    "actual_source": "metar_iem",
     "resolution_bin": "92-93\u00b0F",
     "logged_at": "2026-08-24T06:31:44.343242",
-    "updated_at": "2026-08-26T06:25:12.428155"
+    "updated_at": "2026-08-27T05:22:59.244156"
   },
   {
     "date": "2026-08-26",
@@ -2650,25 +2637,40 @@
       "icon_seamless": 88,
       "gem_seamless": 91
     },
-    "actual": null,
-    "actual_source": null,
+    "actual": 89.6,
+    "actual_source": "open_meteo_archive",
     "resolution_bin": null,
     "logged_at": "2026-08-25T06:23:08.602897",
-    "updated_at": "2026-08-26T19:28:50.644567"
+    "updated_at": "2026-08-27T05:22:58.336731"
   },
   {
     "date": "2026-08-27",
-    "forecast": 88.3,
+    "forecast": 86.5,
     "model_highs": {
       "ecmwf_ifs025": 90,
-      "gfs_seamless": 88,
-      "icon_seamless": 84,
-      "gem_seamless": 88
+      "gfs_seamless": 87,
+      "icon_seamless": 82,
+      "gem_seamless": 84
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-08-26T06:25:10.809465",
-    "updated_at": "2026-08-26T19:28:54.305400"
+    "updated_at": "2026-08-27T05:22:53.886162"
+  },
+  {
+    "date": "2026-08-28",
+    "forecast": 90.2,
+    "model_highs": {
+      "ecmwf_ifs025": 89,
+      "gfs_seamless": 91,
+      "icon_seamless": 89,
+      "gem_seamless": 85
+    },
+    "actual": null,
+    "actual_source": null,
+    "resolution_bin": null,
+    "logged_at": "2026-08-27T05:22:56.988969",
+    "updated_at": "2026-08-27T05:22:56.988973"
   }
 ]
