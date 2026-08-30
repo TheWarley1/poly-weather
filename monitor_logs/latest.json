@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-30T10:55:25.240937",
+  "timestamp": "2026-08-30T15:42:17.706443",
   "trading": {
     "total": 58,
     "open": 0,
@@ -157,9 +157,10 @@
     "atlanta": {
       "city": "Atlanta",
       "paired": 172,
-      "models_used": 3,
+      "models_used": 2,
       "models_dropped": [
-        "ecmwf_ifs025"
+        "ecmwf_ifs025",
+        "gem_seamless"
       ],
       "nws_dropped": true
     },
@@ -172,14 +173,14 @@
     },
     "tokyo": {
       "city": "Tokyo",
-      "paired": 172,
+      "paired": 173,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "seoul": {
       "city": "Seoul",
-      "paired": 173,
+      "paired": 174,
       "models_used": 3,
       "models_dropped": [
         "gfs_seamless"
@@ -223,7 +224,7 @@
     },
     "wellington": {
       "city": "Wellington",
-      "paired": 173,
+      "paired": 174,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
