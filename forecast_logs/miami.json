@@ -169,19 +169,6 @@
     "updated_at": "2026-04-20T21:01:26.440021"
   },
   {
-    "date": "2026-03-06",
-    "forecast": 81.0,
-    "model_highs": {
-      "ecmwf_ifs025": 79.9,
-      "gem_seamless": 83.9
-    },
-    "actual": 84.0,
-    "actual_source": "metar_iem",
-    "resolution_bin": null,
-    "logged_at": "2026-04-08T00:01:30.324170",
-    "updated_at": "2026-04-20T21:01:26.439902"
-  },
-  {
     "date": "2026-03-07",
     "forecast": 81.0,
     "model_highs": {
@@ -2657,47 +2644,44 @@
   },
   {
     "date": "2026-09-02",
-    "forecast": 88.8,
+    "forecast": 88.9,
     "model_highs": {
-      "ecmwf_ifs025": 88,
+      "ecmwf_ifs025": 87,
       "gfs_seamless": 88,
+      "icon_seamless": 89,
+      "gem_seamless": 87
+    },
+    "actual": null,
+    "actual_source": null,
+    "resolution_bin": null,
+    "logged_at": "2026-08-31T12:00:40.462398",
+    "updated_at": "2026-09-03T01:44:42.883902"
+  },
+  {
+    "date": "2026-09-03",
+    "forecast": 88.3,
+    "model_highs": {
+      "ecmwf_ifs025": 87,
+      "gfs_seamless": 87,
       "icon_seamless": 89,
       "gem_seamless": 86
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
-    "logged_at": "2026-08-31T12:00:40.462398",
-    "updated_at": "2026-09-02T20:11:55.558384"
-  },
-  {
-    "date": "2026-09-03",
-    "forecast": 88.8,
-    "model_highs": {
-      "ecmwf_ifs025": 87,
-      "gfs_seamless": 87,
-      "icon_seamless": 90,
-      "gem_seamless": 87
-    },
-    "actual": null,
-    "actual_source": null,
-    "resolution_bin": null,
     "logged_at": "2026-09-01T10:40:05.247602",
-    "updated_at": "2026-09-02T20:11:57.470145"
+    "updated_at": "2026-09-03T01:44:46.231124"
   },
   {
     "date": "2026-09-04",
-    "forecast": 90.3,
+    "forecast": 92.2,
     "model_highs": {
-      "ecmwf_ifs025": 83,
-      "gfs_seamless": 92,
-      "icon_seamless": 87,
       "gem_seamless": 92
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-09-02T15:27:30.345607",
-    "updated_at": "2026-09-02T20:11:58.956250"
+    "updated_at": "2026-09-03T01:46:49.154731"
   }
 ]
