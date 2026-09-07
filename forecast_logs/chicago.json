@@ -1,18 +1,5 @@
 [
   {
-    "date": "2026-03-10",
-    "forecast": 60.1,
-    "model_highs": {
-      "ecmwf_ifs025": 58.6,
-      "gfs_seamless": 62.0
-    },
-    "actual": 61.0,
-    "actual_source": "metar_iem",
-    "resolution_bin": null,
-    "logged_at": "2026-04-07T08:14:40.079646",
-    "updated_at": "2026-04-20T21:00:16.639796"
-  },
-  {
     "date": "2026-03-11",
     "forecast": 42.2,
     "model_highs": {
@@ -2663,46 +2650,48 @@
       "icon_seamless": 80,
       "gem_seamless": 81
     },
-    "actual": 79.8,
-    "actual_source": "open_meteo_archive",
+    "actual": 80.0,
+    "actual_source": "metar_iem",
     "resolution_bin": "80-81\u00b0F",
     "logged_at": "2026-09-03T10:13:29.704751",
-    "updated_at": "2026-09-06T09:49:33.196413"
+    "updated_at": "2026-09-07T01:32:08.306718"
   },
   {
     "date": "2026-09-06",
-    "forecast": 77.7,
+    "forecast": 78.6,
     "model_highs": {
-      "ecmwf_ifs025": 76,
-      "gfs_seamless": 79,
-      "icon_seamless": 76,
+      "ecmwf_ifs025": 78,
+      "gfs_seamless": 80,
+      "icon_seamless": 77,
       "gem_seamless": 80
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-09-04T10:03:50.053941",
-    "updated_at": "2026-09-06T19:40:31.902310"
+    "updated_at": "2026-09-07T01:32:04.344011"
   },
   {
     "date": "2026-09-07",
-    "forecast": 79.0,
+    "forecast": 78.9,
     "model_highs": {
-      "ecmwf_ifs025": 76,
+      "ecmwf_ifs025": 77,
       "gfs_seamless": 79,
       "icon_seamless": 78,
-      "gem_seamless": 83
+      "gem_seamless": 82
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-09-05T09:32:48.774085",
-    "updated_at": "2026-09-06T19:40:35.643414"
+    "updated_at": "2026-09-07T01:32:05.746142"
   },
   {
     "date": "2026-09-08",
-    "forecast": 83.2,
+    "forecast": 84.4,
     "model_highs": {
+      "ecmwf_ifs025": 86,
+      "gfs_seamless": 85,
       "icon_seamless": 84,
       "gem_seamless": 83
     },
@@ -2710,6 +2699,6 @@
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-09-06T09:49:31.869176",
-    "updated_at": "2026-09-06T19:41:58.726299"
+    "updated_at": "2026-09-07T01:32:07.145418"
   }
 ]
