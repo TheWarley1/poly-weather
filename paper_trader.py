@@ -92,7 +92,13 @@ CONFIG = {
     "max_bet_frac": 0.05,         # Per-trade cap: 5% of LIVE bankroll
     "max_daily_exposure": 0.25,   # Total open-trade cost cannot exceed 25% of live bankroll
     "drawdown_soft": 0.20,         # At 20% drawdown, halve Kelly
-    "drawdown_hard": 0.40,          # At 40% drawdown, stop opening new trades
+    "drawdown_hard": 0.50,          # At 50% drawdown, stop opening new trades.
+                                  # Raised from 0.40 on 2026-09-16 at owner request,
+                                  # alongside the ledger reset that cleared the old brake.
+                                  # WARNING: this relaxes a protection that DID fire - the
+                                  # 49.2% drawdown on the prior ledger halted all trading.
+                                  # It is now the last line of defence before total loss,
+                                  # not a gentle stop. Revert to 0.40 if the fix underperforms.
     "prob_shrinkage": 0.10,       # Pull model_prob 10% toward market price before sizing.
                                   # Margin of safety: we don't trust our σ to the last decimal,
                                   # so we bet a slightly more conservative edge than the raw model says.
