@@ -96,6 +96,33 @@ CONFIG = {
     "prob_shrinkage": 0.10,       # Pull model_prob 10% toward market price before sizing.
                                   # Margin of safety: we don't trust our σ to the last decimal,
                                   # so we bet a slightly more conservative edge than the raw model says.
+
+    # ──────────────────────────────────────────────────────────
+    # PATCH N: FORECAST BIAS CORRECTION.
+    #
+    # Root cause of the losing run. Across 58 resolved trades (Sep 2026) the
+    # ensemble forecast ran +1.98 F hot (median +1.90), and 54 of the 58
+    # outcomes landed BELOW the traded bin — one-directional, so a bias, not
+    # variance. Every city but one was biased hot.
+    #
+    # Why PATCH C/D/H/M never fixed it: those all adjusted σ (the WIDTH of the
+    # distribution). The bug is that build_model_probabilities centres the
+    # distribution on the raw forecast (loc=forecast_high falls out of a
+    # forecast that is 1.98 F too high) — the whole curve sits above reality.
+    # Widening a curve cannot re-centre it. At 1.98 F the bias is the same
+    # size as σ itself, so it dominated everything.
+    #
+    # Set either value to 0.0 to disable the correction (documented revert
+    # path — see tests/test_forecast_bias.py).
+    #
+    # Re-measure with: python recalibrate_bias.py --suggest
+    # ──────────────────────────────────────────────────────────
+    "forecast_bias_f": 2.9,       # F-unit cities. Measured +2.86 (n=20, 19/20 hot)
+    "forecast_bias_c": 1.5,       # C-unit cities. Measured +1.52 (n=38, 35/38 hot).
+                                  # 1.52 C == 2.74 F, so both scales agree at ~2.8 F.
+                                  # Measured PER UNIT on purpose: pooling F and C
+                                  # trades into one mean compares Fahrenheit degrees
+                                  # to Celsius degrees and understates both.
 }
 
 TRADES_FILE = Path(__file__).parent / "paper_trades.json"
@@ -389,6 +416,34 @@ def kelly_scalar_for_city(slug):
     if bss >= 0.05:
         return 0.50
     return 0.0
+
+
+# ─────────────────────────────────────────────
+# PATCH N: FORECAST BIAS CORRECTION
+# ─────────────────────────────────────────────
+def apply_forecast_bias(forecast_high, unit="F", bias_f=None, bias_c=None):
+    """Subtract the measured systematic forecast bias from an ensemble high.
+
+    The ensemble runs hot. Across 58 resolved trades (Sep 2026) the forecast
+    exceeded the actual high by +1.98 F on average, and 54 of 58 outcomes
+    landed BELOW the bin that was traded. That is a bias in the centre of the
+    distribution, which no amount of extra σ (PATCH C/D/H/M) can correct.
+
+    Returns the corrected forecast. A bias of 0.0 is a strict no-op, so the
+    correction can be disabled from CONFIG without touching code.
+
+    Both the forecast and the returned value are in *unit*'s own scale, so a
+    Celsius city must be corrected with the Celsius bias — passing the F value
+    would over-correct it by ~1.8x.
+    """
+    if bias_f is None:
+        bias_f = CONFIG.get("forecast_bias_f", 0.0)
+    if bias_c is None:
+        bias_c = CONFIG.get("forecast_bias_c", 0.0)
+    bias = bias_f if unit == "F" else bias_c
+    if not bias:
+        return forecast_high
+    return round(forecast_high - bias, 1)
 
 
 # ─────────────────────────────────────────────
@@ -715,6 +770,14 @@ def scan_city_edges(city_name, city, verbose=True,
         # when use_calibration=True, so we do NOT re-apply empirical_bias here.
         if wu_offset != 0:
             ensemble_high = round(ensemble_high + wu_offset, 1)
+
+        # PATCH N: remove the measured systematic forecast bias.
+        # The ensemble runs hot (+1.98 F across 58 resolved trades, one-directional),
+        # and build_model_probabilities centres its distribution on this value — so
+        # an uncorrected forecast puts the whole curve above where the high lands.
+        # Applied AFTER wu_offset so the two corrections compose rather than
+        # overwrite each other. No-op when CONFIG bias is 0.0.
+        ensemble_high = apply_forecast_bias(ensemble_high, city["unit"])
 
         # Model spread for uncertainty
         spread_vals = list(converted_highs.values())
