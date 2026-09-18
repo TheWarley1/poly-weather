@@ -296,5 +296,33 @@
     "calibrated": true,
     "logged_at": "2026-09-18T10:22:57.524245",
     "resolved": false
+  },
+  {
+    "city": "Tel Aviv",
+    "slug": "tel-aviv",
+    "station": "LLBG",
+    "unit": "C",
+    "market_date": "2026-09-19",
+    "lead_days": 1,
+    "bin": "29\u00b0C",
+    "entry_price": 11.5,
+    "shares": 200,
+    "cost": 23.0,
+    "forecast_high": 28.8,
+    "model_prob": 25.7,
+    "model_prob_shrunk": 24.3,
+    "market_prob": 11.5,
+    "edge_pct": 14.2,
+    "edge_sized_pct": 12.8,
+    "kelly_pct": 2.7,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 1116.1,
+    "city_kelly_scalar": 0.75,
+    "city_bss": 0.24817506748116247,
+    "n_models": 4,
+    "model_spread": 0.5,
+    "calibrated": true,
+    "logged_at": "2026-09-18T15:28:50.002612",
+    "resolved": false
   }
 ]
