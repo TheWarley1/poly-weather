@@ -544,5 +544,33 @@
     "calibrated": true,
     "logged_at": "2026-09-19T10:02:11.829800",
     "resolved": false
+  },
+  {
+    "city": "Toronto",
+    "slug": "toronto",
+    "station": "CYYZ",
+    "unit": "C",
+    "market_date": "2026-09-20",
+    "lead_days": 1,
+    "bin": "22\u00b0C or higher",
+    "entry_price": 15.0,
+    "shares": 8,
+    "cost": 1.2,
+    "forecast_high": 20.7,
+    "model_prob": 31.3,
+    "model_prob_shrunk": 29.6,
+    "market_prob": 15.0,
+    "edge_pct": 16.3,
+    "edge_sized_pct": 14.6,
+    "kelly_pct": 4.3,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 1026.1,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.4075671806292934,
+    "n_models": 3,
+    "model_spread": 0.5,
+    "calibrated": true,
+    "logged_at": "2026-09-19T15:09:47.270074",
+    "resolved": false
   }
 ]
