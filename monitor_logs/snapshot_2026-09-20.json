@@ -1,30 +1,38 @@
 {
-  "timestamp": "2026-09-20T02:10:49.015473",
+  "timestamp": "2026-09-20T10:20:56.864865",
   "trading": {
-    "total": 20,
+    "total": 22,
     "open": 11,
-    "resolved": 9,
+    "resolved": 11,
     "voided": 0,
     "wins": 1,
-    "losses": 8,
-    "win_rate": 0.1111111111111111,
-    "total_cost": 196.9,
-    "total_pnl": -19.9,
-    "roi": -10.1,
-    "bankroll": 980.1,
-    "drawdown_pct": 2.0,
+    "losses": 10,
+    "win_rate": 0.09090909090909091,
+    "total_cost": 271.19,
+    "total_pnl": -94.19,
+    "roi": -34.7,
+    "bankroll": 905.81,
+    "drawdown_pct": 9.4,
     "avg_win": 153.1,
-    "avg_loss": 21.62,
-    "profit_factor": 0.88
+    "avg_loss": 24.73,
+    "profit_factor": 0.62
   },
   "lead_days": {
     "D+1": {
-      "trades": 9,
+      "trades": 10,
       "wins": 1,
-      "win_rate": 11.1,
-      "cost": 196.9,
-      "pnl": -19.9,
-      "roi": -10.1
+      "win_rate": 10.0,
+      "cost": 221.9,
+      "pnl": -44.9,
+      "roi": -20.2
+    },
+    "D+2": {
+      "trades": 1,
+      "wins": 0,
+      "win_rate": 0.0,
+      "cost": 49.29,
+      "pnl": -49.29,
+      "roi": -100.0
     }
   },
   "top_cities": [
@@ -43,13 +51,6 @@
       "pnl": -16.0
     },
     {
-      "city": "Chicago",
-      "trades": 1,
-      "wins": 0,
-      "win_rate": 0.0,
-      "pnl": -19.0
-    },
-    {
       "city": "Seattle",
       "trades": 1,
       "wins": 0,
@@ -62,16 +63,16 @@
       "wins": 0,
       "win_rate": 0.0,
       "pnl": -26.0
+    },
+    {
+      "city": "Tel Aviv",
+      "trades": 2,
+      "wins": 0,
+      "win_rate": 0.0,
+      "pnl": -43.0
     }
   ],
   "bottom_cities": [
-    {
-      "city": "Chicago",
-      "trades": 1,
-      "wins": 0,
-      "win_rate": 0.0,
-      "pnl": -19.0
-    },
     {
       "city": "Seattle",
       "trades": 1,
@@ -99,12 +100,19 @@
       "wins": 0,
       "win_rate": 0.0,
       "pnl": -48.0
+    },
+    {
+      "city": "Chicago",
+      "trades": 3,
+      "wins": 0,
+      "win_rate": 0.0,
+      "pnl": -93.29
     }
   ],
   "calibration": {
     "san-francisco": {
       "city": "San Francisco",
-      "paired": 164,
+      "paired": 165,
       "models_used": 4,
       "models_dropped": [
         "icon_seamless"
@@ -113,42 +121,42 @@
     },
     "nyc": {
       "city": "New York",
-      "paired": 172,
+      "paired": 173,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "chicago": {
       "city": "Chicago",
-      "paired": 172,
+      "paired": 173,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "miami": {
       "city": "Miami",
-      "paired": 171,
+      "paired": 172,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "dallas": {
       "city": "Dallas",
-      "paired": 171,
+      "paired": 172,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "seattle": {
       "city": "Seattle",
-      "paired": 172,
+      "paired": 173,
       "models_used": 5,
       "models_dropped": [],
       "nws_dropped": true
     },
     "atlanta": {
       "city": "Atlanta",
-      "paired": 171,
+      "paired": 172,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -178,7 +186,7 @@
     },
     "toronto": {
       "city": "Toronto",
-      "paired": 170,
+      "paired": 171,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -206,7 +214,7 @@
     },
     "buenos-aires": {
       "city": "Buenos Aires",
-      "paired": 170,
+      "paired": 171,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -255,7 +263,7 @@
     },
     "sao-paulo": {
       "city": "Sao Paulo",
-      "paired": 173,
+      "paired": 174,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -302,7 +310,7 @@
   },
   "recent": {
     "signals_generated": 11,
-    "resolved_in_period": 9,
+    "resolved_in_period": 11,
     "days": 7
   },
   "drawdown": "OK"
