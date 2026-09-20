@@ -291,7 +291,13 @@
     "model_spread": 0.3,
     "calibrated": true,
     "logged_at": "2026-09-18T01:59:52.853487",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "29\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -23.0,
+    "return_pct": -100.0,
+    "resolved_at": "2026-09-20T02:03:30.763384"
   },
   {
     "city": "Chicago",
@@ -347,7 +353,13 @@
     "model_spread": 0.5,
     "calibrated": true,
     "logged_at": "2026-09-18T15:28:50.002612",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "30\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -23.0,
+    "return_pct": -100.0,
+    "resolved_at": "2026-09-20T02:03:31.051676"
   },
   {
     "city": "Toronto",
@@ -571,6 +583,34 @@
     "model_spread": 0.5,
     "calibrated": true,
     "logged_at": "2026-09-19T15:09:47.270074",
+    "resolved": false
+  },
+  {
+    "city": "Wellington",
+    "slug": "wellington",
+    "station": "NZWN",
+    "unit": "C",
+    "market_date": "2026-09-21",
+    "lead_days": 1,
+    "bin": "14\u00b0C",
+    "entry_price": 8.5,
+    "shares": 200,
+    "cost": 17.0,
+    "forecast_high": 14.3,
+    "model_prob": 24.6,
+    "model_prob_shrunk": 23.0,
+    "market_prob": 8.5,
+    "edge_pct": 16.1,
+    "edge_sized_pct": 14.5,
+    "kelly_pct": 3.0,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 980.1,
+    "city_kelly_scalar": 0.75,
+    "city_bss": 0.17926492747210343,
+    "n_models": 4,
+    "model_spread": 0.4,
+    "calibrated": true,
+    "logged_at": "2026-09-20T02:10:48.516878",
     "resolved": false
   }
 ]
