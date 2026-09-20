@@ -399,7 +399,13 @@
     "model_spread": 0.7,
     "calibrated": true,
     "logged_at": "2026-09-18T20:15:02.125452",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "18\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -23.0,
+    "return_pct": -100.0,
+    "resolved_at": "2026-09-20T20:00:16.282684"
   },
   {
     "city": "Miami",
@@ -707,6 +713,34 @@
     "model_spread": 4.7,
     "calibrated": true,
     "logged_at": "2026-09-20T15:14:29.060693",
+    "resolved": false
+  },
+  {
+    "city": "Wellington",
+    "slug": "wellington",
+    "station": "NZWN",
+    "unit": "C",
+    "market_date": "2026-09-22",
+    "lead_days": 1,
+    "bin": "13\u00b0C",
+    "entry_price": 10.0,
+    "shares": 200,
+    "cost": 20.0,
+    "forecast_high": 13.6,
+    "model_prob": 23.3,
+    "model_prob_shrunk": 22.0,
+    "market_prob": 10.0,
+    "edge_pct": 13.3,
+    "edge_sized_pct": 12.0,
+    "kelly_pct": 2.5,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 882.81,
+    "city_kelly_scalar": 0.75,
+    "city_bss": 0.17926492747210343,
+    "n_models": 4,
+    "model_spread": 0.6,
+    "calibrated": true,
+    "logged_at": "2026-09-20T20:07:23.966336",
     "resolved": false
   }
 ]
