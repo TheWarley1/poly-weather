@@ -680,5 +680,33 @@
     "calibrated": true,
     "logged_at": "2026-09-20T10:20:56.462855",
     "resolved": false
+  },
+  {
+    "city": "Dallas",
+    "slug": "dallas",
+    "station": "KDFW",
+    "unit": "F",
+    "market_date": "2026-09-21",
+    "lead_days": 1,
+    "bin": "90-91\u00b0F",
+    "entry_price": 8.0,
+    "shares": 200,
+    "cost": 16.0,
+    "forecast_high": 88.9,
+    "model_prob": 22.0,
+    "model_prob_shrunk": 20.6,
+    "market_prob": 8.0,
+    "edge_pct": 14.0,
+    "edge_sized_pct": 12.6,
+    "kelly_pct": 3.4,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 905.81,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.3396374112271374,
+    "n_models": 4,
+    "model_spread": 4.7,
+    "calibrated": true,
+    "logged_at": "2026-09-20T15:14:29.060693",
+    "resolved": false
   }
 ]
