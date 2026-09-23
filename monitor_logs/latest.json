@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-09-23T02:15:07.356513",
+  "timestamp": "2026-09-23T10:32:14.228020",
   "trading": {
-    "total": 39,
-    "open": 11,
-    "resolved": 28,
+    "total": 41,
+    "open": 10,
+    "resolved": 31,
     "voided": 0,
     "wins": 1,
-    "losses": 27,
-    "win_rate": 0.03571428571428571,
-    "total_cost": 556.38,
-    "total_pnl": -379.38,
-    "roi": -68.2,
-    "bankroll": 620.62,
-    "drawdown_pct": 37.9,
+    "losses": 30,
+    "win_rate": 0.03225806451612903,
+    "total_cost": 594.7,
+    "total_pnl": -417.7,
+    "roi": -70.2,
+    "bankroll": 582.3,
+    "drawdown_pct": 41.8,
     "avg_win": 153.1,
-    "avg_loss": 19.72,
-    "profit_factor": 0.29
+    "avg_loss": 19.03,
+    "profit_factor": 0.27
   },
   "lead_days": {
     "D+1": {
-      "trades": 26,
+      "trades": 29,
       "wins": 1,
-      "win_rate": 3.8,
-      "cost": 488.09,
-      "pnl": -311.09,
-      "roi": -63.7
+      "win_rate": 3.4,
+      "cost": 526.41,
+      "pnl": -349.41,
+      "roi": -66.4
     },
     "D+2": {
       "trades": 2,
@@ -38,10 +38,10 @@
   "top_cities": [
     {
       "city": "Miami",
-      "trades": 4,
+      "trades": 5,
       "wins": 1,
-      "win_rate": 25.0,
-      "pnl": 92.1
+      "win_rate": 20.0,
+      "pnl": 81.98
     },
     {
       "city": "Paris",
@@ -74,18 +74,11 @@
   ],
   "bottom_cities": [
     {
-      "city": "Tel Aviv",
-      "trades": 2,
-      "wins": 0,
-      "win_rate": 0.0,
-      "pnl": -43.0
-    },
-    {
-      "city": "Toronto",
+      "city": "Dallas",
       "trades": 3,
       "wins": 0,
       "win_rate": 0.0,
-      "pnl": -45.2
+      "pnl": -45.96
     },
     {
       "city": "Madrid",
@@ -102,6 +95,13 @@
       "pnl": -55.4
     },
     {
+      "city": "Toronto",
+      "trades": 4,
+      "wins": 0,
+      "win_rate": 0.0,
+      "pnl": -59.44
+    },
+    {
       "city": "Chicago",
       "trades": 4,
       "wins": 0,
@@ -112,7 +112,7 @@
   "calibration": {
     "san-francisco": {
       "city": "San Francisco",
-      "paired": 164,
+      "paired": 165,
       "models_used": 4,
       "models_dropped": [
         "icon_seamless"
@@ -121,44 +121,42 @@
     },
     "nyc": {
       "city": "New York",
-      "paired": 172,
+      "paired": 173,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "chicago": {
       "city": "Chicago",
-      "paired": 172,
+      "paired": 173,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "miami": {
       "city": "Miami",
-      "paired": 171,
+      "paired": 172,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "dallas": {
       "city": "Dallas",
-      "paired": 171,
+      "paired": 172,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "seattle": {
       "city": "Seattle",
-      "paired": 172,
-      "models_used": 4,
-      "models_dropped": [
-        "icon_seamless"
-      ],
+      "paired": 173,
+      "models_used": 5,
+      "models_dropped": [],
       "nws_dropped": true
     },
     "atlanta": {
       "city": "Atlanta",
-      "paired": 171,
+      "paired": 172,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -188,7 +186,7 @@
     },
     "toronto": {
       "city": "Toronto",
-      "paired": 170,
+      "paired": 171,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -216,7 +214,7 @@
     },
     "buenos-aires": {
       "city": "Buenos Aires",
-      "paired": 170,
+      "paired": 171,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -265,7 +263,7 @@
     },
     "sao-paulo": {
       "city": "Sao Paulo",
-      "paired": 173,
+      "paired": 174,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -311,9 +309,9 @@
     }
   },
   "recent": {
-    "signals_generated": 11,
-    "resolved_in_period": 28,
+    "signals_generated": 10,
+    "resolved_in_period": 31,
     "days": 7
   },
-  "drawdown": "HALVED"
+  "drawdown": "HALTED"
 }
