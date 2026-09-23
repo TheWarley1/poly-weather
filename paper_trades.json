@@ -1332,5 +1332,33 @@
     "calibrated": true,
     "logged_at": "2026-09-23T10:32:13.847488",
     "resolved": false
+  },
+  {
+    "city": "Warsaw",
+    "slug": "warsaw",
+    "station": "EPWA",
+    "unit": "C",
+    "market_date": "2026-09-24",
+    "lead_days": 1,
+    "bin": "13\u00b0C",
+    "entry_price": 11.0,
+    "shares": 99,
+    "cost": 10.89,
+    "forecast_high": 12.9,
+    "model_prob": 25.9,
+    "model_prob_shrunk": 24.4,
+    "market_prob": 11.0,
+    "edge_pct": 14.9,
+    "edge_sized_pct": 13.4,
+    "kelly_pct": 1.9,
+    "dd_factor": 0.5,
+    "bankroll_at_entry": 582.3,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.41979668195719533,
+    "n_models": 4,
+    "model_spread": 1.0,
+    "calibrated": true,
+    "logged_at": "2026-09-23T15:51:41.880745",
+    "resolved": false
   }
 ]
