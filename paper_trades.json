@@ -1079,7 +1079,13 @@
     "model_spread": 0.5,
     "calibrated": true,
     "logged_at": "2026-09-22T02:17:14.638119",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "27\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -14.08,
+    "return_pct": -100.0,
+    "resolved_at": "2026-09-24T01:59:50.209715"
   },
   {
     "city": "Seattle",
@@ -1135,7 +1141,13 @@
     "model_spread": 0.5,
     "calibrated": true,
     "logged_at": "2026-09-22T10:37:23.421306",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "24\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -11.28,
+    "return_pct": -100.0,
+    "resolved_at": "2026-09-24T01:59:50.496346"
   },
   {
     "city": "Wellington",
@@ -1191,7 +1203,13 @@
     "model_spread": 0.6,
     "calibrated": true,
     "logged_at": "2026-09-22T16:02:02.291442",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "15\u00b0C",
+    "resolved_price": 100,
+    "revenue": 106.0,
+    "pnl": 93.81,
+    "return_pct": 769.6,
+    "resolved_at": "2026-09-24T01:59:50.787985"
   },
   {
     "city": "Miami",
@@ -1387,6 +1405,34 @@
     "model_spread": 0.7,
     "calibrated": true,
     "logged_at": "2026-09-23T20:55:49.281350",
+    "resolved": false
+  },
+  {
+    "city": "Dallas",
+    "slug": "dallas",
+    "station": "KDFW",
+    "unit": "F",
+    "market_date": "2026-09-24",
+    "lead_days": 1,
+    "bin": "90-91\u00b0F",
+    "entry_price": 8.5,
+    "shares": 124,
+    "cost": 10.54,
+    "forecast_high": 92.2,
+    "model_prob": 21.6,
+    "model_prob_shrunk": 20.3,
+    "market_prob": 8.5,
+    "edge_pct": 13.1,
+    "edge_sized_pct": 11.8,
+    "kelly_pct": 1.6,
+    "dd_factor": 0.5,
+    "bankroll_at_entry": 650.75,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.3396374112271374,
+    "n_models": 4,
+    "model_spread": 1.0,
+    "calibrated": true,
+    "logged_at": "2026-09-24T02:06:08.277783",
     "resolved": false
   }
 ]
