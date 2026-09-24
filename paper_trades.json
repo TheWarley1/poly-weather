@@ -1181,7 +1181,13 @@
     "model_spread": 0.6,
     "calibrated": true,
     "logged_at": "2026-09-22T16:02:02.291415",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "13\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -7.57,
+    "return_pct": -100.0,
+    "resolved_at": "2026-09-24T16:07:22.708631"
   },
   {
     "city": "Warsaw",
@@ -1507,6 +1513,34 @@
     "model_spread": 1.0,
     "calibrated": true,
     "logged_at": "2026-09-24T10:50:29.449614",
+    "resolved": false
+  },
+  {
+    "city": "Paris",
+    "slug": "paris",
+    "station": "LFPG",
+    "unit": "C",
+    "market_date": "2026-09-25",
+    "lead_days": 1,
+    "bin": "27\u00b0C",
+    "entry_price": 10.5,
+    "shares": 108,
+    "cost": 11.34,
+    "forecast_high": 26.7,
+    "model_prob": 23.4,
+    "model_prob_shrunk": 22.1,
+    "market_prob": 10.5,
+    "edge_pct": 12.9,
+    "edge_sized_pct": 11.6,
+    "kelly_pct": 1.6,
+    "dd_factor": 0.5,
+    "bankroll_at_entry": 701.49,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.36777404543934633,
+    "n_models": 4,
+    "model_spread": 0.7,
+    "calibrated": true,
+    "logged_at": "2026-09-24T16:14:03.358334",
     "resolved": false
   }
 ]
