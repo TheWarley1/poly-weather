@@ -1453,7 +1453,13 @@
     "model_spread": 0.7,
     "calibrated": true,
     "logged_at": "2026-09-23T20:55:49.281350",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "27\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -8.96,
+    "return_pct": -100.0,
+    "resolved_at": "2026-09-25T16:07:27.563964"
   },
   {
     "city": "Dallas",
@@ -1739,6 +1745,34 @@
     "model_spread": 0.5,
     "calibrated": true,
     "logged_at": "2026-09-25T10:53:22.511970",
+    "resolved": false
+  },
+  {
+    "city": "Tokyo",
+    "slug": "tokyo",
+    "station": "RJTT",
+    "unit": "C",
+    "market_date": "2026-09-27",
+    "lead_days": 1,
+    "bin": "21\u00b0C",
+    "entry_price": 8.0,
+    "shares": 152,
+    "cost": 12.16,
+    "forecast_high": 21.0,
+    "model_prob": 21.1,
+    "model_prob_shrunk": 19.8,
+    "market_prob": 8.0,
+    "edge_pct": 13.1,
+    "edge_sized_pct": 11.8,
+    "kelly_pct": 1.6,
+    "dd_factor": 0.5,
+    "bankroll_at_entry": 762.56,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.2896642583121273,
+    "n_models": 4,
+    "model_spread": 1.4,
+    "calibrated": true,
+    "logged_at": "2026-09-25T16:14:26.415152",
     "resolved": false
   }
 ]
