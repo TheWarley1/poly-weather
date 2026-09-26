@@ -1802,5 +1802,33 @@
     "calibrated": true,
     "logged_at": "2026-09-25T21:02:56.124253",
     "resolved": false
+  },
+  {
+    "city": "Madrid",
+    "slug": "madrid",
+    "station": "LEMD",
+    "unit": "C",
+    "market_date": "2026-09-27",
+    "lead_days": 1,
+    "bin": "30\u00b0C",
+    "entry_price": 8.5,
+    "shares": 192,
+    "cost": 16.32,
+    "forecast_high": 30.4,
+    "model_prob": 25.9,
+    "model_prob_shrunk": 24.1,
+    "market_prob": 8.5,
+    "edge_pct": 17.4,
+    "edge_sized_pct": 15.6,
+    "kelly_pct": 2.1,
+    "dd_factor": 0.5,
+    "bankroll_at_entry": 762.56,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.3888003710715733,
+    "n_models": 4,
+    "model_spread": 0.2,
+    "calibrated": true,
+    "logged_at": "2026-09-26T02:26:00.389579",
+    "resolved": false
   }
 ]
