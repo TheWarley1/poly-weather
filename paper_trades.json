@@ -1521,7 +1521,13 @@
     "model_spread": 1.9,
     "calibrated": true,
     "logged_at": "2026-09-24T10:50:29.449595",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "64-65\u00b0F",
+    "resolved_price": 100,
+    "revenue": 172.0,
+    "pnl": 157.38,
+    "return_pct": 1076.5,
+    "resolved_at": "2026-09-26T10:30:57.862116"
   },
   {
     "city": "London",
@@ -1549,7 +1555,13 @@
     "model_spread": 1.0,
     "calibrated": true,
     "logged_at": "2026-09-24T10:50:29.449614",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "24\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -12.96,
+    "return_pct": -100.0,
+    "resolved_at": "2026-09-26T10:30:58.201508"
   },
   {
     "city": "Paris",
@@ -1577,7 +1589,13 @@
     "model_spread": 0.7,
     "calibrated": true,
     "logged_at": "2026-09-24T16:14:03.358334",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "28\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -11.34,
+    "return_pct": -100.0,
+    "resolved_at": "2026-09-26T10:30:58.613805"
   },
   {
     "city": "Miami",
@@ -1605,7 +1623,13 @@
     "model_spread": 2.1,
     "calibrated": true,
     "logged_at": "2026-09-24T21:01:41.034673",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "90-91\u00b0F",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -9.76,
+    "return_pct": -100.0,
+    "resolved_at": "2026-09-26T10:30:58.861661"
   },
   {
     "city": "Madrid",
@@ -1633,7 +1657,13 @@
     "model_spread": 0.4,
     "calibrated": true,
     "logged_at": "2026-09-24T21:01:41.034699",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "35\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -12.62,
+    "return_pct": -100.0,
+    "resolved_at": "2026-09-26T10:30:59.245399"
   },
   {
     "city": "Buenos Aires",
@@ -1661,7 +1691,13 @@
     "model_spread": 1.2,
     "calibrated": true,
     "logged_at": "2026-09-25T02:21:37.401404",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "27\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -12.0,
+    "return_pct": -100.0,
+    "resolved_at": "2026-09-26T10:30:59.615428"
   },
   {
     "city": "Tel Aviv",
@@ -1829,6 +1865,62 @@
     "model_spread": 0.2,
     "calibrated": true,
     "logged_at": "2026-09-26T02:26:00.389579",
+    "resolved": false
+  },
+  {
+    "city": "Warsaw",
+    "slug": "warsaw",
+    "station": "EPWA",
+    "unit": "C",
+    "market_date": "2026-09-27",
+    "lead_days": 1,
+    "bin": "19\u00b0C",
+    "entry_price": 10.0,
+    "shares": 200,
+    "cost": 20.0,
+    "forecast_high": 19.0,
+    "model_prob": 25.9,
+    "model_prob_shrunk": 24.3,
+    "market_prob": 10.0,
+    "edge_pct": 15.9,
+    "edge_sized_pct": 14.3,
+    "kelly_pct": 4.0,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 861.26,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.41979668195719533,
+    "n_models": 4,
+    "model_spread": 0.7,
+    "calibrated": true,
+    "logged_at": "2026-09-26T10:36:00.417580",
+    "resolved": false
+  },
+  {
+    "city": "Milan",
+    "slug": "milan",
+    "station": "LIMC",
+    "unit": "C",
+    "market_date": "2026-09-27",
+    "lead_days": 1,
+    "bin": "24\u00b0C",
+    "entry_price": 8.0,
+    "shares": 200,
+    "cost": 16.0,
+    "forecast_high": 23.7,
+    "model_prob": 21.0,
+    "model_prob_shrunk": 19.7,
+    "market_prob": 8.0,
+    "edge_pct": 13.0,
+    "edge_sized_pct": 11.7,
+    "kelly_pct": 3.2,
+    "dd_factor": 1.0,
+    "bankroll_at_entry": 861.26,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.3525963858310618,
+    "n_models": 4,
+    "model_spread": 0.4,
+    "calibrated": true,
+    "logged_at": "2026-09-26T10:36:00.417601",
     "resolved": false
   }
 ]
