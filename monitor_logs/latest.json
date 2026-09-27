@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-09-27T11:08:50.183349",
+  "timestamp": "2026-09-27T16:07:13.025456",
   "trading": {
-    "total": 62,
-    "open": 9,
-    "resolved": 53,
+    "total": 63,
+    "open": 8,
+    "resolved": 55,
     "voided": 0,
     "wins": 5,
-    "losses": 48,
-    "win_rate": 0.09433962264150944,
-    "total_cost": 846.73,
-    "total_pnl": -176.73,
-    "roi": -20.9,
-    "bankroll": 823.27,
-    "drawdown_pct": 17.7,
+    "losses": 50,
+    "win_rate": 0.09090909090909091,
+    "total_cost": 868.58,
+    "total_pnl": -198.58,
+    "roi": -22.9,
+    "bankroll": 801.42,
+    "drawdown_pct": 19.9,
     "avg_win": 119.52,
-    "avg_loss": 16.13,
-    "profit_factor": 0.77
+    "avg_loss": 15.92,
+    "profit_factor": 0.75
   },
   "lead_days": {
     "D+1": {
-      "trades": 51,
+      "trades": 53,
       "wins": 5,
-      "win_rate": 9.8,
-      "cost": 778.44,
-      "pnl": -108.44,
-      "roi": -13.9
+      "win_rate": 9.4,
+      "cost": 800.29,
+      "pnl": -130.29,
+      "roi": -16.3
     },
     "D+2": {
       "trades": 2,
@@ -65,27 +65,27 @@
       "pnl": 45.31
     },
     {
-      "city": "Tokyo",
+      "city": "Munich",
       "trades": 1,
       "wins": 0,
       "win_rate": 0.0,
-      "pnl": -8.96
+      "pnl": -16.0
     }
   ],
   "bottom_cities": [
-    {
-      "city": "Wellington",
-      "trades": 3,
-      "wins": 0,
-      "win_rate": 0.0,
-      "pnl": -44.57
-    },
     {
       "city": "Tel Aviv",
       "trades": 3,
       "wins": 0,
       "win_rate": 0.0,
       "pnl": -52.75
+    },
+    {
+      "city": "Wellington",
+      "trades": 4,
+      "wins": 0,
+      "win_rate": 0.0,
+      "pnl": -54.26
     },
     {
       "city": "Toronto",
@@ -173,14 +173,14 @@
     },
     "tokyo": {
       "city": "Tokyo",
-      "paired": 172,
+      "paired": 173,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "seoul": {
       "city": "Seoul",
-      "paired": 173,
+      "paired": 174,
       "models_used": 3,
       "models_dropped": [
         "gfs_seamless"
@@ -224,7 +224,7 @@
     },
     "wellington": {
       "city": "Wellington",
-      "paired": 173,
+      "paired": 174,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -305,15 +305,15 @@
     },
     "taipei": {
       "city": "Taipei",
-      "paired": 176,
+      "paired": 177,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     }
   },
   "recent": {
-    "signals_generated": 9,
-    "resolved_in_period": 42,
+    "signals_generated": 8,
+    "resolved_in_period": 44,
     "days": 7
   },
   "drawdown": "OK"
