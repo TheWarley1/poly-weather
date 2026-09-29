@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-09-29T11:54:05.504336",
+  "timestamp": "2026-09-29T17:22:37.881904",
   "trading": {
-    "total": 75,
-    "open": 7,
+    "total": 76,
+    "open": 8,
     "resolved": 68,
     "voided": 0,
     "wins": 5,
@@ -180,7 +180,7 @@
     },
     "seoul": {
       "city": "Seoul",
-      "paired": 173,
+      "paired": 174,
       "models_used": 3,
       "models_dropped": [
         "gfs_seamless"
@@ -196,7 +196,7 @@
     },
     "singapore": {
       "city": "Singapore",
-      "paired": 171,
+      "paired": 172,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -210,7 +210,7 @@
     },
     "shanghai": {
       "city": "Shanghai",
-      "paired": 173,
+      "paired": 174,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -247,7 +247,7 @@
     },
     "hong-kong": {
       "city": "Hong Kong",
-      "paired": 176,
+      "paired": 177,
       "models_used": 3,
       "models_dropped": [
         "gfs_seamless"
@@ -305,15 +305,15 @@
     },
     "taipei": {
       "city": "Taipei",
-      "paired": 176,
+      "paired": 177,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     }
   },
   "recent": {
-    "signals_generated": 7,
-    "resolved_in_period": 45,
+    "signals_generated": 8,
+    "resolved_in_period": 44,
     "days": 7
   },
   "drawdown": "HALTED"
