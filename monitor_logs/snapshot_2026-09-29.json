@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-09-29T17:22:37.881904",
+  "timestamp": "2026-09-29T21:47:43.122142",
   "trading": {
-    "total": 76,
-    "open": 8,
+    "total": 78,
+    "open": 10,
     "resolved": 68,
     "voided": 0,
     "wins": 5,
@@ -173,7 +173,7 @@
     },
     "tokyo": {
       "city": "Tokyo",
-      "paired": 172,
+      "paired": 173,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -231,14 +231,14 @@
     },
     "ankara": {
       "city": "Ankara",
-      "paired": 173,
+      "paired": 174,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "tel-aviv": {
       "city": "Tel Aviv",
-      "paired": 176,
+      "paired": 177,
       "models_used": 3,
       "models_dropped": [
         "ecmwf_ifs025"
@@ -273,7 +273,7 @@
     },
     "lucknow": {
       "city": "Lucknow",
-      "paired": 175,
+      "paired": 176,
       "models_used": 3,
       "models_dropped": [
         "gfs_seamless"
@@ -312,7 +312,7 @@
     }
   },
   "recent": {
-    "signals_generated": 8,
+    "signals_generated": 10,
     "resolved_in_period": 44,
     "days": 7
   },
