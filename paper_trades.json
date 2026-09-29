@@ -2133,7 +2133,13 @@
     "model_spread": 3.0,
     "calibrated": true,
     "logged_at": "2026-09-27T16:07:12.610103",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "92-93\u00b0F",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -25.0,
+    "return_pct": -100.0,
+    "resolved_at": "2026-09-29T11:47:51.481839"
   },
   {
     "city": "Chicago",
@@ -2161,7 +2167,13 @@
     "model_spread": 1.8,
     "calibrated": true,
     "logged_at": "2026-09-27T20:45:08.057179",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "72-73\u00b0F",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -22.0,
+    "return_pct": -100.0,
+    "resolved_at": "2026-09-29T11:47:51.744640"
   },
   {
     "city": "Warsaw",
@@ -2223,7 +2235,13 @@
     "model_spread": 1.2,
     "calibrated": true,
     "logged_at": "2026-09-28T02:23:29.432595",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "88-89\u00b0F",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -8.4,
+    "return_pct": -100.0,
+    "resolved_at": "2026-09-29T11:47:52.199630"
   },
   {
     "city": "Dallas",
@@ -2251,7 +2269,13 @@
     "model_spread": 2.9,
     "calibrated": true,
     "logged_at": "2026-09-28T02:23:29.432617",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "92-93\u00b0F",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -13.21,
+    "return_pct": -100.0,
+    "resolved_at": "2026-09-29T11:47:52.454858"
   },
   {
     "city": "Toronto",
@@ -2279,7 +2303,13 @@
     "model_spread": 1.9,
     "calibrated": true,
     "logged_at": "2026-09-28T02:23:29.432624",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "21\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -12.26,
+    "return_pct": -100.0,
+    "resolved_at": "2026-09-29T11:47:52.883454"
   },
   {
     "city": "Paris",
@@ -2447,6 +2477,34 @@
     "model_spread": 1.1,
     "calibrated": true,
     "logged_at": "2026-09-29T03:10:59.052763",
+    "resolved": false
+  },
+  {
+    "city": "Tokyo",
+    "slug": "tokyo",
+    "station": "RJTT",
+    "unit": "C",
+    "market_date": "2026-09-30",
+    "lead_days": 1,
+    "bin": "19\u00b0C or below",
+    "entry_price": 9.0,
+    "shares": 200,
+    "cost": 18.0,
+    "forecast_high": 18.8,
+    "model_prob": 64.3,
+    "model_prob_shrunk": 58.8,
+    "market_prob": 9.0,
+    "edge_pct": 55.3,
+    "edge_sized_pct": 49.8,
+    "kelly_pct": 6.8,
+    "dd_factor": 0.5,
+    "bankroll_at_entry": 571.23,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.2896642583121273,
+    "n_models": 4,
+    "model_spread": 1.4,
+    "calibrated": true,
+    "logged_at": "2026-09-29T11:54:05.149173",
     "resolved": false
   }
 ]

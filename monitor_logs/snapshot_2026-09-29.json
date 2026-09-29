@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-09-29T03:10:59.510108",
+  "timestamp": "2026-09-29T11:54:05.504336",
   "trading": {
-    "total": 74,
-    "open": 11,
-    "resolved": 63,
+    "total": 75,
+    "open": 7,
+    "resolved": 68,
     "voided": 0,
     "wins": 5,
-    "losses": 58,
-    "win_rate": 0.07936507936507936,
-    "total_cost": 1017.9,
-    "total_pnl": -347.9,
-    "roi": -34.2,
-    "bankroll": 652.1,
-    "drawdown_pct": 34.8,
+    "losses": 63,
+    "win_rate": 0.07352941176470588,
+    "total_cost": 1098.77,
+    "total_pnl": -428.77,
+    "roi": -39.0,
+    "bankroll": 571.23,
+    "drawdown_pct": 42.9,
     "avg_win": 119.52,
-    "avg_loss": 16.3,
-    "profit_factor": 0.63
+    "avg_loss": 16.29,
+    "profit_factor": 0.58
   },
   "lead_days": {
     "D+1": {
-      "trades": 61,
+      "trades": 66,
       "wins": 5,
-      "win_rate": 8.2,
-      "cost": 949.61,
-      "pnl": -279.61,
-      "roi": -29.4
+      "win_rate": 7.6,
+      "cost": 1030.48,
+      "pnl": -360.48,
+      "roi": -35.0
     },
     "D+2": {
       "trades": 2,
@@ -38,17 +38,10 @@
   "top_cities": [
     {
       "city": "Miami",
-      "trades": 8,
+      "trades": 9,
       "wins": 2,
-      "win_rate": 25.0,
-      "pnl": 133.86
-    },
-    {
-      "city": "Chicago",
-      "trades": 6,
-      "wins": 1,
-      "win_rate": 16.7,
-      "pnl": 30.09
+      "win_rate": 22.2,
+      "pnl": 125.46
     },
     {
       "city": "London",
@@ -63,6 +56,13 @@
       "wins": 1,
       "win_rate": 16.7,
       "pnl": 10.67
+    },
+    {
+      "city": "Chicago",
+      "trades": 7,
+      "wins": 1,
+      "win_rate": 14.3,
+      "pnl": 8.09
     },
     {
       "city": "Tokyo",
@@ -89,17 +89,17 @@
     },
     {
       "city": "Toronto",
-      "trades": 4,
-      "wins": 0,
-      "win_rate": 0.0,
-      "pnl": -59.44
-    },
-    {
-      "city": "Dallas",
       "trades": 5,
       "wins": 0,
       "win_rate": 0.0,
-      "pnl": -67.0
+      "pnl": -71.7
+    },
+    {
+      "city": "Dallas",
+      "trades": 7,
+      "wins": 0,
+      "win_rate": 0.0,
+      "pnl": -105.21
     },
     {
       "city": "Madrid",
@@ -112,7 +112,7 @@
   "calibration": {
     "san-francisco": {
       "city": "San Francisco",
-      "paired": 164,
+      "paired": 165,
       "models_used": 4,
       "models_dropped": [
         "icon_seamless"
@@ -121,35 +121,35 @@
     },
     "nyc": {
       "city": "New York",
-      "paired": 172,
+      "paired": 173,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "chicago": {
       "city": "Chicago",
-      "paired": 172,
+      "paired": 173,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "miami": {
       "city": "Miami",
-      "paired": 171,
+      "paired": 172,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "dallas": {
       "city": "Dallas",
-      "paired": 171,
+      "paired": 172,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "seattle": {
       "city": "Seattle",
-      "paired": 172,
+      "paired": 173,
       "models_used": 3,
       "models_dropped": [
         "ecmwf_ifs025",
@@ -159,7 +159,7 @@
     },
     "atlanta": {
       "city": "Atlanta",
-      "paired": 171,
+      "paired": 172,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -189,7 +189,7 @@
     },
     "toronto": {
       "city": "Toronto",
-      "paired": 171,
+      "paired": 172,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -224,7 +224,7 @@
     },
     "wellington": {
       "city": "Wellington",
-      "paired": 173,
+      "paired": 174,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -312,9 +312,9 @@
     }
   },
   "recent": {
-    "signals_generated": 11,
-    "resolved_in_period": 43,
+    "signals_generated": 7,
+    "resolved_in_period": 45,
     "days": 7
   },
-  "drawdown": "HALVED"
+  "drawdown": "HALTED"
 }
