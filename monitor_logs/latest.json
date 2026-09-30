@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-09-30T17:16:48.447859",
+  "timestamp": "2026-09-30T21:47:44.580615",
   "trading": {
-    "total": 81,
-    "open": 10,
+    "total": 83,
+    "open": 12,
     "resolved": 71,
     "voided": 0,
     "wins": 5,
@@ -11,8 +11,8 @@
     "total_cost": 1136.06,
     "total_pnl": -466.06,
     "roi": -41.0,
-    "bankroll": 551.94,
-    "drawdown_pct": 44.8,
+    "bankroll": 533.94,
+    "drawdown_pct": 46.6,
     "avg_win": 119.52,
     "avg_loss": 16.12,
     "profit_factor": 0.56
@@ -231,14 +231,14 @@
     },
     "ankara": {
       "city": "Ankara",
-      "paired": 173,
+      "paired": 174,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "tel-aviv": {
       "city": "Tel Aviv",
-      "paired": 176,
+      "paired": 177,
       "models_used": 3,
       "models_dropped": [
         "ecmwf_ifs025"
@@ -273,7 +273,7 @@
     },
     "lucknow": {
       "city": "Lucknow",
-      "paired": 175,
+      "paired": 176,
       "models_used": 3,
       "models_dropped": [
         "gfs_seamless"
@@ -312,7 +312,7 @@
     }
   },
   "recent": {
-    "signals_generated": 10,
+    "signals_generated": 12,
     "resolved_in_period": 40,
     "days": 7
   },
