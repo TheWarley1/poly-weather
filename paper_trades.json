@@ -3046,5 +3046,33 @@
     "calibrated": true,
     "logged_at": "2026-10-04T11:33:04.458831",
     "resolved": false
+  },
+  {
+    "city": "Milan",
+    "slug": "milan",
+    "station": "LIMC",
+    "unit": "C",
+    "market_date": "2026-10-05",
+    "lead_days": 1,
+    "bin": "23\u00b0C",
+    "entry_price": 8.5,
+    "shares": 98,
+    "cost": 8.33,
+    "forecast_high": 23.3,
+    "model_prob": 21.2,
+    "model_prob_shrunk": 19.9,
+    "market_prob": 8.5,
+    "edge_pct": 12.7,
+    "edge_sized_pct": 11.4,
+    "kelly_pct": 1.6,
+    "dd_factor": 0.5,
+    "bankroll_at_entry": 536.29,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.3525963858310618,
+    "n_models": 4,
+    "model_spread": 0.2,
+    "calibrated": true,
+    "logged_at": "2026-10-04T20:45:24.136019",
+    "resolved": false
   }
 ]
