@@ -3045,7 +3045,13 @@
     "model_spread": 0.8,
     "calibrated": true,
     "logged_at": "2026-10-04T11:33:04.458831",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "22\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -8.67,
+    "return_pct": -100.0,
+    "resolved_at": "2026-10-06T03:37:03.434608"
   },
   {
     "city": "Milan",
@@ -3073,7 +3079,13 @@
     "model_spread": 0.2,
     "calibrated": true,
     "logged_at": "2026-10-04T20:45:24.136019",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "25\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -8.33,
+    "return_pct": -100.0,
+    "resolved_at": "2026-10-06T03:37:03.823014"
   },
   {
     "city": "Wellington",
@@ -3157,6 +3169,34 @@
     "model_spread": 0.7,
     "calibrated": true,
     "logged_at": "2026-10-05T23:31:18.879057",
+    "resolved": false
+  },
+  {
+    "city": "Madrid",
+    "slug": "madrid",
+    "station": "LEMD",
+    "unit": "C",
+    "market_date": "2026-10-07",
+    "lead_days": 1,
+    "bin": "21\u00b0C",
+    "entry_price": 13.5,
+    "shares": 72,
+    "cost": 9.72,
+    "forecast_high": 21.3,
+    "model_prob": 27.9,
+    "model_prob_shrunk": 26.4,
+    "market_prob": 13.5,
+    "edge_pct": 14.4,
+    "edge_sized_pct": 12.9,
+    "kelly_pct": 1.9,
+    "dd_factor": 0.5,
+    "bankroll_at_entry": 519.29,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.3888003710715733,
+    "n_models": 4,
+    "model_spread": 1.0,
+    "calibrated": true,
+    "logged_at": "2026-10-06T03:41:43.869751",
     "resolved": false
   }
 ]
