@@ -3289,7 +3289,13 @@
     "model_spread": 1.1,
     "calibrated": true,
     "logged_at": "2026-10-06T22:07:08.167953",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "78-79\u00b0F",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -10.54,
+    "return_pct": -100.0,
+    "resolved_at": "2026-10-08T12:26:25.483203"
   },
   {
     "city": "Paris",
@@ -3485,6 +3491,34 @@
     "model_spread": 0.5,
     "calibrated": true,
     "logged_at": "2026-10-08T03:23:08.824925",
+    "resolved": false
+  },
+  {
+    "city": "Dallas",
+    "slug": "dallas",
+    "station": "KDFW",
+    "unit": "F",
+    "market_date": "2026-10-09",
+    "lead_days": 1,
+    "bin": "86-87\u00b0F",
+    "entry_price": 10.0,
+    "shares": 103,
+    "cost": 10.3,
+    "forecast_high": 86.4,
+    "model_prob": 25.6,
+    "model_prob_shrunk": 24.0,
+    "market_prob": 10.0,
+    "edge_pct": 15.6,
+    "edge_sized_pct": 14.0,
+    "kelly_pct": 2.0,
+    "dd_factor": 0.5,
+    "bankroll_at_entry": 525.9,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.3396374112271374,
+    "n_models": 3,
+    "model_spread": 1.7,
+    "calibrated": true,
+    "logged_at": "2026-10-08T12:31:07.327668",
     "resolved": false
   }
 ]
