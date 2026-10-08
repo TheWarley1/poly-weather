@@ -3323,7 +3323,13 @@
     "model_spread": 0.8,
     "calibrated": true,
     "logged_at": "2026-10-06T22:07:08.167973",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "17\u00b0C",
+    "resolved_price": 0,
+    "revenue": 0.0,
+    "pnl": -9.8,
+    "return_pct": -100.0,
+    "resolved_at": "2026-10-08T22:39:58.161929"
   },
   {
     "city": "Milan",
@@ -3519,6 +3525,34 @@
     "model_spread": 1.7,
     "calibrated": true,
     "logged_at": "2026-10-08T12:31:07.327668",
+    "resolved": false
+  },
+  {
+    "city": "Ankara",
+    "slug": "ankara",
+    "station": "LTAC",
+    "unit": "C",
+    "market_date": "2026-10-10",
+    "lead_days": 1,
+    "bin": "23\u00b0C",
+    "entry_price": 10.0,
+    "shares": 92,
+    "cost": 9.2,
+    "forecast_high": 23.4,
+    "model_prob": 24.3,
+    "model_prob_shrunk": 22.8,
+    "market_prob": 10.0,
+    "edge_pct": 14.3,
+    "edge_sized_pct": 12.8,
+    "kelly_pct": 1.8,
+    "dd_factor": 0.5,
+    "bankroll_at_entry": 516.1,
+    "city_kelly_scalar": 1.0,
+    "city_bss": 0.35081805318237846,
+    "n_models": 4,
+    "model_spread": 0.5,
+    "calibrated": true,
+    "logged_at": "2026-10-08T22:47:31.698657",
     "resolved": false
   }
 ]

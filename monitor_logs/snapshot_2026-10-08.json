@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-10-08T12:31:07.675972",
+  "timestamp": "2026-10-08T22:47:32.275133",
   "trading": {
-    "total": 105,
+    "total": 106,
     "open": 8,
-    "resolved": 97,
+    "resolved": 98,
     "voided": 0,
     "wins": 8,
-    "losses": 89,
-    "win_rate": 0.08247422680412371,
-    "total_cost": 1392.1,
-    "total_pnl": -474.1,
-    "roi": -34.1,
-    "bankroll": 525.9,
-    "drawdown_pct": 47.4,
+    "losses": 90,
+    "win_rate": 0.08163265306122448,
+    "total_cost": 1401.9,
+    "total_pnl": -483.9,
+    "roi": -34.5,
+    "bankroll": 516.1,
+    "drawdown_pct": 48.4,
     "avg_win": 102.8,
-    "avg_loss": 14.57,
+    "avg_loss": 14.51,
     "profit_factor": 0.63
   },
   "lead_days": {
     "D+1": {
-      "trades": 93,
+      "trades": 94,
       "wins": 8,
-      "win_rate": 8.6,
-      "cost": 1288.47,
-      "pnl": -370.47,
-      "roi": -28.8
+      "win_rate": 8.5,
+      "cost": 1298.27,
+      "pnl": -380.27,
+      "roi": -29.3
     },
     "D+2": {
       "trades": 4,
@@ -74,11 +74,11 @@
   ],
   "bottom_cities": [
     {
-      "city": "Milan",
+      "city": "Paris",
       "trades": 5,
       "wins": 0,
       "win_rate": 0.0,
-      "pnl": -55.53
+      "pnl": -58.01
     },
     {
       "city": "Tel Aviv",
@@ -173,14 +173,14 @@
     },
     "tokyo": {
       "city": "Tokyo",
-      "paired": 172,
+      "paired": 173,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "seoul": {
       "city": "Seoul",
-      "paired": 173,
+      "paired": 174,
       "models_used": 3,
       "models_dropped": [
         "gfs_seamless"
@@ -196,21 +196,21 @@
     },
     "singapore": {
       "city": "Singapore",
-      "paired": 171,
+      "paired": 172,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "paris": {
       "city": "Paris",
-      "paired": 173,
+      "paired": 174,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "shanghai": {
       "city": "Shanghai",
-      "paired": 173,
+      "paired": 174,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -231,14 +231,14 @@
     },
     "ankara": {
       "city": "Ankara",
-      "paired": 173,
+      "paired": 174,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "tel-aviv": {
       "city": "Tel Aviv",
-      "paired": 176,
+      "paired": 177,
       "models_used": 3,
       "models_dropped": [
         "ecmwf_ifs025"
@@ -247,7 +247,7 @@
     },
     "hong-kong": {
       "city": "Hong Kong",
-      "paired": 176,
+      "paired": 177,
       "models_used": 3,
       "models_dropped": [
         "gfs_seamless"
@@ -256,7 +256,7 @@
     },
     "munich": {
       "city": "Munich",
-      "paired": 176,
+      "paired": 177,
       "models_used": 2,
       "models_dropped": [
         "ecmwf_ifs025",
@@ -273,7 +273,7 @@
     },
     "lucknow": {
       "city": "Lucknow",
-      "paired": 175,
+      "paired": 176,
       "models_used": 3,
       "models_dropped": [
         "gfs_seamless"
@@ -282,14 +282,14 @@
     },
     "warsaw": {
       "city": "Warsaw",
-      "paired": 176,
+      "paired": 177,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "milan": {
       "city": "Milan",
-      "paired": 175,
+      "paired": 176,
       "models_used": 3,
       "models_dropped": [
         "ecmwf_ifs025"
@@ -298,14 +298,14 @@
     },
     "madrid": {
       "city": "Madrid",
-      "paired": 177,
+      "paired": 178,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     },
     "taipei": {
       "city": "Taipei",
-      "paired": 176,
+      "paired": 177,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
