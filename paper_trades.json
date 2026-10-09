@@ -3515,7 +3515,13 @@
     "model_spread": 0.5,
     "calibrated": true,
     "logged_at": "2026-10-08T03:23:08.824925",
-    "resolved": false
+    "resolved": true,
+    "outcome_bin": "19\u00b0C",
+    "resolved_price": 100,
+    "revenue": 45.0,
+    "pnl": 38.48,
+    "return_pct": 590.2,
+    "resolved_at": "2026-10-09T22:02:18.425448"
   },
   {
     "city": "Dallas",
@@ -3599,6 +3605,34 @@
     "model_spread": null,
     "calibrated": true,
     "logged_at": "2026-10-09T03:30:00.867482",
+    "resolved": false
+  },
+  {
+    "city": "Sao Paulo",
+    "slug": "sao-paulo",
+    "station": "SBGR",
+    "unit": "C",
+    "market_date": "2026-10-11",
+    "lead_days": 2,
+    "bin": "24\u00b0C or below",
+    "entry_price": 14.5,
+    "shares": 68,
+    "cost": 9.86,
+    "forecast_high": 26.0,
+    "model_prob": 33.6,
+    "model_prob_shrunk": 31.7,
+    "market_prob": 14.5,
+    "edge_pct": 19.1,
+    "edge_sized_pct": 17.2,
+    "kelly_pct": 1.9,
+    "dd_factor": 0.5,
+    "bankroll_at_entry": 527.65,
+    "city_kelly_scalar": 0.75,
+    "city_bss": 0.16766953963980913,
+    "n_models": 4,
+    "model_spread": 1.7,
+    "calibrated": true,
+    "logged_at": "2026-10-09T22:06:55.057101",
     "resolved": false
   }
 ]
