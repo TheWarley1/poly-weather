@@ -29,21 +29,6 @@
     "updated_at": "2026-04-20T21:06:24.867048"
   },
   {
-    "date": "2026-04-14",
-    "forecast": 14.7,
-    "model_highs": {
-      "ecmwf_ifs025": 14.4,
-      "gfs_seamless": 15.6,
-      "icon_seamless": 14.4,
-      "gem_seamless": 14.4
-    },
-    "actual": 15.0,
-    "actual_source": "metar_iem",
-    "resolution_bin": "15\u00b0C",
-    "logged_at": "2026-04-15T18:46:03.318747",
-    "updated_at": "2026-04-20T21:06:24.867013"
-  },
-  {
     "date": "2026-04-15",
     "forecast": null,
     "model_highs": {},
@@ -2559,40 +2544,39 @@
       "icon_seamless": 14.4,
       "gem_seamless": 14.4
     },
-    "actual": null,
-    "actual_source": null,
-    "resolution_bin": null,
+    "actual": 14.0,
+    "actual_source": "metar_iem",
+    "resolution_bin": "14\u00b0C",
     "logged_at": "2026-10-09T12:15:00.828901",
-    "updated_at": "2026-10-11T21:10:31.755654"
+    "updated_at": "2026-10-12T02:59:31.520666"
   },
   {
     "date": "2026-10-12",
-    "forecast": 11.0,
+    "forecast": 11.7,
     "model_highs": {
-      "ecmwf_ifs025": 9.4,
-      "gfs_seamless": 11.7,
-      "icon_seamless": 11.1,
-      "gem_seamless": 12.2
-    },
-    "actual": null,
-    "actual_source": null,
-    "resolution_bin": null,
-    "logged_at": "2026-10-10T11:34:24.994860",
-    "updated_at": "2026-10-11T21:10:33.042356"
-  },
-  {
-    "date": "2026-10-13",
-    "forecast": 12.1,
-    "model_highs": {
-      "ecmwf_ifs025": 11.7,
-      "gfs_seamless": 13.3,
+      "ecmwf_ifs025": 11.1,
+      "gfs_seamless": 12.2,
       "icon_seamless": 11.7,
       "gem_seamless": 12.2
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
+    "logged_at": "2026-10-10T11:34:24.994860",
+    "updated_at": "2026-10-12T02:58:47.480047"
+  },
+  {
+    "date": "2026-10-13",
+    "forecast": 12.4,
+    "model_highs": {
+      "ecmwf_ifs025": 11.7,
+      "gfs_seamless": 13.3,
+      "icon_seamless": 12.2
+    },
+    "actual": null,
+    "actual_source": null,
+    "resolution_bin": null,
     "logged_at": "2026-10-11T11:46:19.352901",
-    "updated_at": "2026-10-11T21:10:34.400187"
+    "updated_at": "2026-10-12T02:59:30.724832"
   }
 ]

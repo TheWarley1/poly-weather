@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-10-11T21:11:57.651353",
+  "timestamp": "2026-10-12T03:01:01.230373",
   "trading": {
     "total": 110,
-    "open": 3,
-    "resolved": 107,
+    "open": 1,
+    "resolved": 109,
     "voided": 0,
     "wins": 9,
-    "losses": 98,
-    "win_rate": 0.08411214953271028,
-    "total_cost": 1486.82,
-    "total_pnl": -523.82,
-    "roi": -35.2,
+    "losses": 100,
+    "win_rate": 0.08256880733944955,
+    "total_cost": 1506.24,
+    "total_pnl": -543.24,
+    "roi": -36.1,
     "bankroll": 508.18,
     "drawdown_pct": 49.2,
     "avg_win": 95.66,
-    "avg_loss": 14.13,
-    "profit_factor": 0.62
+    "avg_loss": 14.04,
+    "profit_factor": 0.61
   },
   "lead_days": {
     "D+1": {
-      "trades": 102,
+      "trades": 104,
       "wins": 9,
-      "win_rate": 8.8,
-      "cost": 1374.97,
-      "pnl": -411.97,
-      "roi": -30.0
+      "win_rate": 8.7,
+      "cost": 1394.39,
+      "pnl": -431.39,
+      "roi": -30.9
     },
     "D+2": {
       "trades": 5,
@@ -82,10 +82,10 @@
     },
     {
       "city": "Tel Aviv",
-      "trades": 5,
+      "trades": 6,
       "wins": 0,
       "win_rate": 0.0,
-      "pnl": -69.85
+      "pnl": -80.49
     },
     {
       "city": "Toronto",
@@ -103,10 +103,10 @@
     },
     {
       "city": "Madrid",
-      "trades": 10,
+      "trades": 11,
       "wins": 0,
       "win_rate": 0.0,
-      "pnl": -146.54
+      "pnl": -155.32
     }
   ],
   "calibration": {
@@ -165,7 +165,7 @@
     },
     "london": {
       "city": "London",
-      "paired": 175,
+      "paired": 176,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -202,7 +202,7 @@
     },
     "paris": {
       "city": "Paris",
-      "paired": 175,
+      "paired": 176,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
@@ -237,7 +237,7 @@
     },
     "tel-aviv": {
       "city": "Tel Aviv",
-      "paired": 177,
+      "paired": 176,
       "models_used": 3,
       "models_dropped": [
         "ecmwf_ifs025"
@@ -272,7 +272,7 @@
     },
     "lucknow": {
       "city": "Lucknow",
-      "paired": 177,
+      "paired": 176,
       "models_used": 3,
       "models_dropped": [
         "gfs_seamless"
@@ -304,15 +304,15 @@
     },
     "taipei": {
       "city": "Taipei",
-      "paired": 177,
+      "paired": 176,
       "models_used": 4,
       "models_dropped": [],
       "nws_dropped": true
     }
   },
   "recent": {
-    "signals_generated": 3,
-    "resolved_in_period": 19,
+    "signals_generated": 1,
+    "resolved_in_period": 21,
     "days": 7
   },
   "drawdown": "HALTED"
