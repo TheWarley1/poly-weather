@@ -1,21 +1,5 @@
 [
   {
-    "date": "2026-04-25",
-    "forecast": 89.2,
-    "model_highs": {
-      "ecmwf_ifs025": 87,
-      "gfs_seamless": 90,
-      "icon_seamless": 88,
-      "gem_seamless": 90,
-      "nws": 91
-    },
-    "actual": 87.0,
-    "actual_source": "metar_iem",
-    "resolution_bin": "84\u00b0F or higher",
-    "logged_at": "2026-04-23T07:20:40.009938",
-    "updated_at": "2026-04-26T07:15:44.441125"
-  },
-  {
     "date": "2026-04-26",
     "forecast": 84.1,
     "model_highs": {
@@ -2757,21 +2741,6 @@
   },
   {
     "date": "2026-10-22",
-    "forecast": 83.2,
-    "model_highs": {
-      "ecmwf_ifs025": 82,
-      "gfs_seamless": 83,
-      "icon_seamless": 83,
-      "gem_seamless": 82
-    },
-    "actual": null,
-    "actual_source": null,
-    "resolution_bin": null,
-    "logged_at": "2026-10-20T10:32:49.362665",
-    "updated_at": "2026-10-22T20:55:06.682464"
-  },
-  {
-    "date": "2026-10-23",
     "forecast": 83.5,
     "model_highs": {
       "ecmwf_ifs025": 82,
@@ -2782,21 +2751,36 @@
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
+    "logged_at": "2026-10-20T10:32:49.362665",
+    "updated_at": "2026-10-23T02:14:01.689291"
+  },
+  {
+    "date": "2026-10-23",
+    "forecast": 84.0,
+    "model_highs": {
+      "ecmwf_ifs025": 83,
+      "gfs_seamless": 84,
+      "icon_seamless": 84,
+      "gem_seamless": 82
+    },
+    "actual": null,
+    "actual_source": null,
+    "resolution_bin": null,
     "logged_at": "2026-10-21T10:44:41.270920",
-    "updated_at": "2026-10-22T20:55:09.920450"
+    "updated_at": "2026-10-23T02:14:04.678887"
   },
   {
     "date": "2026-10-24",
-    "forecast": 82.5,
+    "forecast": 83.5,
     "model_highs": {
       "ecmwf_ifs025": 82,
-      "gfs_seamless": 82,
-      "gem_seamless": 81
+      "gfs_seamless": 83,
+      "icon_seamless": 84
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-10-22T10:46:42.630351",
-    "updated_at": "2026-10-22T20:56:21.292305"
+    "updated_at": "2026-10-23T02:14:47.955494"
   }
 ]
