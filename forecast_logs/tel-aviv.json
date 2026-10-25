@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-04-27",
-    "forecast": 22.7,
-    "model_highs": {
-      "ecmwf_ifs025": 21.7,
-      "gfs_seamless": 23.3,
-      "icon_seamless": 23.3,
-      "gem_seamless": 22.8
-    },
-    "actual": 23.0,
-    "actual_source": "metar_iem",
-    "resolution_bin": "23\u00b0C",
-    "logged_at": "2026-04-25T07:05:06.142457",
-    "updated_at": "2026-04-28T01:46:57.772257"
-  },
-  {
     "date": "2026-04-28",
     "forecast": 23.8,
     "model_highs": {
@@ -2599,40 +2584,40 @@
       "icon_seamless": 31.1,
       "gem_seamless": 31.1
     },
-    "actual": null,
-    "actual_source": null,
-    "resolution_bin": null,
+    "actual": 31.0,
+    "actual_source": "metar_iem",
+    "resolution_bin": "31\u00b0C",
     "logged_at": "2026-10-22T10:48:59.737598",
-    "updated_at": "2026-10-24T19:56:23.859714"
+    "updated_at": "2026-10-25T02:01:27.972231"
   },
   {
     "date": "2026-10-25",
-    "forecast": 28.6,
+    "forecast": 28.8,
     "model_highs": {
       "ecmwf_ifs025": 30.0,
       "gfs_seamless": 28.9,
-      "icon_seamless": 27.8,
-      "gem_seamless": 28.9
-    },
-    "actual": null,
-    "actual_source": null,
-    "resolution_bin": null,
-    "logged_at": "2026-10-23T10:42:57.231120",
-    "updated_at": "2026-10-24T19:56:25.440218"
-  },
-  {
-    "date": "2026-10-26",
-    "forecast": 28.7,
-    "model_highs": {
-      "ecmwf_ifs025": 30.6,
-      "gfs_seamless": 28.3,
       "icon_seamless": 28.3,
       "gem_seamless": 28.9
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
+    "logged_at": "2026-10-23T10:42:57.231120",
+    "updated_at": "2026-10-25T02:01:25.544931"
+  },
+  {
+    "date": "2026-10-26",
+    "forecast": 29.3,
+    "model_highs": {
+      "ecmwf_ifs025": 28.9,
+      "gfs_seamless": 28.9,
+      "icon_seamless": 30.0,
+      "gem_seamless": 28.9
+    },
+    "actual": null,
+    "actual_source": null,
+    "resolution_bin": null,
     "logged_at": "2026-10-24T09:59:42.723856",
-    "updated_at": "2026-10-24T19:56:27.335283"
+    "updated_at": "2026-10-25T02:01:27.171555"
   }
 ]
