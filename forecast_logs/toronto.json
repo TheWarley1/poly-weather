@@ -2535,27 +2535,45 @@
   },
   {
     "date": "2026-10-31",
-    "forecast": 13.6,
+    "forecast": 14.1,
     "model_highs": {
+      "ecmwf_ifs025": 14.4,
       "gem_seamless": 14.4
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-10-29T17:43:14.806858",
-    "updated_at": "2026-10-31T11:20:57.815440"
+    "updated_at": "2026-10-31T16:25:59.574992"
   },
   {
     "date": "2026-11-01",
-    "forecast": 15.9,
+    "forecast": 16.2,
     "model_highs": {
-      "ecmwf_ifs025": 16.7,
+      "ecmwf_ifs025": 15.6,
+      "gfs_seamless": 17.2,
+      "icon_seamless": 16.1,
       "gem_seamless": 15.6
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-10-30T17:22:17.000041",
-    "updated_at": "2026-10-31T11:22:32.679924"
+    "updated_at": "2026-10-31T16:26:01.814497"
+  },
+  {
+    "date": "2026-11-02",
+    "forecast": 18.5,
+    "model_highs": {
+      "ecmwf_ifs025": 16.7,
+      "gfs_seamless": 20.0,
+      "icon_seamless": 18.9,
+      "gem_seamless": 17.2
+    },
+    "actual": null,
+    "actual_source": null,
+    "resolution_bin": null,
+    "logged_at": "2026-10-31T16:26:04.622002",
+    "updated_at": "2026-10-31T16:26:04.622008"
   }
 ]
