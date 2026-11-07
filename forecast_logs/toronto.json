@@ -2514,17 +2514,17 @@
     "model_highs": {
       "ecmwf_ifs025": 12.8
     },
-    "actual": 12.7,
-    "actual_source": "open_meteo_archive",
+    "actual": 13.0,
+    "actual_source": "metar_iem",
     "resolution_bin": "13\u00b0C",
     "logged_at": "2026-11-04T13:26:06.396815",
-    "updated_at": "2026-11-07T12:00:52.477846"
+    "updated_at": "2026-11-07T17:30:06.818143"
   },
   {
     "date": "2026-11-07",
-    "forecast": 9.7,
+    "forecast": 8.4,
     "model_highs": {
-      "gfs_seamless": 10.6,
+      "gfs_seamless": 7.8,
       "icon_seamless": 8.9,
       "gem_seamless": 9.4
     },
@@ -2532,36 +2532,35 @@
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-11-05T13:40:49.203791",
-    "updated_at": "2026-11-07T12:00:46.441043"
+    "updated_at": "2026-11-07T17:28:39.508722"
   },
   {
     "date": "2026-11-08",
-    "forecast": 9.8,
-    "model_highs": {
-      "ecmwf_ifs025": 10.6,
-      "gfs_seamless": 8.9,
-      "icon_seamless": 10.6,
-      "gem_seamless": 10.0
-    },
-    "actual": null,
-    "actual_source": null,
-    "resolution_bin": null,
-    "logged_at": "2026-11-06T13:23:35.774726",
-    "updated_at": "2026-11-07T12:00:49.120944"
-  },
-  {
-    "date": "2026-11-09",
-    "forecast": 10.1,
+    "forecast": 9.9,
     "model_highs": {
       "ecmwf_ifs025": 10.0,
-      "gfs_seamless": 10.6,
+      "gfs_seamless": 10.0,
       "icon_seamless": 10.0,
       "gem_seamless": 10.0
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
+    "logged_at": "2026-11-06T13:23:35.774726",
+    "updated_at": "2026-11-07T17:28:42.127800"
+  },
+  {
+    "date": "2026-11-09",
+    "forecast": 9.5,
+    "model_highs": {
+      "ecmwf_ifs025": 8.9,
+      "gfs_seamless": 10.0,
+      "gem_seamless": 10.0
+    },
+    "actual": null,
+    "actual_source": null,
+    "resolution_bin": null,
     "logged_at": "2026-11-07T12:00:51.259937",
-    "updated_at": "2026-11-07T12:00:51.259943"
+    "updated_at": "2026-11-07T17:30:06.102771"
   }
 ]
