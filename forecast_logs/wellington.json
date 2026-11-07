@@ -2559,18 +2559,18 @@
       "gfs_seamless": 18.3,
       "gem_seamless": 19.4
     },
-    "actual": null,
-    "actual_source": null,
-    "resolution_bin": null,
+    "actual": 21.0,
+    "actual_source": "metar_iem",
+    "resolution_bin": "21\u00b0C",
     "logged_at": "2026-11-05T13:40:23.732416",
-    "updated_at": "2026-11-07T03:30:09.700439"
+    "updated_at": "2026-11-07T12:00:50.050241"
   },
   {
     "date": "2026-11-08",
-    "forecast": 19.0,
+    "forecast": 18.9,
     "model_highs": {
       "ecmwf_ifs025": 18.3,
-      "gfs_seamless": 18.9,
+      "gfs_seamless": 18.3,
       "icon_seamless": 17.8,
       "gem_seamless": 17.8
     },
@@ -2578,6 +2578,21 @@
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-11-06T13:22:13.107587",
-    "updated_at": "2026-11-07T03:30:12.136758"
+    "updated_at": "2026-11-07T12:00:46.607154"
+  },
+  {
+    "date": "2026-11-09",
+    "forecast": 16.9,
+    "model_highs": {
+      "ecmwf_ifs025": 16.1,
+      "gfs_seamless": 15.6,
+      "icon_seamless": 16.1,
+      "gem_seamless": 16.7
+    },
+    "actual": null,
+    "actual_source": null,
+    "resolution_bin": null,
+    "logged_at": "2026-11-07T12:00:49.256684",
+    "updated_at": "2026-11-07T12:00:49.256689"
   }
 ]
