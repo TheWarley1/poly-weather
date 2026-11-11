@@ -1,21 +1,5 @@
 [
   {
-    "date": "2026-05-14",
-    "forecast": 65.0,
-    "model_highs": {
-      "ecmwf_ifs025": 66,
-      "gfs_seamless": 67,
-      "icon_seamless": 67,
-      "gem_seamless": 67,
-      "nws": 61
-    },
-    "actual": 67.0,
-    "actual_source": "metar_iem",
-    "resolution_bin": "66-67\u00b0F",
-    "logged_at": "2026-05-12T08:19:35.068412",
-    "updated_at": "2026-05-16T01:49:06.728148"
-  },
-  {
     "date": "2026-05-15",
     "forecast": 66.5,
     "model_highs": {
@@ -2730,33 +2714,33 @@
       "icon_seamless": 58,
       "gem_seamless": 59
     },
-    "actual": 57.7,
-    "actual_source": "open_meteo_archive",
+    "actual": 58.0,
+    "actual_source": "metar_iem",
     "resolution_bin": "58-59\u00b0F",
     "logged_at": "2026-11-07T12:00:03.262030",
-    "updated_at": "2026-11-10T13:51:52.435906"
+    "updated_at": "2026-11-11T03:26:54.140613"
   },
   {
     "date": "2026-11-10",
-    "forecast": 62.4,
+    "forecast": 62.6,
     "model_highs": {
       "ecmwf_ifs025": 60,
       "gfs_seamless": 63,
       "icon_seamless": 63,
-      "gem_seamless": 62
+      "gem_seamless": 63
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-11-08T12:19:51.686189",
-    "updated_at": "2026-11-10T22:36:32.414794"
+    "updated_at": "2026-11-11T03:26:08.582434"
   },
   {
     "date": "2026-11-11",
-    "forecast": 61.0,
+    "forecast": 61.6,
     "model_highs": {
       "ecmwf_ifs025": 58,
-      "gfs_seamless": 62,
+      "gfs_seamless": 64,
       "icon_seamless": 60,
       "gem_seamless": 63
     },
@@ -2764,19 +2748,20 @@
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-11-09T14:31:02.198920",
-    "updated_at": "2026-11-10T22:36:34.372986"
+    "updated_at": "2026-11-11T03:26:10.890806"
   },
   {
     "date": "2026-11-12",
-    "forecast": 60.9,
+    "forecast": 58.1,
     "model_highs": {
-      "icon_seamless": 59,
-      "gem_seamless": 62
+      "ecmwf_ifs025": 58,
+      "gfs_seamless": 57,
+      "icon_seamless": 59
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-11-10T13:51:51.568258",
-    "updated_at": "2026-11-10T22:37:58.171993"
+    "updated_at": "2026-11-11T03:26:53.520939"
   }
 ]
