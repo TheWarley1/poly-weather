@@ -1,21 +1,5 @@
 [
   {
-    "date": "2026-05-19",
-    "forecast": 74.6,
-    "model_highs": {
-      "ecmwf_ifs025": 74,
-      "gfs_seamless": 83,
-      "icon_seamless": 72,
-      "gem_seamless": 71,
-      "nws": 72
-    },
-    "actual": 80.0,
-    "actual_source": "metar_iem",
-    "resolution_bin": "80-81\u00b0F",
-    "logged_at": "2026-05-17T08:07:56.499738",
-    "updated_at": "2026-05-20T20:00:58.865801"
-  },
-  {
     "date": "2026-05-21",
     "forecast": 66.5,
     "model_highs": {
@@ -2730,11 +2714,11 @@
       "icon_seamless": 62,
       "gem_seamless": 63
     },
-    "actual": 65.1,
-    "actual_source": "open_meteo_archive",
+    "actual": 63.0,
+    "actual_source": "metar_iem",
     "resolution_bin": "62-63\u00b0F",
     "logged_at": "2026-11-12T14:05:46.998444",
-    "updated_at": "2026-11-15T13:02:23.564374"
+    "updated_at": "2026-11-16T03:27:53.467136"
   },
   {
     "date": "2026-11-15",
@@ -2749,14 +2733,14 @@
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-11-13T13:38:16.066037",
-    "updated_at": "2026-11-15T22:10:47.283023"
+    "updated_at": "2026-11-16T03:27:49.755925"
   },
   {
     "date": "2026-11-16",
-    "forecast": 58.1,
+    "forecast": 59.1,
     "model_highs": {
       "ecmwf_ifs025": 60,
-      "gfs_seamless": 56,
+      "gfs_seamless": 59,
       "icon_seamless": 58,
       "gem_seamless": 56
     },
@@ -2764,14 +2748,14 @@
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-11-14T12:36:36.041252",
-    "updated_at": "2026-11-15T22:10:48.572338"
+    "updated_at": "2026-11-16T03:27:51.353025"
   },
   {
     "date": "2026-11-17",
-    "forecast": 59.6,
+    "forecast": 59.2,
     "model_highs": {
       "ecmwf_ifs025": 59,
-      "gfs_seamless": 60,
+      "gfs_seamless": 59,
       "icon_seamless": 59,
       "gem_seamless": 57
     },
@@ -2779,6 +2763,6 @@
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-11-15T13:02:22.502667",
-    "updated_at": "2026-11-15T22:10:50.047837"
+    "updated_at": "2026-11-16T03:27:52.873142"
   }
 ]
