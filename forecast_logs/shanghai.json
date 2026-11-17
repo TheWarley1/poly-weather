@@ -2429,11 +2429,11 @@
       "icon_seamless": 20.0,
       "gem_seamless": 20.6
     },
-    "actual": 20.2,
-    "actual_source": "open_meteo_archive",
+    "actual": 20.0,
+    "actual_source": "metar_iem",
     "resolution_bin": "20\u00b0C",
     "logged_at": "2026-11-11T13:04:41.264442",
-    "updated_at": "2026-11-13T22:57:41.285447"
+    "updated_at": "2026-11-17T15:01:49.162494"
   },
   {
     "date": "2026-11-14",
@@ -2474,37 +2474,53 @@
       "icon_seamless": 17.8,
       "gem_seamless": 18.9
     },
-    "actual": 18.8,
-    "actual_source": "open_meteo_archive",
+    "actual": 20.0,
+    "actual_source": "metar_iem",
     "resolution_bin": "20\u00b0C",
     "logged_at": "2026-11-14T12:36:49.159742",
-    "updated_at": "2026-11-17T01:13:53.861648"
+    "updated_at": "2026-11-17T15:01:47.977276"
   },
   {
     "date": "2026-11-17",
-    "forecast": 18.9,
+    "forecast": 18.6,
     "model_highs": {
+      "icon_seamless": 17.2,
       "gem_seamless": 17.8
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-11-15T13:02:28.066193",
-    "updated_at": "2026-11-17T01:13:50.713307"
+    "updated_at": "2026-11-17T15:01:42.988957"
   },
   {
     "date": "2026-11-18",
-    "forecast": 15.7,
+    "forecast": 15.8,
     "model_highs": {
       "ecmwf_ifs025": 14.4,
       "gfs_seamless": 14.4,
-      "icon_seamless": 13.9,
+      "icon_seamless": 14.4,
       "gem_seamless": 16.1
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-11-16T14:07:19.263252",
-    "updated_at": "2026-11-17T01:13:52.587572"
+    "updated_at": "2026-11-17T15:01:44.760624"
+  },
+  {
+    "date": "2026-11-19",
+    "forecast": 12.3,
+    "model_highs": {
+      "ecmwf_ifs025": 10.6,
+      "gfs_seamless": 12.8,
+      "icon_seamless": 10.6,
+      "gem_seamless": 11.1
+    },
+    "actual": null,
+    "actual_source": null,
+    "resolution_bin": null,
+    "logged_at": "2026-11-17T15:01:46.359043",
+    "updated_at": "2026-11-17T15:01:46.359053"
   }
 ]
