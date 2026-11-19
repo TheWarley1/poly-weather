@@ -1,21 +1,5 @@
 [
   {
-    "date": "2026-05-22",
-    "forecast": 87.0,
-    "model_highs": {
-      "ecmwf_ifs025": 85,
-      "gfs_seamless": 87,
-      "icon_seamless": 86,
-      "gem_seamless": 90,
-      "nws": 88
-    },
-    "actual": 88.0,
-    "actual_source": "metar_iem",
-    "resolution_bin": "88-89\u00b0F",
-    "logged_at": "2026-05-20T08:49:51.250154",
-    "updated_at": "2026-05-25T02:05:08.201591"
-  },
-  {
     "date": "2026-05-23",
     "forecast": 86.6,
     "model_highs": {
@@ -2650,10 +2634,10 @@
       "gem_seamless": 86
     },
     "actual": 86.0,
-    "actual_source": "open_meteo_archive",
+    "actual_source": "metar_iem",
     "resolution_bin": "86-87\u00b0F",
     "logged_at": "2026-11-10T13:51:51.238718",
-    "updated_at": "2026-11-13T13:38:17.761563"
+    "updated_at": "2026-11-19T04:45:39.543657"
   },
   {
     "date": "2026-11-13",
@@ -2742,36 +2726,36 @@
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-11-16T14:07:10.677019",
-    "updated_at": "2026-11-18T23:39:02.912146"
+    "updated_at": "2026-11-19T04:45:33.794971"
   },
   {
     "date": "2026-11-19",
-    "forecast": 79.4,
+    "forecast": 78.9,
     "model_highs": {
-      "ecmwf_ifs025": 78,
-      "gfs_seamless": 77,
+      "ecmwf_ifs025": 79,
+      "gfs_seamless": 78,
       "icon_seamless": 78,
-      "gem_seamless": 80
+      "gem_seamless": 76
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-11-17T15:00:19.112524",
-    "updated_at": "2026-11-18T23:39:04.275856"
+    "updated_at": "2026-11-19T04:45:35.006124"
   },
   {
     "date": "2026-11-20",
-    "forecast": 83.4,
+    "forecast": 82.6,
     "model_highs": {
-      "ecmwf_ifs025": 80,
-      "gfs_seamless": 85,
+      "ecmwf_ifs025": 82,
+      "gfs_seamless": 78,
       "icon_seamless": 83,
-      "gem_seamless": 79
+      "gem_seamless": 84
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
     "logged_at": "2026-11-18T14:43:42.528008",
-    "updated_at": "2026-11-18T23:39:05.632915"
+    "updated_at": "2026-11-19T04:45:36.211269"
   }
 ]
