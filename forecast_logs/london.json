@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-05-24",
-    "forecast": 29.7,
-    "model_highs": {
-      "ecmwf_ifs025": 30.0,
-      "gfs_seamless": 29.4,
-      "icon_seamless": 30.0,
-      "gem_seamless": 29.4
-    },
-    "actual": 31.0,
-    "actual_source": "metar_iem",
-    "resolution_bin": null,
-    "logged_at": "2026-05-22T08:45:50.202923",
-    "updated_at": "2026-05-25T02:04:36.117691"
-  },
-  {
     "date": "2026-05-25",
     "forecast": 32.6,
     "model_highs": {
@@ -2703,40 +2688,40 @@
       "icon_seamless": 9.4,
       "gem_seamless": 8.9
     },
-    "actual": null,
-    "actual_source": null,
-    "resolution_bin": null,
+    "actual": 11.0,
+    "actual_source": "metar_iem",
+    "resolution_bin": "11\u00b0C",
     "logged_at": "2026-11-18T14:43:42.487536",
-    "updated_at": "2026-11-20T23:26:40.576634"
+    "updated_at": "2026-11-21T04:30:37.768652"
   },
   {
     "date": "2026-11-21",
+    "forecast": 9.3,
+    "model_highs": {
+      "ecmwf_ifs025": 8.9,
+      "gfs_seamless": 9.4,
+      "icon_seamless": 8.3,
+      "gem_seamless": 8.3
+    },
+    "actual": null,
+    "actual_source": null,
+    "resolution_bin": null,
+    "logged_at": "2026-11-19T14:47:45.145872",
+    "updated_at": "2026-11-21T04:30:35.212460"
+  },
+  {
+    "date": "2026-11-22",
     "forecast": 9.1,
     "model_highs": {
-      "ecmwf_ifs025": 7.8,
-      "gfs_seamless": 9.4,
+      "ecmwf_ifs025": 8.3,
+      "gfs_seamless": 8.9,
       "icon_seamless": 8.9,
       "gem_seamless": 7.8
     },
     "actual": null,
     "actual_source": null,
     "resolution_bin": null,
-    "logged_at": "2026-11-19T14:47:45.145872",
-    "updated_at": "2026-11-20T23:26:42.594119"
-  },
-  {
-    "date": "2026-11-22",
-    "forecast": 8.9,
-    "model_highs": {
-      "ecmwf_ifs025": 7.8,
-      "gfs_seamless": 8.9,
-      "icon_seamless": 8.9,
-      "gem_seamless": 7.2
-    },
-    "actual": null,
-    "actual_source": null,
-    "resolution_bin": null,
     "logged_at": "2026-11-20T05:21:05.610898",
-    "updated_at": "2026-11-20T23:26:44.614448"
+    "updated_at": "2026-11-21T04:30:36.685236"
   }
 ]
